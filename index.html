@@ -4,15 +4,17 @@
 <div id="lobbyScreen" style="display:none">
   <div class="buildCard lobbyCard">
     <div class="eyebrow">ROBOT ARENA <b>2</b></div>
-    <h1>MULTIPLAYER</h1>
-    <p class="buildHint">Create a game and share the code, or enter a code to join.</p>
+    <h1>MULTIPLAYER LOBBY</h1>
+    <p class="buildHint">Create a game or join an existing one.</p>
 
     <div class="lobbyActions">
-      <button id="createBtn" class="lobbyBtn">CREATE GAME</button>
-      <div class="lobbyDivider">OR</div>
-      <div class="joinRow">
-        <input id="joinCode" type="text" maxlength="6" placeholder="GAME CODE" autocomplete="off" spellcheck="false">
-        <button id="joinBtn" class="lobbyBtn">JOIN</button>
+      <button id="createBtn" class="lobbyBtn">CREATE NEW GAME</button>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <h3 style="font-size: 14px; color: #e4ca3e; letter-spacing: 2px; margin-bottom: 10px;">ACTIVE GAMES</h3>
+      <div id="activeLobbies" class="activeLobbies">
+        <div class="lobbyStatus">Searching for games...</div>
       </div>
     </div>
 
@@ -60,6 +62,10 @@
     <p class="buildHint">Select a team to face in the arena. Each team has its own AI style and robots.</p>
     <div id="teamPicker" class="teamPicker"></div>
     <button id="teamContinueBtn" class="lobbyBtn teamContinueBtn">CONTINUE TO BUILD →</button>
+    <div style="margin-top: 20px; text-align: center;">
+      <p style="font-size: 12px; color: #52645b; margin-bottom: 10px;">OR PLAY MULTIPLAYER</p>
+      <button id="multiplayerBtn" class="lobbyBtn" style="background: #2a3832; border-color: #52645b; color: #aebeb5;">MULTIPLAYER →</button>
+    </div>
   </div>
 </div>
 
@@ -91,11 +97,11 @@
 
   <!-- Bottom bar: robot name + color + launch -->
   <div class="blBottomBar">
-    <div class="blNameRow">
+    <div class="blTopRow">
       <span class="blNameLabel">ROBOT NAME:</span>
       <input id="robotNameInput" class="blNameInput" type="text" maxlength="16" value="NOVA-7" spellcheck="false" autocomplete="off">
     </div>
-    <div class="blColorRow">
+    <div class="blBottomRow">
       <span class="blColorLabel">COLOR</span>
       <label class="blColorSwatch">
         <input id="buildColorPicker" type="color" value="#56a48c">
@@ -124,9 +130,6 @@
     <div class="actions">
       <button id="fire">FIRE</button>
       <button id="boost">BOOST</button>
-    </div>
-    <div class="weapons">
-      <button>⚙</button><button class="active">▥</button><button>▥</button><button>▥</button>
     </div>
   </div>
 </div>

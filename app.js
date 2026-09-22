@@ -194,6 +194,25 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
       }
       // Motor housing
       part(new THREE.CylinderGeometry(0.12*s, 0.14*s, 0.28*s, 12), structure, 0, gunY, -0.52*s);
+    } else if (gun === 'sword') {
+      // Energy sword — long blade with hilt
+      part(new THREE.BoxGeometry(0.08*s, 0.04*s, 1.1*s), barrel, 0, gunY, -0.65*s); // blade
+      part(new THREE.BoxGeometry(0.12*s, 0.08*s, 0.18*s), structure, 0, gunY, -0.08*s); // hilt
+      part(new THREE.BoxGeometry(0.18*s, 0.06*s, 0.06*s), accent, 0, gunY, 0.04*s); // pommel
+      // Energy glow effect (blade tip)
+      part(new THREE.ConeGeometry(0.04*s, 0.12*s, 8), accent, 0, gunY, -1.2*s, 0, 0, Math.PI/2);
+    } else if (gun === 'chainsaw') {
+      // Chainsaw — spinning blade with teeth
+      part(new THREE.BoxGeometry(0.26*s, 0.28*s, 0.32*s), structure, 0, gunY, -0.18*s); // motor housing
+      part(new THREE.CylinderGeometry(0.16*s, 0.16*s, 0.06*s, 16), barrel, 0, gunY, -0.42*s, 0, 0, 0); // blade disc
+      // Teeth around the blade
+      for (let ti = 0; ti < 8; ti++) {
+        const ta = ti * (Math.PI / 4);
+        part(new THREE.BoxGeometry(0.04*s, 0.04*s, 0.08*s), accent,
+          Math.cos(ta)*0.18*s, gunY, -0.42*s + Math.sin(ta)*0.18*s, 0, ta, 0);
+      }
+      // Handle
+      part(new THREE.BoxGeometry(0.12*s, 0.06*s, 0.16*s), structure, 0, gunY-0.1*s, 0.06*s);
     }
   }
 
@@ -273,10 +292,22 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
     // Shoulder pads
     for (const side of [-1,1]) {
       part(new THREE.BoxGeometry(0.22*s, 0.32*s*ap, 0.6*s), armour, side*0.66*s, 1.7*s, 0);
-      // Upper arm
+      // Shoulder joint sphere
+      part(new THREE.SphereGeometry(0.14*s, 10, 8), structure, side*0.66*s, 1.7*s, 0);
+      // Upper arm (humerus)
       part(new THREE.BoxGeometry(0.2*s, 0.5*s, 0.2*s), structure, side*0.66*s, 1.32*s, 0);
-      // Forearm
+      // Elbow joint
+      part(new THREE.SphereGeometry(0.12*s, 10, 8), structure, side*0.66*s, 1.05*s, 0);
+      // Forearm (ulna/radius)
       part(new THREE.BoxGeometry(0.18*s, 0.42*s, 0.18*s), armour, side*0.66*s, 0.88*s, 0.05*s, 0.2*side, 0, 0);
+      // Wrist joint
+      part(new THREE.SphereGeometry(0.1*s, 8, 8), structure, side*0.66*s, 0.66*s, 0.05*s);
+      // Hand/claw
+      part(new THREE.BoxGeometry(0.16*s, 0.14*s, 0.12*s), structure, side*0.66*s, 0.58*s, 0.08*s);
+      // Finger claws
+      for (const fi of [-0.04*s, 0, 0.04*s]) {
+        part(new THREE.BoxGeometry(0.03*s, 0.06*s, 0.08*s), barrel, side*0.66*s + fi, 0.52*s, 0.12*s, 0.3, 0, 0);
+      }
     }
     // Hazard stripe across chest
     part(new THREE.BoxGeometry(0.7*s, 0.1*s, 0.08*s), hazard, 0, 1.28*s, -0.4*s);
@@ -307,6 +338,12 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
       for (const [hx,hz] of [[-0.3*s,0.1*s],[0.3*s,0.1*s]]) {
         part(new THREE.CylinderGeometry(0.18*s, 0.14*s, 0.12*s, 12), structure, hx, -0.45*s, hz);
         part(new THREE.TorusGeometry(0.16*s, 0.025*s, 6, 12), barrel, hx, -0.48*s, hz);
+      }
+    } else if (engine === 'jet') {
+      // Backpack-style rocket boosters
+      for (const ex of [-0.32*s, 0.32*s]) {
+        part(new THREE.CylinderGeometry(0.1*s, 0.14*s, 0.48*s, 10), barrel, ex, 1.45*s, 0.48*s, -0.4, 0, 0);
+        part(new THREE.TorusGeometry(0.12*s, 0.02*s, 6, 10), accent, ex, 1.28*s, 0.62*s);
       }
     }
 
@@ -405,6 +442,7 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
       if (engine === 'sprint') part(new THREE.CylinderGeometry(0.09*s,0.13*s,0.22*s,10), barrel, tx,0.44*s,0.92*s,-0.3,0,0);
       if (engine === 'jet')    part(new THREE.CylinderGeometry(0.1*s,0.14*s,0.42*s,10), barrel, tx,0.58*s,0.92*s,-0.4,0,0);
     }
+  }
 
   scene.add(group);
   return group;
@@ -480,6 +518,9 @@ let robotTint = 0x56a48c;
 let player = buildRobot(robotTint, true, 'medium', 'laser', 'standard', 'tracked', 'medium');
 player.position.set(0, 0, 0);
 
+// Show team screen by default
+document.getElementById('teamScreen').style.display = 'grid';
+
 // ── Bot configs ───────────────────────────────────────────────────────────────
 const SPAWN_POSITIONS = [
   { x: -5, z: -2 }, { x: 5, z: -3 }, { x: -6, z: 3 }, { x: 5, z: 3 },
@@ -493,7 +534,7 @@ function spawnBots(botConfigs) {
 
   botConfigs.slice(0, 1).forEach((cfg, i) => {
     const pos = SPAWN_POSITIONS[i] || { x: (Math.random() - 0.5) * 16, z: (Math.random() - 0.5) * 12 };
-    const r = buildRobot(cfg.color, false, cfg.size, cfg.gun, cfg.engine);
+    const r = buildRobot(cfg.color, false, cfg.size, cfg.gun, cfg.engine, cfg.chassis || 'tracked', cfg.armor || 'medium');
     r.position.set(pos.x, 0, pos.z);
     bots.push({
       ...cfg,
@@ -560,8 +601,10 @@ function addModel(group, path, color) {
 }
 
 function loadArenaAsset() {
+  const arenaConfig = PARTS.arena.find(a => a.id === buildState.arena) || PARTS.arena[0];
+  const arenaPath = `assets/glb-arenas/${arenaConfig.file}`;
   return new Promise((resolve, reject) =>
-    loader.load('assets/glb-arenas/arena_classic.glb', gltf => {
+    loader.load(arenaPath, gltf => {
       proceduralArena.forEach(o => { o.visible = false; });
       grid.visible = false;
       const arena = gltf.scene;
@@ -579,6 +622,150 @@ function loadArenaAsset() {
   );
 }
 
+// ── Multiplayer PeerJS Setup ───────────────────────────────────────────────
+let peer = null;
+let conn = null;
+let isHost = false;
+let gameCode = null;
+let opponentReady = false;
+
+// Initialize PeerJS
+function initPeer() {
+  peer = new Peer();
+  
+  peer.on('open', (id) => {
+    console.log('My peer ID is: ' + id);
+    if (isHost) {
+      gameCode = id.slice(-6).toUpperCase();
+      document.getElementById('roomCode').textContent = gameCode;
+    }
+  });
+
+  peer.on('connection', (connection) => {
+    conn = connection;
+    setupConnection();
+  });
+
+  peer.on('error', (err) => {
+    console.error('PeerJS error:', err);
+    const statusEl = document.getElementById('lobbyStatus');
+    if (statusEl) {
+      statusEl.textContent = 'Connection error: ' + err.type;
+      statusEl.className = 'lobbyStatus err';
+    }
+  });
+}
+
+function setupConnection() {
+  conn.on('open', () => {
+    console.log('Connection established');
+    if (isHost) {
+      document.getElementById('waitingStatus').textContent = 'Opponent connected! Build your robot.';
+      document.getElementById('goToBuildBtn').style.display = 'block';
+    } else {
+      document.getElementById('waitingStatus').textContent = 'Connected to host! Build your robot.';
+      document.getElementById('goToBuildBtn').style.display = 'block';
+    }
+  });
+
+  conn.on('data', (data) => {
+    handlePeerData(data);
+  });
+
+  conn.on('close', () => {
+    console.log('Connection closed');
+    document.getElementById('feed').textContent = 'OPPONENT DISCONNECTED';
+  });
+}
+
+function handlePeerData(data) {
+  switch (data.type) {
+    case 'position':
+      // Update opponent position (for multiplayer)
+      if (bots.length > 0) {
+        bots[0].r.position.set(data.x, data.y, data.z);
+        bots[0].r.rotation.y = data.rotation;
+      }
+      break;
+    case 'shoot':
+      // Handle opponent shooting
+      if (bots.length > 0) {
+        const from = new THREE.Vector3(data.from.x, data.from.y, data.from.z);
+        const to = new THREE.Vector3(data.to.x, data.to.y, data.to.z);
+        shoot(from, to, 0xff6848, 'b');
+      }
+      break;
+    case 'ready':
+      opponentReady = data.ready;
+      updateReadyStatus();
+      break;
+    case 'start':
+      if (isHost) {
+        startMultiplayerGame();
+      }
+      break;
+  }
+}
+
+function updateReadyStatus() {
+  const slot1Ready = document.getElementById('slot1Ready');
+  if (slot1Ready) {
+    slot1Ready.textContent = opponentReady ? 'READY' : '';
+  }
+}
+
+function sendToPeer(data) {
+  if (conn && conn.open) {
+    conn.send(data);
+  }
+}
+
+// Lobby event handlers
+document.getElementById('createBtn')?.addEventListener('click', () => {
+  isHost = true;
+  document.getElementById('lobbyScreen').style.display = 'none';
+  document.getElementById('waitingScreen').style.display = 'grid';
+  initPeer();
+});
+
+document.getElementById('joinBtn')?.addEventListener('click', () => {
+  const code = document.getElementById('joinCode').value.trim().toUpperCase();
+  if (code.length !== 6) {
+    document.getElementById('lobbyStatus').textContent = 'Please enter a 6-character code';
+    document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+    return;
+  }
+  
+  isHost = false;
+  initPeer();
+  
+  peer.on('open', (id) => {
+    // Try to connect to host
+    conn = peer.connect(code.toLowerCase() + id.slice(-6));
+    setupConnection();
+    
+    conn.on('error', (err) => {
+      document.getElementById('lobbyStatus').textContent = 'Could not connect to game';
+      document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+    });
+  });
+});
+
+document.getElementById('copyCodeBtn')?.addEventListener('click', () => {
+  if (gameCode) {
+    navigator.clipboard.writeText(gameCode);
+    document.getElementById('copyCodeBtn').textContent = '✓';
+    setTimeout(() => {
+      document.getElementById('copyCodeBtn').textContent = '⧉';
+    }, 2000);
+  }
+});
+
+document.getElementById('goToBuildBtn')?.addEventListener('click', () => {
+  document.getElementById('waitingScreen').style.display = 'none';
+  document.getElementById('teamScreen').style.display = 'grid';
+});
+
 // ── Build screen — Bot Lab tap-builder ───────────────────────────────────────
 const buildState = {
   chassis: 'tracked',
@@ -587,14 +774,15 @@ const buildState = {
   engine:  'standard',
   armor:   'medium',
   color:   0x56a48c,
+  arena:   'classic',
 };
 
 // Part stats for the top bar display
 const PART_STATS = {
-  chassis: { tracked: {w:100,s:'STD'}, standing: {w:85,s:'MED'}, walking: {w:120,s:'SLW'} },
+  chassis: { tracked: {w:100,s:'STD'}, standing: {w:85,s:'MED'}, walking: {w:120,s:'SLW'}, wedge: {w:90,s:'FAS'} },
   size:    { small: {w:-20,s:'+SPD'}, medium: {w:0,s:'STD'}, large: {w:+40,s:'-SPD'} },
   armor:   { light: {a:'LGT'}, medium: {a:'MED'}, heavy: {a:'HVY'} },
-  engine:  { standard: {s:'STD'}, sprint: {s:'FAS'}, tank: {s:'SLW'}, hover: {s:'HOV'} },
+  engine:  { standard: {s:'STD'}, sprint: {s:'FAS'}, tank: {s:'SLW'}, hover: {s:'HOV'}, jet: {s:'JET'} },
 };
 
 const PARTS = {
@@ -602,6 +790,7 @@ const PARTS = {
     { id:'tracked',  label:'Tracked Tank',    icon:'🦿', desc:'Low-profile armoured hull', weight:100, speed:'STD' },
     { id:'standing', label:'Standing Biped',  icon:'🤖', desc:'Upright humanoid frame',     weight:85,  speed:'MED' },
     { id:'walking',  label:'Walking Spider',  icon:'🕷', desc:'Quad-leg assault frame',     weight:120, speed:'SLW' },
+    { id:'wedge',    label:'Wedge Flipper',   icon:'🔺', desc:'Low wedge with flipper arm', weight:90,  speed:'FAS' },
   ],
   size: [
     { id:'small',  label:'Small',  icon:'▪', desc:'Lightweight + fast',    weight:-20, speed:'+SPD' },
@@ -612,17 +801,31 @@ const PARTS = {
     { id:'laser',   label:'Laser Twins',   icon:'⚡', desc:'Rapid twin energy beams', dps:'HIGH',   rng:'MED'  },
     { id:'cannon',  label:'Heavy Cannon',  icon:'💥', desc:'Single heavy shell',       dps:'MED',    rng:'HIGH' },
     { id:'shotgun', label:'Spread Burst',  icon:'🔫', desc:'Wide close-range spray',   dps:'V.HIGH', rng:'LOW'  },
+    { id:'flail',   label:'Flail Arm',     icon:'🔨', desc:'Overhead swinging ball',  dps:'MED',    rng:'MED'  },
+    { id:'railgun', label:'Railgun',       icon:'⚡', desc:'Charged rail projectile',  dps:'HIGH',   rng:'HIGH' },
+    { id:'plasma',  label:'Plasma Thrower',icon:'🔮', desc:'Wide plasma orb emitter',  dps:'HIGH',   rng:'MED'  },
+    { id:'spinner', label:'Bar Spinner',   icon:'🔄', desc:'Horizontal spinning disc',  dps:'V.HIGH', rng:'LOW'  },
+    { id:'sword',   label:'Energy Sword',  icon:'⚔', desc:'Long energy blade',        dps:'HIGH',   rng:'MED'  },
+    { id:'chainsaw',label:'Chainsaw',      icon:'🪚', desc:'Spinning blade weapon',     dps:'V.HIGH', rng:'LOW'  },
   ],
   engine: [
     { id:'standard', label:'Standard Drive', icon:'⚙', desc:'Balanced power output',  spd:'STD',  boost:'MED'  },
     { id:'sprint',   label:'Sprint Boost',   icon:'💨', desc:'Speed +35%, boost burn', spd:'+35%', boost:'HIGH' },
     { id:'tank',     label:'Tank Drive',     icon:'🛡', desc:'Slow but extra armour',  spd:'-28%', boost:'LOW'  },
     { id:'hover',    label:'Hover Pods',     icon:'🌀', desc:'Float and strafe',        spd:'+15%', boost:'MED'  },
+    { id:'jet',      label:'Jet Boosters',   icon:'🚀', desc:'Rocket boost thrust',    spd:'+25%', boost:'V.HIGH' },
   ],
   armor: [
     { id:'light',  label:'Light Plating',  icon:'◇', desc:'Thin, fast reaction',    hp:60,  wt:'-10' },
     { id:'medium', label:'Medium Armour',  icon:'◈', desc:'Standard protection',    hp:100, wt:'STD' },
     { id:'heavy',  label:'Heavy Plating',  icon:'◆', desc:'Max HP, slower',         hp:160, wt:'+30' },
+  ],
+  arena: [
+    { id:'classic',    label:'Classic Arena',   icon:'🏟', desc:'Standard battle arena',      file:'arena_classic.glb' },
+    { id:'arena',      label:'Arena',           icon:'🏗', desc:'Industrial arena',            file:'arena_arena.glb' },
+    { id:'colosseum',  label:'Colosseum',       icon:'🏛', desc:'Ancient Roman arena',         file:'arena_colosseum.glb' },
+    { id:'gauntlet',   label:'Gauntlet',        icon:'⚔', desc:'Narrow combat corridor',      file:'arena_gauntlet.glb' },
+    { id:'pillars',    label:'Pillars',         icon:'🏛', desc:'Open arena with pillars',     file:'arena_pillars.glb' },
   ],
 };
 
@@ -632,6 +835,7 @@ const CATEGORIES = [
   { id:'engine',  label:'MOBILITY',icon:'⚙' },
   { id:'size',    label:'SIZE',    icon:'⤡' },
   { id:'armor',   label:'ARMOR',   icon:'◆' },
+  { id:'arena',   label:'ARENA',   icon:'🏟' },
   { id:'color',   label:'COLOR',   icon:'🎨' },
 ];
 
@@ -682,6 +886,30 @@ function renderPartList(categoryId) {
       const swEl = document.getElementById('blColorName');
       if (swEl) swEl.textContent = e.target.value.toUpperCase();
       rebuildPreview();
+    });
+    return;
+  }
+
+  if (categoryId === 'arena') {
+    const options = PARTS[categoryId] || [];
+    options.forEach(opt => {
+      const selected = buildState[categoryId] === opt.id;
+      const row = document.createElement('button');
+      row.className = 'blPartRow' + (selected ? ' selected' : '');
+
+      row.innerHTML = `
+        <div class="blPartThumb">${opt.icon}</div>
+        <div class="blPartInfo">
+          <div class="blPartName">${opt.label}</div>
+          <div class="blPartDesc">${opt.desc}</div>
+        </div>
+        <div class="blPartCheck">✓</div>`;
+
+      row.addEventListener('pointerdown', () => {
+        buildState[categoryId] = opt.id;
+        renderPartList(categoryId);
+      });
+      list.appendChild(row);
     });
     return;
   }
@@ -749,6 +977,11 @@ document.getElementById('teamContinueBtn').addEventListener('click', () => {
   updateBotLabStats();
 });
 
+document.getElementById('multiplayerBtn')?.addEventListener('click', () => {
+  teamScreen.style.display = 'none';
+  document.getElementById('lobbyScreen').style.display = 'grid';
+});
+
 // Bottom bar color picker sync
 const bottomColorPicker = document.getElementById('buildColorPicker');
 if (bottomColorPicker) {
@@ -777,13 +1010,33 @@ launchButton && launchButton.addEventListener('click', async () => {
   player = buildRobot(robotTint.getHex(), true, selectedSize, selectedGun, selectedEngine, buildState.chassis, buildState.armor);
   player.position.set(0, 0, 5);
 
-  activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
-  spawnBots(activeBotConfigs);
+  // Send ready status to peer if multiplayer
+  if (conn && conn.open) {
+    sendToPeer({ type: 'ready', ready: true });
+  }
 
-  const chosenTeam = TEAMS.find(t => t.index === selectedTeamIndex);
-  if (chosenTeam) {
-    document.getElementById('feed').textContent =
-      `VS ${chosenTeam.name.toUpperCase()} — "${chosenTeam.motto}"`;
+  // For single player or when host
+  if (!conn || isHost) {
+    activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
+    spawnBots(activeBotConfigs);
+
+    const chosenTeam = TEAMS.find(t => t.index === selectedTeamIndex);
+    if (chosenTeam) {
+      document.getElementById('feed').textContent =
+        `VS ${chosenTeam.name.toUpperCase()} — "${chosenTeam.motto}"`;
+    }
+  } else {
+    // For multiplayer guest, wait for host to start
+    document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
+    sendToPeer({ type: 'ready', ready: true });
+    
+    // Wait for host to send start signal
+    const waitForStart = () => {
+      if (gameStarted) return;
+      setTimeout(waitForStart, 100);
+    };
+    waitForStart();
+    return;
   }
 
   try {
@@ -799,6 +1052,23 @@ launchButton && launchButton.addEventListener('click', async () => {
     launchButton.disabled = false;
   }
 });
+
+function startMultiplayerGame() {
+  if (opponentReady) {
+    document.getElementById('feed').textContent = 'MULTIPLAYER MATCH STARTING...';
+    sendToPeer({ type: 'start' });
+    
+    // Start the game
+    activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
+    spawnBots(activeBotConfigs);
+    
+    loadArenaAsset().then(() => {
+      gameStarted = true;
+      buildScreen.style.display = 'none';
+      document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+    });
+  }
+}
 
 // ── Combat ────────────────────────────────────────────────────────────────────
 const shots = [], sparks = [];
@@ -833,11 +1103,18 @@ function burst(position, color) {
 
 function firePlayer() {
   const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(player.quaternion);
-  shoot(
-    player.position.clone().add(new THREE.Vector3(0, 1.1, -0.9)),
-    player.position.clone().add(dir.multiplyScalar(14)),
-    0xffdd5a, 'p'
-  );
+  const from = player.position.clone().add(new THREE.Vector3(0, 1.1, -0.9));
+  const to = player.position.clone().add(dir.multiplyScalar(14));
+  shoot(from, to, 0xffdd5a, 'p');
+  
+  // Send shoot data to peer for multiplayer
+  if (conn && conn.open) {
+    sendToPeer({
+      type: 'shoot',
+      from: { x: from.x, y: from.y, z: from.z },
+      to: { x: to.x, y: to.y, z: to.z }
+    });
+  }
 }
 
 function respawnBot(bot) {
@@ -851,7 +1128,7 @@ function respawnBot(bot) {
 
 // ── Main update ───────────────────────────────────────────────────────────────
 function update(dt) {
-  const engineFactor = { standard: 1, sprint: 1.35, tank: 0.72, hover: 1.15 }[selectedEngine] ?? 1;
+  const engineFactor = { standard: 1, sprint: 1.35, tank: 0.72, hover: 1.15, jet: 1.25 }[selectedEngine] ?? 1;
   const speed = (input.boost ? 6.5 : 3.8) * engineFactor;
 
   player.position.x = THREE.MathUtils.clamp(player.position.x + input.x * speed * dt, -12, 12);
@@ -1116,8 +1393,8 @@ function loop(time) {
     buildCamAngle += dt * 0.4;
     const camR = 4.0;
     // Standing robots are taller — raise camera
-    const camH = buildState.chassis === 'standing' ? 2.8 : 1.8;
-    const lookH = buildState.chassis === 'standing' ? 1.4 : 0.8;
+    const camH = buildState.chassis === 'standing' ? 2.8 : (buildState.chassis === 'wedge' ? 1.2 : 1.8);
+    const lookH = buildState.chassis === 'standing' ? 1.4 : (buildState.chassis === 'wedge' ? 0.5 : 0.8);
     camera.position.set(
       Math.sin(buildCamAngle) * camR,
       camH,
@@ -1176,5 +1453,6 @@ const moveJoy  = e => {
 };
 joystick.onpointerdown  = e => { joystick.setPointerCapture(e.pointerId); moveJoy(e); };
 joystick.onpointermove  = moveJoy;
-joystick.onpointerup    = () => { input.x = input.y = 0; knob.style.transform = ''; };
-joystick.onpointercancel = joystick.onpointerup;
+const joystickRelease = () => { input.x = input.y = 0; knob.style.transform = ''; };
+joystick.onpointerup    = joystickRelease;
+joystick.onpointercancel = joystickRelease;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap');*{box-sizing:border-box}html,body,#game{margin:0;width:100%;height:100%;overflow:hidden;background:#111}body{font-family:'Barlow Condensed',sans-serif;color:#fff;touch-action:none}#game canvas{display:block;width:100%;height:100%}#hud{position:fixed;inset:0;pointer-events:none;z-index:3;text-shadow:0 2px 3px #000}.top{height:58px;padding:14px 20px;display:flex;align-items:center;gap:22px;background:linear-gradient(#111a,#1110)}.top b{font-size:23px;letter-spacing:2px}.top b em{font-style:normal;color:#e4ca3e}.top span{font-size:12px;letter-spacing:2px;color:#f0b84c}.top strong{margin-left:auto;font-size:27px;letter-spacing:2px}.score{position:absolute;top:77px;left:22px;display:flex;align-items:center;gap:9px}.score i{font-style:normal;font-size:25px;color:#dcf3e7}.score small{font-size:10px;letter-spacing:2px}.bar{width:130px;height:7px;background:#201f1a;border:1px solid #857d58}.bar u{display:block;width:100%;height:100%;background:#78e160;text-decoration:none}.score label{margin-left:14px;font-size:20px;color:#f8d249}.feed{position:absolute;right:20px;top:80px;font-size:12px;color:#d9c98a;letter-spacing:1px}.weapons{position:absolute;bottom:17px;left:18px;display:flex;gap:5px;pointer-events:auto}.weapons button{width:39px;height:39px;border:2px solid #777b6a;background:#202522dd;color:#d2d9c2;font-size:20px}.weapons button.active{border-color:#e8da5d;background:#42472c}.actions{position:absolute;bottom:24px;right:24px;display:flex;gap:12px;pointer-events:auto;flex-direction:column}.actions button{width:72px;height:50px;border-radius:50%;border:2px solid #ddd39a;background:#332f24d9;color:#fff;font:800 13px 'Barlow Condensed';letter-spacing:1px}.actions button:first-child{border-color:#f2d94d}.actions button:last-child{border-color:#f1794b}.actions button:active{transform:scale(.92);background:#a4422b}.joystick{display:none}#joystick{display:none}@media(max-width:900px){.top{height:42px;padding:8px 12px}.top b{font-size:18px}.top span{font-size:9px}.top strong{font-size:21px}.score{top:52px;left:12px}.feed{top:55px;right:12px;font-size:10px}.actions{right:17px;bottom:24px}.weapons{bottom:15px;left:12px}#joystick{display:block;position:absolute;left:21px;bottom:22px;width:112px;height:112px;border-radius:50%;border:2px solid #e5e5c955;background:#282e2c77;pointer-events:auto}#joystick div{position:absolute;left:31px;top:31px;width:46px;height:46px;border-radius:50%;background:#c8d6bd66;border:2px solid #eaf3d9aa}.score label{font-size:16px}.bar{width:90px}}@media(min-width:901px){.actions{display:none}}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap');*{box-sizing:border-box}html,body,#game{margin:0;width:100%;height:100%;overflow:hidden;background:#111}body{font-family:'Barlow Condensed',sans-serif;color:#fff;touch-action:none}#game canvas{display:block;width:100%;height:100%}#hud{position:fixed;inset:0;pointer-events:none;z-index:3;text-shadow:0 2px 3px #000}.top{height:58px;padding:14px 20px;display:flex;align-items:center;gap:22px;background:linear-gradient(#111a,#1110)}.top b{font-size:23px;letter-spacing:2px}.top b em{font-style:normal;color:#e4ca3e}.top span{font-size:12px;letter-spacing:2px;color:#f0b84c}.top strong{margin-left:auto;font-size:27px;letter-spacing:2px}.score{position:absolute;top:77px;left:22px;display:flex;align-items:center;gap:9px}.score i{font-style:normal;font-size:25px;color:#dcf3e7}.score small{font-size:10px;letter-spacing:2px}.bar{width:130px;height:7px;background:#201f1a;border:1px solid #857d58}.bar u{display:block;width:100%;height:100%;background:#78e160;text-decoration:none}.score label{margin-left:14px;font-size:20px;color:#f8d249}.feed{position:absolute;right:20px;top:80px;font-size:12px;color:#d9c98a;letter-spacing:1px}.weapons{position:absolute;bottom:22px;left:16px;display:flex;gap:6px;pointer-events:auto;z-index:10}.weapons button{width:44px;height:44px;border:2px solid #777b6a;background:#202522dd;color:#d2d9c2;font-size:22px;border-radius:4px}.weapons button.active{border-color:#e8da5d;background:#42472c}.actions{position:absolute;bottom:22px;right:16px;display:flex;gap:12px;pointer-events:auto;flex-direction:column;z-index:10}.actions button{width:68px;height:52px;border-radius:50%;border:2px solid #ddd39a;background:#332f24d9;color:#fff;font:800 13px 'Barlow Condensed';letter-spacing:1px}.actions button:first-child{border-color:#f2d94d}.actions button:last-child{border-color:#f1794b}.actions button:active{transform:scale(.92);background:#a4422b}.joystick{display:none}#joystick{display:none}@media(max-width:900px){.top{height:42px;padding:8px 12px}.top b{font-size:18px}.top span{font-size:9px}.top strong{font-size:21px}.score{top:52px;left:12px}.feed{top:55px;right:12px;font-size:10px}.actions{right:17px;bottom:24px}.weapons{bottom:15px;left:12px}#joystick{display:block;position:absolute;left:21px;bottom:22px;width:112px;height:112px;border-radius:50%;border:2px solid #e5e5c955;background:#282e2c77;pointer-events:auto}#joystick div{position:absolute;left:31px;top:31px;width:46px;height:46px;border-radius:50%;background:#c8d6bd66;border:2px solid #eaf3d9aa}.score label{font-size:16px}.bar{width:90px}}@media(min-width:901px){.actions{display:none}}
 #buildScreen{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#344844 0,#111817 58%,#090b0b 100%);padding:18px}
 .buildCard{width:min(620px,100%);padding:clamp(22px,5vw,46px);border:1px solid #789184;background:#101b1bdd;box-shadow:0 18px 80px #000b}
 .eyebrow{color:#f0b84c;font-size:13px;letter-spacing:3px}.eyebrow b{color:#e4ca3e}
@@ -25,6 +25,20 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 #joinCode{flex:1;padding:12px 14px;border:2px solid #52645b;background:#0d1a19;color:#e4e9e1;font:700 18px 'Barlow Condensed';letter-spacing:4px;text-transform:uppercase;outline:none}
 #joinCode:focus{border-color:#e4ca3e}
 #joinCode::placeholder{color:#445550;letter-spacing:3px}
+
+/* Active lobbies list */
+.activeLobbies{max-height:200px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;scrollbar-width:thin;scrollbar-color:#52645b #0d1a19}
+.activeLobbies::-webkit-scrollbar{width:6px}
+.activeLobbies::-webkit-scrollbar-track{background:#0d1a19}
+.activeLobbies::-webkit-scrollbar-thumb{background:#52645b;border-radius:3px}
+.lobbyItem{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid #2a3832;background:#0d1a19;cursor:pointer;transition:border-color .12s,background .12s}
+.lobbyItem:hover{border-color:#52645b;background:#111f1d}
+.lobbyItem.selected{border-color:#e4ca3e;background:#161f1a}
+.lobbyHost{flex:1;font-size:13px;letter-spacing:1px;font-weight:700;color:#d9e2d8}
+.lobbyStatus{font-size:11px;letter-spacing:1px;color:#7a9a7a}
+.lobbyStatus.waiting{color:#78e160}
+.lobbyStatus.full{color:#e86040}
+.lobbyJoin{font-size:11px;letter-spacing:1px;color:#e4ca3e;font-weight:700}
 
 /* status line */
 .lobbyStatus{min-height:22px;font-size:13px;letter-spacing:1px;color:#aebeb5;text-align:center;margin-top:4px}
@@ -132,7 +146,7 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 
 /* ── 3D viewport area ────────────────────────── */
 .blViewport{
-  flex:0 0 40vh;
+  flex:0 0 35vh;
   position:relative;
   overflow:hidden;
   /* transparent — Three.js canvas shows through from #game behind */
@@ -167,20 +181,20 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 .blCatBar::-webkit-scrollbar{display:none}
 
 .blCatBtn{
-  flex:1 1 0;min-width:52px;
+  flex:1 1 0;min-width:44px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:2px;padding:8px 4px;
+  gap:1px;padding:6px 2px;
   border:none;border-right:1px solid #2a3832;
   background:transparent;
   color:#6a8a7a;
-  font:700 9px 'Barlow Condensed';letter-spacing:1px;
+  font:700 7px 'Barlow Condensed';letter-spacing:0.5px;
   cursor:pointer;
   -webkit-tap-highlight-color:transparent;
   transition:background .1s,color .1s;
 }
 .blCatBtn:last-child{border-right:none}
-.blCatBtn .blCatIcon{font-size:16px;line-height:1}
-.blCatBtn .blCatLabel{font-size:9px;letter-spacing:1px;margin-top:1px}
+.blCatBtn .blCatIcon{font-size:13px;line-height:1}
+.blCatBtn .blCatLabel{font-size:7px;letter-spacing:0.5px;margin-top:1px}
 .blCatBtn.active{background:#c85a1a;color:#fff;border-bottom:2px solid #e07030}
 .blCatBtn:active{opacity:.75}
 
@@ -260,50 +274,83 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
   flex-shrink:0;
   background:#1a1f1e;
   border-top:2px solid #3a4a40;
-  padding:6px 10px 8px;
-  display:flex;flex-direction:column;gap:5px;
+  padding:4px 8px;
+  display:flex;flex-direction:column;gap:4px;
 }
-.blNameRow{
-  display:flex;align-items:center;gap:8px;
+.blTopRow{
+  display:flex;align-items:center;gap:6px;
 }
-.blNameLabel{font-size:10px;letter-spacing:2px;color:#52645b;white-space:nowrap}
+.blNameLabel{font-size:8px;letter-spacing:1px;color:#52645b;white-space:nowrap}
 .blNameInput{
   flex:1;background:#0e1614;border:1px solid #3a4a40;
-  color:#e2d8c8;font:700 14px 'Barlow Condensed';letter-spacing:2px;
-  padding:5px 8px;outline:none;
+  color:#e2d8c8;font:700 11px 'Barlow Condensed';letter-spacing:1px;
+  padding:3px 5px;outline:none;
 }
 .blNameInput:focus{border-color:#e4ca3e}
-.blColorRow{
-  display:flex;align-items:center;gap:8px;
+.blBottomRow{
+  display:flex;align-items:center;gap:6px;
 }
-.blColorLabel{font-size:10px;letter-spacing:2px;color:#52645b;white-space:nowrap}
+.blColorLabel{font-size:8px;letter-spacing:1px;color:#52645b;white-space:nowrap}
 .blColorSwatch{
-  display:flex;align-items:center;gap:6px;cursor:pointer;
-  border:1px solid #3a4a40;background:#0e1614;padding:3px 8px;flex:1;
+  display:flex;align-items:center;gap:3px;cursor:pointer;
+  border:1px solid #3a4a40;background:#0e1614;padding:2px 5px;flex:1;
 }
 .blColorSwatch input[type=color]{
-  width:28px;height:28px;border:none;padding:0;background:none;cursor:pointer;
+  width:20px;height:20px;border:none;padding:0;background:none;cursor:pointer;
 }
-.blColorSwatch span{font-size:12px;letter-spacing:1px;color:#aebeb5}
+.blColorSwatch span{font-size:10px;letter-spacing:0.5px;color:#aebeb5}
 .blLaunchBtn{
   flex-shrink:0;
-  padding:8px 16px;
+  padding:5px 10px;
   background:#c85a1a;border:2px solid #e07030;
-  color:#fff;font:800 13px 'Barlow Condensed';letter-spacing:2px;
+  color:#fff;font:800 10px 'Barlow Condensed';letter-spacing:1px;
   cursor:pointer;white-space:nowrap;
 }
 .blLaunchBtn:disabled{opacity:.4;cursor:default}
 .blLaunchBtn:active{transform:scale(.96)}
 .blLoadStatus{
-  font-size:10px;letter-spacing:1px;color:#7a9a7a;min-height:14px;text-align:center;
+  font-size:8px;letter-spacing:0.5px;color:#7a9a7a;min-height:10px;text-align:center;
+}
+
+/* Mobile responsive adjustments */
+@media(max-width:400px){
+  .blViewport{flex:0 0 32vh}
+  .blCatBtn{min-width:38px;padding:5px 1px}
+  .blCatBtn .blCatIcon{font-size:11px}
+  .blCatBtn .blCatLabel{font-size:6px}
+  .blBottomBar{padding:3px 6px}
+  .blNameLabel{font-size:7px}
+  .blNameInput{font-size:10px;padding:2px 4px}
+  .blColorLabel{font-size:7px}
+  .blColorSwatch span{font-size:9px}
+  .blLaunchBtn{font-size:9px;padding:4px 8px}
+}
+
+/* Game HUD mobile adjustments */
+@media(max-width:600px){
+  .joystick{display:block;position:absolute;bottom:130px;left:16px;width:120px;height:120px;background:#1a1f1e;border:2px solid #3a4a40;border-radius:50%;z-index:10}
+  .joystick div{width:48px;height:48px;background:#4a5a50;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+  .weapons{bottom:28px;left:16px}
+  .actions{bottom:28px;right:16px}
+  .actions button{width:60px;height:48px;font-size:11px}
+  .top{height:48px;padding:10px 16px}
+  .top b{font-size:18px}
+  .top span{font-size:10px}
+  .top strong{font-size:22px}
+  .score{top:60px;left:16px}
+  .score i{font-size:20px}
+  .score small{font-size:9px}
+  .bar{width:100px;height:6px}
+  .score label{font-size:16px}
+  .feed{top:64px;right:16px;font-size:11px}
 }
 
 /* ── Landscape override: side-by-side ────────────── */
 @media(min-width:600px) and (orientation:landscape){
   #buildScreen{flex-direction:row;flex-wrap:wrap}
   .blTopBar{width:100%;order:0}
-  .blViewport{flex:0 0 45%;order:1;height:calc(100vh - 44px - 96px)}
+  .blViewport{flex:0 0 45%;order:1;height:calc(100vh - 44px - 70px)}
   .blCatBar{flex:0 0 55%;order:2;height:auto}
-  .blPartList{flex:0 0 55%;order:3;height:calc(100vh - 44px - 52px - 96px)}
+  .blPartList{flex:0 0 55%;order:3;height:calc(100vh - 44px - 52px - 70px)}
   .blBottomBar{width:100%;order:4}
 }
