@@ -42,6 +42,14 @@ box(0, -.25, 0, [30, .5, 21], mats.floor);
 const grid = new THREE.GridHelper(30, 15, 0x77756d, 0x96948b);
 grid.position.y = .015;
 scene.add(grid);
+const arenaObstacles = [
+  {minX: -1.6, maxX: 1.6, minZ: -.85, maxZ: .85},
+  {minX: -9.8, maxX: -7.3, minZ: -2.2, maxZ: -.8},
+  {minX: 7.3, maxX: 9.8, minZ: -2.2, maxZ: -.8},
+  {minX: -9.8, maxX: -7.3, minZ: .8, maxZ: 2.2},
+  {minX: 7.3, maxX: 9.8, minZ: .8, maxZ: 2.2}
+];
+const arenaBounds = {minX: -10.8, maxX: 10.8, minZ: -7.2, maxZ: 7.2};
 for (let x = -14; x <= 14; x += 2) {
   box(x, .04, -10.5, [1.15, .06, .4], mats.yellow).rotation.y = Math.PI / 5;
   box(x, .04, 10.5, [1.15, .06, .4], mats.yellow).rotation.y = Math.PI / 5;
@@ -93,6 +101,46 @@ const bots = botConfigs.map(config => {
   r.position.set(config.x, 0, config.z);
   return {...config, r, health: 100, fire: Math.random() * 1.5, respawn: 0, target: player};
 });
+
+function resolveArenaCollision(position, radius = .85) {
+  arenaObstacles.forEach(obstacle => {
+    const minX = obstacle.minX;
+    const maxX = obstacle.maxX;
+    const minZ = obstacle.minZ;
+    const maxZ = obstacle.maxZ;
+    const nearestX = THREE.MathUtils.clamp(position.x, minX, maxX);
+    const nearestZ = THREE.MathUtils.clamp(position.z, minZ, maxZ);
+    const dx = position.x - nearestX;
+    const dz = position.z - nearestZ;
+    if (dx * dx + dz * dz >= radius * radius) return;
+    if (Math.abs(dx) > Math.abs(dz)) {
+      position.x = dx < 0 ? minX - radius : maxX + radius;
+    } else {
+      position.z = dz < 0 ? minZ - radius : maxZ + radius;
+    }
+  });
+  position.x = THREE.MathUtils.clamp(position.x, arenaBounds.minX + radius, arenaBounds.maxX - radius);
+  position.z = THREE.MathUtils.clamp(position.z, arenaBounds.minZ + radius, arenaBounds.maxZ - radius);
+}
+
+function separateRobots() {
+  const active = [player, ...bots.filter(bot => bot.respawn <= 0).map(bot => bot.r)];
+  for (let i = 0; i < active.length; i++) {
+    for (let j = i + 1; j < active.length; j++) {
+      const first = active[i], second = active[j];
+      const delta = new THREE.Vector2(first.position.x - second.position.x, first.position.z - second.position.z);
+      const distance = delta.length();
+      if (distance >= 1.7 || distance === 0) continue;
+      delta.normalize().multiplyScalar((1.7 - distance) / 2);
+      first.position.x += delta.x;
+      first.position.z += delta.y;
+      second.position.x -= delta.x;
+      second.position.z -= delta.y;
+      resolveArenaCollision(first.position);
+      resolveArenaCollision(second.position);
+    }
+  }
+}
 
 let selectedEngine = 'standard';
 let robotTint = 0x56a48c;
@@ -211,6 +259,7 @@ function respawnBot(bot) {
   bot.respawn = 0;
   bot.r.visible = true;
   bot.r.position.set((Math.random() > .5 ? 1 : -1) * (5 + Math.random() * 6), 0, -5 + Math.random() * 10);
+  resolveArenaCollision(bot.r.position);
   bot.fire = 1;
 }
 function update(dt) {
@@ -218,6 +267,7 @@ function update(dt) {
   const speed = (input.boost ? 6.5 : 3.8) * engineFactor;
   player.position.x = THREE.MathUtils.clamp(player.position.x + input.x * speed * dt, -12, 12);
   player.position.z = THREE.MathUtils.clamp(player.position.z + input.y * speed * dt, -8, 8);
+  resolveArenaCollision(player.position);
   if (Math.abs(input.x) + Math.abs(input.y) > .1) player.rotation.y = Math.atan2(input.x, input.y);
   if (input.fire && (!update.cooldown || update.cooldown <= 0)) {
     firePlayer();
@@ -240,12 +290,18 @@ function update(dt) {
       const botSpeed = bot.engine === 'sprint' ? 1.25 : bot.engine === 'tank' ? .52 : .78;
       bot.r.position.x += Math.sign(dx) * dt * botSpeed;
       bot.r.position.z += Math.sign(dz) * dt * botSpeed;
+      resolveArenaCollision(bot.r.position);
     }
     bot.r.rotation.y = Math.atan2(dx, dz);
     if (distance < 13 && bot.fire <= 0) {
       shoot(bot.r.position.clone().add(new THREE.Vector3(0, 1, -.8)), target.position, 0xff6848);
       bot.fire = bot.gun === 'shotgun' ? 2 : bot.gun === 'laser' ? 1.1 : 1.55 + index * .2;
     }
+  });
+  separateRobots();
+  resolveArenaCollision(player.position);
+  bots.forEach(bot => {
+    if (bot.respawn <= 0) resolveArenaCollision(bot.r.position);
   });
 
   for (let i = shots.length - 1; i >= 0; i--) {
