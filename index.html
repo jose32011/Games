@@ -5,17 +5,39 @@
   <div class="buildCard lobbyCard">
     <div class="eyebrow">ROBOT ARENA <b>2</b></div>
     <h1>MULTIPLAYER LOBBY</h1>
-    <p class="buildHint">Create a game or join an existing one.</p>
+    <p class="buildHint">Create a game with a name, or join a friend's game by name.</p>
 
     <div class="lobbyActions">
+      <div style="margin-bottom: 10px;">
+        <label style="font-size: 12px; color: #aebeb5; letter-spacing: 1px; display: block; margin-bottom: 5px;">GAME NAME</label>
+        <input id="gameNameInput" type="text" placeholder="Enter game name" maxlength="15" autocomplete="off" spellcheck="false" style="width: 100%; padding: 12px 14px; border: 2px solid #52645b; background: #0d1a19; color: #e4e9e1; font: 700 16px 'Barlow Condensed'; letter-spacing: 1px; outline: none;">
+      </div>
       <button id="createBtn" class="lobbyBtn">CREATE NEW GAME</button>
     </div>
 
     <div style="margin-top: 20px;">
-      <h3 style="font-size: 14px; color: #e4ca3e; letter-spacing: 2px; margin-bottom: 10px;">ACTIVE GAMES</h3>
+      <h3 style="font-size: 14px; color: #e4ca3e; letter-spacing: 2px; margin-bottom: 10px;">AVAILABLE GAMES</h3>
       <div id="activeLobbies" class="activeLobbies">
-        <div class="lobbyStatus">Searching for games...</div>
+        <div class="lobbyStatus">No active games. Create one to start!</div>
       </div>
+      <button id="refreshLobbiesBtn" style="margin-top: 10px; padding: 8px 12px; font-size: 11px; background: #2a3832; border: 1px solid #52645b; color: #aebeb5; cursor: pointer;">REFRESH LIST</button>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <h3 style="font-size: 14px; color: #e4ca3e; letter-spacing: 2px; margin-bottom: 10px;">JOIN BY NAME</h3>
+      <div class="joinRow">
+        <input id="joinGameName" type="text" placeholder="Enter friend's game name" autocomplete="off" spellcheck="false">
+        <button id="joinByNameBtn" class="lobbyBtn">JOIN</button>
+      </div>
+    </div>
+
+    <div style="margin-top: 15px; padding: 10px; background: #0a1514; border: 1px solid #2a3832; font-size: 11px; color: #7a9a7a; line-height: 1.4;">
+      <strong style="color: #e4ca3e;">How to play with friends:</strong><br>
+      1. Create a game with a name<br>
+      2. Share your game name with a friend<br>
+      3. Friend enters your game name to join<br>
+      4. Both build robots and battle!<br>
+      <em style="color: #52645b; font-size: 10px;">Note: Requires Firebase setup for multiplayer</em>
     </div>
 
     <div id="lobbyStatus" class="lobbyStatus"></div>
@@ -27,12 +49,6 @@
   <div class="buildCard lobbyCard">
     <div class="eyebrow">ROBOT ARENA <b>2</b></div>
     <h1>WAITING ROOM</h1>
-
-    <div class="roomCodeBox">
-      <span class="roomCodeLabel">GAME CODE</span>
-      <span id="roomCode" class="roomCodeValue">——</span>
-      <button id="copyCodeBtn" class="copyBtn" title="Copy code">⧉</button>
-    </div>
 
     <div class="playerSlots">
       <div class="playerSlot" id="slot0">
@@ -51,6 +67,7 @@
 
     <div id="waitingStatus" class="lobbyStatus">Waiting for opponent to join…</div>
     <button id="goToBuildBtn" class="lobbyBtn" style="display:none">BUILD YOUR ROBOT →</button>
+    <button id="backToLobbyBtn" class="lobbyBtn" style="margin-top: 10px; background: #2a3832; border-color: #52645b; color: #aebeb5;">BACK TO LOBBY</button>
   </div>
 </div>
 
@@ -136,5 +153,7 @@
 
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
 <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
 <script type="module" src="app.js"></script>
 </body></html>

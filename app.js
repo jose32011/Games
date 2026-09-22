@@ -406,7 +406,6 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
         part(new THREE.TorusGeometry(0.13*s, 0.022*s, 6, 10), accent, ex, 0.72*s, 0.86*s);
       }
     }
-  }
 
   } else if (chassis === 'wedge') {
     // ── WEDGE / FLIPPER chassis ───────────────────────────────────────────
@@ -626,8 +625,132 @@ function loadArenaAsset() {
 let peer = null;
 let conn = null;
 let isHost = false;
-let gameCode = null;
+let myPeerId = null;
 let opponentReady = false;
+let lobbyRefreshInterval = null;
+let myGameName = null;
+let activeLobbies = [];
+
+// Firebase configuration for real-time lobby system
+const firebaseConfig = {
+  databaseURL: "https://jessegames-af27a-default-rtdb.firebaseio.com/"
+};
+
+// Initialize Firebase
+let database = null;
+let lobbiesRef = null;
+
+try {
+  firebase.initializeApp(firebaseConfig);
+  database = firebase.database();
+  lobbiesRef = database.ref('lobbies');
+  console.log('Firebase initialized successfully');
+} catch (error) {
+  console.error('Firebase initialization failed:', error);
+}
+
+// Firebase lobby functions
+function registerLobby(gameName, peerId) {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return;
+  }
+  
+  const lobbyData = {
+    name: gameName,
+    peerId: peerId,
+    createdAt: firebase.database.ServerValue.TIMESTAMP,
+    status: 'waiting'
+  };
+  
+  lobbiesRef.child(gameName.toLowerCase()).set(lobbyData)
+    .then(() => {
+      console.log('Registered lobby:', gameName, 'with peer ID:', peerId);
+    })
+    .catch((error) => {
+      console.error('Failed to register lobby:', error);
+    });
+}
+
+function getLobby(gameName) {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return Promise.resolve(null);
+  }
+  
+  return lobbiesRef.child(gameName.toLowerCase()).once('value')
+    .then((snapshot) => {
+      return snapshot.val();
+    });
+}
+
+function removeLobby(gameName) {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return;
+  }
+  
+  lobbiesRef.child(gameName.toLowerCase()).remove()
+    .catch((error) => {
+      console.error('Failed to remove lobby:', error);
+    });
+}
+
+function getAllLobbies() {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return Promise.resolve([]);
+  }
+  
+  return lobbiesRef.once('value')
+    .then((snapshot) => {
+      const lobbies = snapshot.val() || {};
+      const allLobbies = Object.values(lobbies);
+      console.log('All lobbies from Firebase:', allLobbies);
+      
+      // Filter out lobbies older than 5 minutes
+      const fiveMinutesAgo = Date.now() - 300000;
+      const filtered = allLobbies.filter(lobby => {
+        const createdAt = lobby.createdAt || 0;
+        const isRecent = createdAt > fiveMinutesAgo;
+        return isRecent;
+      });
+      
+      console.log('Filtered lobbies:', filtered);
+      return filtered;
+    });
+}
+
+// Real-time listener for lobby updates
+function setupLobbyListener() {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return;
+  }
+  
+  lobbiesRef.on('value', (snapshot) => {
+    const lobbies = snapshot.val() || {};
+    const allLobbies = Object.values(lobbies);
+    
+    // Filter out old lobbies
+    const fiveMinutesAgo = Date.now() - 300000;
+    activeLobbies = allLobbies.filter(lobby => {
+      const createdAt = lobby.createdAt || 0;
+      return createdAt > fiveMinutesAgo;
+    });
+    
+    updateLobbyDisplay();
+  });
+}
+
+function removeLobbyListener() {
+  if (!lobbiesRef) {
+    console.error('Firebase not initialized');
+    return;
+  }
+  
+  lobbiesRef.off();
+}
 
 // Initialize PeerJS
 function initPeer() {
@@ -635,9 +758,50 @@ function initPeer() {
   
   peer.on('open', (id) => {
     console.log('My peer ID is: ' + id);
+    myPeerId = id;
+    
     if (isHost) {
-      gameCode = id.slice(-6).toUpperCase();
-      document.getElementById('roomCode').textContent = gameCode;
+      const gameName = document.getElementById('gameNameInput').value.trim() || 'Game' + id.slice(-4);
+      myGameName = gameName;
+      
+      // Register this lobby with game name
+      registerLobby(gameName, id);
+      
+      // Update lobby display
+      activeLobbies = [{
+        id: id,
+        name: gameName,
+        hostName: gameName,
+        status: 'waiting',
+        createdAt: Date.now()
+      }];
+      updateLobbyDisplay();
+      
+      document.getElementById('lobbyScreen').style.display = 'none';
+      document.getElementById('waitingScreen').style.display = 'grid';
+      document.getElementById('slot0Name').textContent = 'YOU (HOST)';
+      
+      // Add copy button to waiting room
+      const waitingScreen = document.getElementById('waitingScreen');
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'lobbyBtn';
+      copyBtn.textContent = 'COPY GAME NAME';
+      copyBtn.style.marginTop = '10px';
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(myGameName);
+        copyBtn.textContent = 'COPIED!';
+        setTimeout(() => {
+          copyBtn.textContent = 'COPY GAME NAME';
+        }, 2000);
+      });
+      waitingScreen.querySelector('.lobbyCard').appendChild(copyBtn);
+      
+      // Clean up lobby when connection closes
+      peer.on('close', () => {
+        if (myGameName) {
+          removeLobby(myGameName);
+        }
+      });
     }
   });
 
@@ -662,6 +826,8 @@ function setupConnection() {
     if (isHost) {
       document.getElementById('waitingStatus').textContent = 'Opponent connected! Build your robot.';
       document.getElementById('goToBuildBtn').style.display = 'block';
+      document.getElementById('slot1Name').textContent = 'OPPONENT';
+      document.getElementById('slot1Ready').textContent = 'CONNECTED';
     } else {
       document.getElementById('waitingStatus').textContent = 'Connected to host! Build your robot.';
       document.getElementById('goToBuildBtn').style.display = 'block';
@@ -675,10 +841,15 @@ function setupConnection() {
   conn.on('close', () => {
     console.log('Connection closed');
     document.getElementById('feed').textContent = 'OPPONENT DISCONNECTED';
+    if (isHost) {
+      document.getElementById('slot1Name').textContent = 'WAITING…';
+      document.getElementById('slot1Ready').textContent = '';
+    }
   });
 }
 
 function handlePeerData(data) {
+  console.log('Received peer data:', data, 'isHost:', isHost, 'opponentReady:', opponentReady);
   switch (data.type) {
     case 'position':
       // Update opponent position (for multiplayer)
@@ -697,11 +868,28 @@ function handlePeerData(data) {
       break;
     case 'ready':
       opponentReady = data.ready;
+      console.log('Opponent ready status updated:', opponentReady);
       updateReadyStatus();
+      
+      // If host and opponent is ready, start the game
+      if (isHost && opponentReady) {
+        console.log('Host: Opponent ready, starting multiplayer game');
+        startMultiplayerGame();
+      }
       break;
     case 'start':
-      if (isHost) {
-        startMultiplayerGame();
+      if (!isHost) {
+        // Guest receives start signal from host
+        console.log('Guest received start signal, loading arena');
+        loadArenaAsset().then(() => {
+          gameStarted = true;
+          buildScreen.style.display = 'none';
+          document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+        }).catch((err) => {
+          console.error('Guest arena loading failed:', err);
+          document.getElementById('loadStatus').textContent = 'ARENA LOAD FAILED';
+          document.getElementById('launch').disabled = false;
+        });
       }
       break;
   }
@@ -720,50 +908,184 @@ function sendToPeer(data) {
   }
 }
 
+// Lobby management
+function updateLobbyDisplay() {
+  const lobbiesContainer = document.getElementById('activeLobbies');
+  if (!lobbiesContainer) return;
+  
+  console.log('Updating lobby display with:', activeLobbies);
+  
+  if (activeLobbies.length === 0) {
+    lobbiesContainer.innerHTML = '<div class="lobbyStatus">No active games. Create one to start!</div>';
+    return;
+  }
+  
+  lobbiesContainer.innerHTML = '';
+  activeLobbies.forEach(lobby => {
+    const item = document.createElement('div');
+    item.className = 'lobbyItem';
+    const isMyGame = isHost && lobby.name === myGameName;
+    
+    item.innerHTML = `
+      <div class="lobbyHost">${lobby.name} ${isMyGame ? '(YOU)' : ''}</div>
+      <div class="lobbyStatus ${lobby.status === 'waiting' ? 'waiting' : 'full'}">
+        ${lobby.status === 'waiting' ? 'WAITING' : 'FULL'}
+      </div>
+      ${isMyGame ? '<div class="lobbyJoin">HOSTING</div>' : '<div class="lobbyJoin">JOIN →</div>'}
+    `;
+    
+    if (!isMyGame) {
+      item.addEventListener('click', () => {
+        document.getElementById('joinGameName').value = lobby.name;
+        document.getElementById('joinByNameBtn').click();
+      });
+    }
+    lobbiesContainer.appendChild(item);
+  });
+}
+
+async function refreshLobbies() {
+  try {
+    activeLobbies = await getAllLobbies();
+    updateLobbyDisplay();
+  } catch (error) {
+    console.error('Failed to refresh lobbies:', error);
+  }
+}
+
+
+
 // Lobby event handlers
 document.getElementById('createBtn')?.addEventListener('click', () => {
-  isHost = true;
-  document.getElementById('lobbyScreen').style.display = 'none';
-  document.getElementById('waitingScreen').style.display = 'grid';
-  initPeer();
-});
-
-document.getElementById('joinBtn')?.addEventListener('click', () => {
-  const code = document.getElementById('joinCode').value.trim().toUpperCase();
-  if (code.length !== 6) {
-    document.getElementById('lobbyStatus').textContent = 'Please enter a 6-character code';
+  const gameName = document.getElementById('gameNameInput').value.trim();
+  if (!gameName) {
+    document.getElementById('lobbyStatus').textContent = 'Please enter a game name';
     document.getElementById('lobbyStatus').className = 'lobbyStatus err';
     return;
   }
   
-  isHost = false;
+  isHost = true;
   initPeer();
+});
+
+document.getElementById('joinByNameBtn')?.addEventListener('click', async () => {
+  const gameName = document.getElementById('joinGameName').value.trim();
+  if (!gameName) {
+    document.getElementById('lobbyStatus').textContent = 'Please enter a game name';
+    document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+    return;
+  }
   
-  peer.on('open', (id) => {
-    // Try to connect to host
-    conn = peer.connect(code.toLowerCase() + id.slice(-6));
-    setupConnection();
+  document.getElementById('lobbyStatus').textContent = 'Looking up game...';
+  document.getElementById('lobbyStatus').className = 'lobbyStatus';
+  
+  try {
+    // Check if Firebase is available
+    if (!database || !lobbiesRef) {
+      document.getElementById('lobbyStatus').textContent = 'Firebase not available. Check console.';
+      document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+      console.error('Firebase not initialized');
+      return;
+    }
     
-    conn.on('error', (err) => {
-      document.getElementById('lobbyStatus').textContent = 'Could not connect to game';
+    // Look up the lobby by game name from Firebase
+    const lobby = await getLobby(gameName);
+    console.log('Found lobby:', lobby);
+    
+    if (!lobby) {
+      document.getElementById('lobbyStatus').textContent = 'Game not found. Check the name or ask host to create it.';
+      document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+      return;
+    }
+    
+    if (!lobby.peerId) {
+      document.getElementById('lobbyStatus').textContent = 'Game found but no peer ID. Host may be reconnecting.';
+      document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+      return;
+    }
+    
+    isHost = false;
+    initPeer();
+    
+    peer.on('open', (id) => {
+      console.log('Peer opened, connecting to host peer ID:', lobby.peerId);
+      // Try to connect to the host's peer ID
+      conn = peer.connect(lobby.peerId);
+      setupConnection();
+      
+      conn.on('error', (err) => {
+        console.error('Connection error:', err);
+        document.getElementById('lobbyStatus').textContent = 'Could not connect to game. Host may be offline.';
+        document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+      });
+      
+      // Show waiting screen while connecting
+      document.getElementById('lobbyScreen').style.display = 'none';
+      document.getElementById('waitingScreen').style.display = 'grid';
+      document.getElementById('waitingStatus').textContent = 'Connecting to ' + gameName + '...';
+      document.getElementById('slot0Name').textContent = 'YOU (GUEST)';
+      document.getElementById('slot0Tag').textContent = 'GUEST';
+    });
+    
+    peer.on('error', (err) => {
+      console.error('PeerJS error:', err);
+      document.getElementById('lobbyStatus').textContent = 'PeerJS error: ' + err.type;
       document.getElementById('lobbyStatus').className = 'lobbyStatus err';
     });
+    
+  } catch (error) {
+    console.error('Failed to join game:', error);
+    document.getElementById('lobbyStatus').textContent = 'Error joining game. Please try again.';
+    document.getElementById('lobbyStatus').className = 'lobbyStatus err';
+  }
+});
+
+// Start lobby refresh when lobby screen is shown
+function startLobbyRefresh() {
+  setupLobbyListener();
+  // Initial refresh to populate the list
+  refreshLobbies();
+}
+
+function stopLobbyRefresh() {
+  removeLobbyListener();
+}
+
+// Observe lobby screen visibility
+const lobbyObserver = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.target.id === 'lobbyScreen') {
+      if (mutation.target.style.display !== 'none') {
+        startLobbyRefresh();
+      } else {
+        stopLobbyRefresh();
+      }
+    }
   });
 });
 
-document.getElementById('copyCodeBtn')?.addEventListener('click', () => {
-  if (gameCode) {
-    navigator.clipboard.writeText(gameCode);
-    document.getElementById('copyCodeBtn').textContent = '✓';
-    setTimeout(() => {
-      document.getElementById('copyCodeBtn').textContent = '⧉';
-    }, 2000);
+// Start observing the lobby screen after a short delay to ensure DOM is ready
+setTimeout(() => {
+  const lobbyScreen = document.getElementById('lobbyScreen');
+  if (lobbyScreen) {
+    lobbyObserver.observe(lobbyScreen, { attributes: true, attributeFilter: ['style'] });
   }
-});
+}, 100);
 
 document.getElementById('goToBuildBtn')?.addEventListener('click', () => {
   document.getElementById('waitingScreen').style.display = 'none';
   document.getElementById('teamScreen').style.display = 'grid';
+});
+
+document.getElementById('backToLobbyBtn')?.addEventListener('click', () => {
+  document.getElementById('waitingScreen').style.display = 'none';
+  document.getElementById('lobbyScreen').style.display = 'grid';
+  // Refresh lobby display to show our game
+  refreshLobbies();
+});
+
+document.getElementById('refreshLobbiesBtn')?.addEventListener('click', () => {
+  refreshLobbies();
 });
 
 // ── Build screen — Bot Lab tap-builder ───────────────────────────────────────
@@ -1017,6 +1339,18 @@ launchButton && launchButton.addEventListener('click', async () => {
 
   // For single player or when host
   if (!conn || isHost) {
+    // If multiplayer, check if opponent is ready
+    if (conn && conn.open) {
+      if (opponentReady) {
+        startMultiplayerGame();
+      } else {
+        document.getElementById('feed').textContent = 'WAITING FOR OPPONENT TO BE READY...';
+        loadStatus.textContent = 'WAITING FOR OPPONENT...';
+      }
+      return;
+    }
+    
+    // Single player mode
     activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
     spawnBots(activeBotConfigs);
 
@@ -1025,31 +1359,43 @@ launchButton && launchButton.addEventListener('click', async () => {
       document.getElementById('feed').textContent =
         `VS ${chosenTeam.name.toUpperCase()} — "${chosenTeam.motto}"`;
     }
+
+    try {
+      await loadArenaAsset();
+      gameStarted = true;
+      buildScreen.style.display = 'none';
+      setTimeout(() => {
+        document.getElementById('feed').textContent = 'BATTLE ONLINE — DESTROY ALL HOSTILES';
+      }, 3000);
+    } catch (err) {
+      console.error('Asset loading failed', err);
+      loadStatus.textContent = 'ASSET LOAD FAILED — CHECK LOCAL ASSETS';
+      launchButton.disabled = false;
+    }
   } else {
     // For multiplayer guest, wait for host to start
     document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
     sendToPeer({ type: 'ready', ready: true });
+    loadStatus.textContent = 'WAITING FOR HOST...';
     
     // Wait for host to send start signal
     const waitForStart = () => {
-      if (gameStarted) return;
+      if (gameStarted) {
+        // Host sent start signal, now load arena
+        loadArenaAsset().then(() => {
+          gameStarted = true;
+          buildScreen.style.display = 'none';
+          document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+        }).catch((err) => {
+          console.error('Asset loading failed', err);
+          loadStatus.textContent = 'ASSET LOAD FAILED — CHECK LOCAL ASSETS';
+          launchButton.disabled = false;
+        });
+        return;
+      }
       setTimeout(waitForStart, 100);
     };
     waitForStart();
-    return;
-  }
-
-  try {
-    await loadArenaAsset();
-    gameStarted = true;
-    buildScreen.style.display = 'none';
-    setTimeout(() => {
-      document.getElementById('feed').textContent = 'BATTLE ONLINE — DESTROY ALL HOSTILES';
-    }, 3000);
-  } catch (err) {
-    console.error('Asset loading failed', err);
-    loadStatus.textContent = 'ASSET LOAD FAILED — CHECK LOCAL ASSETS';
-    launchButton.disabled = false;
   }
 });
 
@@ -1058,15 +1404,27 @@ function startMultiplayerGame() {
     document.getElementById('feed').textContent = 'MULTIPLAYER MATCH STARTING...';
     sendToPeer({ type: 'start' });
     
-    // Start the game
+    // Start the game for host
     activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
     spawnBots(activeBotConfigs);
     
+    // Load arena for host
     loadArenaAsset().then(() => {
       gameStarted = true;
       buildScreen.style.display = 'none';
       document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+      
+      // Send start signal to guest after host arena is loaded
+      if (conn && conn.open) {
+        sendToPeer({ type: 'start' });
+      }
+    }).catch((err) => {
+      console.error('Host arena loading failed:', err);
+      document.getElementById('loadStatus').textContent = 'ARENA LOAD FAILED';
+      document.getElementById('launch').disabled = false;
     });
+  } else {
+    document.getElementById('feed').textContent = 'WAITING FOR OPPONENT TO BE READY...';
   }
 }
 

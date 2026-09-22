@@ -25,32 +25,43 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 #joinCode{flex:1;padding:12px 14px;border:2px solid #52645b;background:#0d1a19;color:#e4e9e1;font:700 18px 'Barlow Condensed';letter-spacing:4px;text-transform:uppercase;outline:none}
 #joinCode:focus{border-color:#e4ca3e}
 #joinCode::placeholder{color:#445550;letter-spacing:3px}
+#joinPeerId{flex:1;padding:12px 14px;border:2px solid #52645b;background:#0d1a19;color:#e4e9e1;font:700 14px 'Barlow Condensed';letter-spacing:1px;outline:none}
+#joinPeerId:focus{border-color:#e4ca3e}
+#joinPeerId::placeholder{color:#445550;letter-spacing:1px}
+#joinGameName{flex:1;padding:12px 14px;border:2px solid #52645b;background:#0d1a19;color:#e4e9e1;font:700 16px 'Barlow Condensed';letter-spacing:1px;outline:none}
+#joinGameName:focus{border-color:#e4ca3e}
+#joinGameName::placeholder{color:#445550;letter-spacing:1px}
+#gameNameInput:focus{border-color:#e4ca3e}
 
 /* Active lobbies list */
-.activeLobbies{max-height:200px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;scrollbar-width:thin;scrollbar-color:#52645b #0d1a19}
+.activeLobbies{max-height:250px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:#52645b #0d1a19}
 .activeLobbies::-webkit-scrollbar{width:6px}
 .activeLobbies::-webkit-scrollbar-track{background:#0d1a19}
 .activeLobbies::-webkit-scrollbar-thumb{background:#52645b;border-radius:3px}
-.lobbyItem{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid #2a3832;background:#0d1a19;cursor:pointer;transition:border-color .12s,background .12s}
+.lobbyItem{display:flex;align-items:center;gap:12px;padding:14px 16px;border:2px solid #2a3832;background:#0d1a19;cursor:pointer;transition:border-color .12s,background .12s}
 .lobbyItem:hover{border-color:#52645b;background:#111f1d}
 .lobbyItem.selected{border-color:#e4ca3e;background:#161f1a}
-.lobbyHost{flex:1;font-size:13px;letter-spacing:1px;font-weight:700;color:#d9e2d8}
-.lobbyStatus{font-size:11px;letter-spacing:1px;color:#7a9a7a}
+.lobbyHost{flex:1;font-size:15px;letter-spacing:1px;font-weight:700;color:#d9e2d8}
+.lobbyStatus{font-size:12px;letter-spacing:1px;color:#7a9a7a}
 .lobbyStatus.waiting{color:#78e160}
 .lobbyStatus.full{color:#e86040}
-.lobbyJoin{font-size:11px;letter-spacing:1px;color:#e4ca3e;font-weight:700}
+.lobbyJoin{font-size:12px;letter-spacing:1px;color:#e4ca3e;font-weight:700;padding:4px 8px;background:#2a3832;border-radius:2px}
+
+/* Player slots (for waiting room) */
+.playerSlots{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+.playerSlot{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid #2a3832;background:#0d1a19}
+.slotDot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dot-green{background:#78e160;box-shadow:0 0 6px #78e16099}
+.dot-gray{background:#445550}
+.dot-yellow{background:#e4ca3e;box-shadow:0 0 6px #e4ca3e99}
+.slotName{flex:1;font-size:15px;letter-spacing:2px}
+.slotTag{font-size:10px;letter-spacing:2px;color:#52645b;border:1px solid #2a3832;padding:2px 6px}
+.slotReady{font-size:11px;letter-spacing:2px;color:#78e160;min-width:60px;text-align:right}
 
 /* status line */
 .lobbyStatus{min-height:22px;font-size:13px;letter-spacing:1px;color:#aebeb5;text-align:center;margin-top:4px}
 .lobbyStatus.err{color:#e86040}
 .lobbyStatus.ok{color:#78e160}
-
-/* ── WAITING ROOM ─────────────────────────────────────────────────── */
-.roomCodeBox{display:flex;align-items:center;gap:12px;background:#0a1514;border:1px solid #52645b;padding:14px 18px;margin:20px 0}
-.roomCodeLabel{font-size:11px;letter-spacing:3px;color:#f0b84c}
-.roomCodeValue{font-size:32px;letter-spacing:8px;font-weight:800;color:#e4ca3e;flex:1}
-.copyBtn{border:1px solid #52645b;background:none;color:#aebeb5;font-size:18px;padding:4px 10px;cursor:pointer;line-height:1}
-.copyBtn:hover{color:#e4ca3e;border-color:#e4ca3e}
 
 .playerSlots{display:flex;flex-direction:column;gap:10px;margin:18px 0}
 .playerSlot{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid #2a3832;background:#0d1a19}
@@ -74,7 +85,7 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 .startBtnStyle{width:100%;margin-top:10px;padding:14px;font-size:18px;background:#e05c2a;border-color:#f07040;color:#fff;letter-spacing:3px}
 .startBtnStyle:disabled{opacity:.4;cursor:default}
 
-@media(max-width:480px){.readyPlayers{flex-direction:column}.roomCodeValue{font-size:24px;letter-spacing:5px}}
+@media(max-width:480px){.readyPlayers{flex-direction:column}}
 
 
 /* ── TEAM SELECT SCREEN ───────────────────────────────────────────────────── */
