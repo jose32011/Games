@@ -1,1 +1,137 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Robot Arena 2</title><link rel="stylesheet" href="styles.css"></head><body><div id="buildScreen"><div class="buildCard"><div class="eyebrow">ROBOT ARENA <b>2</b></div><h1>BUILD YOUR ROBOT</h1><p class="buildHint">Choose your textured chassis, weapon, engine, and color before entering a four-bot arena battle.</p><div class="buildGrid"><fieldset><legend>SIZE</legend><label><input type="radio" name="size" value="small" checked><span>SMALL</span></label><label><input type="radio" name="size" value="medium"><span>MEDIUM</span></label><label><input type="radio" name="size" value="large"><span>LARGE</span></label></fieldset><fieldset><legend>GUN</legend><label><input type="radio" name="gun" value="laser" checked><span>LASER</span></label><label><input type="radio" name="gun" value="cannon"><span>CANNON</span></label><label><input type="radio" name="gun" value="shotgun"><span>SHOTGUN</span></label></fieldset><fieldset><legend>ENGINE</legend><label><input type="radio" name="engine" value="standard" checked><span>STANDARD</span></label><label><input type="radio" name="engine" value="sprint"><span>SPRINT</span></label><label><input type="radio" name="engine" value="tank"><span>TANK</span></label><label><input type="radio" name="engine" value="hover"><span>HOVER</span></label></fieldset><fieldset class="colorChoice"><legend>COLOR</legend><label class="colorInput"><input id="robotColor" type="color" value="#56a48c"><span id="colorValue">#56A48C</span></label></fieldset></div><button id="launch">LAUNCH</button><div id="loadStatus" role="status"></div></div></div><div id="game"><div id="hud"><div class="top"><b>ROBOT ARENA <em>2</em></b><span>LIVE MATCH</span><strong id="timer">04:55</strong></div><div class="score"><i id="health">100</i><div><small>NOVA-7</small><div class="bar"><u id="healthBar"></u></div></div><label id="score">00 — 00</label></div><div class="feed" id="feed">SYSTEM: ARENA ONLINE</div><div id="joystick"><div></div></div><div class="actions"><button id="fire">FIRE</button><button id="boost">BOOST</button></div><div class="weapons"><button>⚙</button><button class="active">▥</button><button>▥</button><button>▥</button></div></div></div><script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script><script type="module" src="app.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Robot Arena 2</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<!-- ─── LOBBY SCREEN ──────────────────────────────────────────────── -->
+<div id="lobbyScreen" style="display:none">
+  <div class="buildCard lobbyCard">
+    <div class="eyebrow">ROBOT ARENA <b>2</b></div>
+    <h1>MULTIPLAYER</h1>
+    <p class="buildHint">Create a game and share the code, or enter a code to join.</p>
+
+    <div class="lobbyActions">
+      <button id="createBtn" class="lobbyBtn">CREATE GAME</button>
+      <div class="lobbyDivider">OR</div>
+      <div class="joinRow">
+        <input id="joinCode" type="text" maxlength="6" placeholder="GAME CODE" autocomplete="off" spellcheck="false">
+        <button id="joinBtn" class="lobbyBtn">JOIN</button>
+      </div>
+    </div>
+
+    <div id="lobbyStatus" class="lobbyStatus"></div>
+  </div>
+</div>
+
+<!-- ─── WAITING ROOM ─────────────────────────────────────────────── -->
+<div id="waitingScreen" style="display:none">
+  <div class="buildCard lobbyCard">
+    <div class="eyebrow">ROBOT ARENA <b>2</b></div>
+    <h1>WAITING ROOM</h1>
+
+    <div class="roomCodeBox">
+      <span class="roomCodeLabel">GAME CODE</span>
+      <span id="roomCode" class="roomCodeValue">——</span>
+      <button id="copyCodeBtn" class="copyBtn" title="Copy code">⧉</button>
+    </div>
+
+    <div class="playerSlots">
+      <div class="playerSlot" id="slot0">
+        <span class="slotDot dot-green"></span>
+        <span class="slotName" id="slot0Name">YOU</span>
+        <span class="slotTag" id="slot0Tag">HOST</span>
+        <span class="slotReady" id="slot0Ready"></span>
+      </div>
+      <div class="playerSlot" id="slot1">
+        <span class="slotDot dot-gray"></span>
+        <span class="slotName" id="slot1Name">WAITING…</span>
+        <span class="slotTag" id="slot1Tag">GUEST</span>
+        <span class="slotReady" id="slot1Ready"></span>
+      </div>
+    </div>
+
+    <div id="waitingStatus" class="lobbyStatus">Waiting for opponent to join…</div>
+    <button id="goToBuildBtn" class="lobbyBtn" style="display:none">BUILD YOUR ROBOT →</button>
+  </div>
+</div>
+
+<!-- ─── TEAM SELECT SCREEN ───────────────────────────────────────── -->
+<div id="teamScreen">
+  <div class="buildCard teamSelectCard">
+    <div class="eyebrow">ROBOT ARENA <b>2</b></div>
+    <h1>CHOOSE YOUR OPPONENT</h1>
+    <p class="buildHint">Select a team to face in the arena. Each team has its own AI style and robots.</p>
+    <div id="teamPicker" class="teamPicker"></div>
+    <button id="teamContinueBtn" class="lobbyBtn teamContinueBtn">CONTINUE TO BUILD →</button>
+  </div>
+</div>
+
+<!-- ─── BUILD SCREEN — BOT LAB ────────────────────────────────────── -->
+<div id="buildScreen" style="display:none">
+
+  <!-- Top bar -->
+  <div class="blTopBar">
+    <span class="blTitle">BOT LAB</span>
+    <div class="blStats">
+      <div class="blStat"><span class="blStatLabel">WEIGHT</span><span id="blWeight" class="blStatVal">100</span></div>
+      <div class="blStat"><span class="blStatLabel">ARMOR</span><span id="blArmor" class="blStatVal">MED</span></div>
+      <div class="blStat"><span class="blStatLabel">SPEED</span><span id="blSpeed" class="blStatVal">STD</span></div>
+    </div>
+  </div>
+
+  <!-- 3D preview viewport (Three.js canvas shows through) -->
+  <div class="blViewport">
+    <div class="blViewportLabel">TAP PARTS BELOW TO BUILD</div>
+    <!-- grid overlay like the original -->
+    <div class="blGrid"></div>
+  </div>
+
+  <!-- Category tabs -->
+  <div id="catBar" class="blCatBar"></div>
+
+  <!-- Part list -->
+  <div id="partGrid" class="blPartList"></div>
+
+  <!-- Bottom bar: robot name + color + launch -->
+  <div class="blBottomBar">
+    <div class="blNameRow">
+      <span class="blNameLabel">ROBOT NAME:</span>
+      <input id="robotNameInput" class="blNameInput" type="text" maxlength="16" value="NOVA-7" spellcheck="false" autocomplete="off">
+    </div>
+    <div class="blColorRow">
+      <span class="blColorLabel">COLOR</span>
+      <label class="blColorSwatch">
+        <input id="buildColorPicker" type="color" value="#56a48c">
+        <span id="blColorName">Teal</span>
+      </label>
+      <button id="launch" class="blLaunchBtn">ENTER ARENA ▶</button>
+    </div>
+    <div id="loadStatus" role="status" class="blLoadStatus"></div>
+  </div>
+
+</div>
+
+<!-- ─── GAME (Three.js canvas + HUD) ─────────────────────────────── -->
+<div id="game">
+  <div id="hud">
+    <div class="top">
+      <b>ROBOT ARENA <em>2</em></b><span>LIVE MATCH</span><strong id="timer">04:55</strong>
+    </div>
+    <div class="score">
+      <i id="health">100</i>
+      <div><small id="playerName">NOVA-7</small><div class="bar"><u id="healthBar"></u></div></div>
+      <label id="score">00 — 00</label>
+    </div>
+    <div class="feed" id="feed">SYSTEM: ARENA ONLINE</div>
+    <div id="joystick"><div></div></div>
+    <div class="actions">
+      <button id="fire">FIRE</button>
+      <button id="boost">BOOST</button>
+    </div>
+    <div class="weapons">
+      <button>⚙</button><button class="active">▥</button><button>▥</button><button>▥</button>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script type="module" src="app.js"></script>
+</body></html>

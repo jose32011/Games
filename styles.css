@@ -10,3 +10,300 @@ fieldset input[type=radio]{accent-color:#e4ca3e}.colorChoice{grid-column:span 2}
 #launch{width:100%;margin-top:22px;padding:14px;border:2px solid #e8da5d;background:#e4b934;color:#17190f;font:800 18px 'Barlow Condensed';letter-spacing:3px;cursor:pointer}
 #launch:disabled{opacity:.6;cursor:wait}#loadStatus{height:18px;margin-top:10px;text-align:center;color:#aebeb5;font-size:12px;letter-spacing:1px}
 @media(max-width:480px){.buildGrid{grid-template-columns:1fr}.colorChoice{grid-column:auto}.buildCard{padding:24px 18px}}
+
+/* ── LOBBY & WAITING ROOM ─────────────────────────────────────────── */
+#lobbyScreen,#waitingScreen{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#344844 0,#111817 58%,#090b0b 100%);padding:18px}
+.lobbyCard{max-width:480px}
+
+/* create/join actions */
+.lobbyActions{display:flex;flex-direction:column;gap:14px;margin:24px 0 18px}
+.lobbyBtn{padding:13px 22px;border:2px solid #e8da5d;background:#e4b934;color:#17190f;font:800 16px 'Barlow Condensed';letter-spacing:3px;cursor:pointer;transition:opacity .15s}
+.lobbyBtn:disabled{opacity:.45;cursor:default}
+.lobbyBtn:not(:disabled):hover{opacity:.85}
+.lobbyDivider{text-align:center;color:#52645b;font-size:12px;letter-spacing:4px}
+.joinRow{display:flex;gap:10px}
+#joinCode{flex:1;padding:12px 14px;border:2px solid #52645b;background:#0d1a19;color:#e4e9e1;font:700 18px 'Barlow Condensed';letter-spacing:4px;text-transform:uppercase;outline:none}
+#joinCode:focus{border-color:#e4ca3e}
+#joinCode::placeholder{color:#445550;letter-spacing:3px}
+
+/* status line */
+.lobbyStatus{min-height:22px;font-size:13px;letter-spacing:1px;color:#aebeb5;text-align:center;margin-top:4px}
+.lobbyStatus.err{color:#e86040}
+.lobbyStatus.ok{color:#78e160}
+
+/* ── WAITING ROOM ─────────────────────────────────────────────────── */
+.roomCodeBox{display:flex;align-items:center;gap:12px;background:#0a1514;border:1px solid #52645b;padding:14px 18px;margin:20px 0}
+.roomCodeLabel{font-size:11px;letter-spacing:3px;color:#f0b84c}
+.roomCodeValue{font-size:32px;letter-spacing:8px;font-weight:800;color:#e4ca3e;flex:1}
+.copyBtn{border:1px solid #52645b;background:none;color:#aebeb5;font-size:18px;padding:4px 10px;cursor:pointer;line-height:1}
+.copyBtn:hover{color:#e4ca3e;border-color:#e4ca3e}
+
+.playerSlots{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+.playerSlot{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid #2a3832;background:#0d1a19}
+.slotDot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dot-green{background:#78e160;box-shadow:0 0 6px #78e16099}
+.dot-gray{background:#445550}
+.dot-yellow{background:#e4ca3e;box-shadow:0 0 6px #e4ca3e99}
+.slotName{flex:1;font-size:15px;letter-spacing:2px}
+.slotTag{font-size:10px;letter-spacing:2px;color:#52645b;border:1px solid #2a3832;padding:2px 6px}
+.slotReady{font-size:11px;letter-spacing:2px;color:#78e160;min-width:60px;text-align:right}
+
+#waitingScreen .lobbyBtn{width:100%;margin-top:14px}
+
+/* ── BUILD SCREEN MULTIPLAYER READY PANEL ─────────────────────────── */
+#mpReadyPanel{margin-top:22px;border-top:1px solid #2a3832;padding-top:18px}
+.readyPlayers{display:flex;gap:14px;margin-bottom:16px}
+.readySlot{flex:1;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #2a3832;background:#0d1a19;font-size:13px;letter-spacing:1px}
+.readyBadge{margin-left:auto;font-size:11px;letter-spacing:2px;color:#78e160}
+.readyBtnStyle{width:100%;padding:14px;font-size:18px;background:#e4b934;border-color:#e8da5d;color:#17190f;letter-spacing:3px}
+.readyBtnStyle.is-ready{background:#78e160;border-color:#5ec44e;color:#0d1a19}
+.startBtnStyle{width:100%;margin-top:10px;padding:14px;font-size:18px;background:#e05c2a;border-color:#f07040;color:#fff;letter-spacing:3px}
+.startBtnStyle:disabled{opacity:.4;cursor:default}
+
+@media(max-width:480px){.readyPlayers{flex-direction:column}.roomCodeValue{font-size:24px;letter-spacing:5px}}
+
+
+/* ── TEAM SELECT SCREEN ───────────────────────────────────────────────────── */
+#teamScreen{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#344844 0,#111817 58%,#090b0b 100%);padding:18px;overflow-y:auto}
+.teamSelectCard{width:min(780px,100%);max-height:90vh;display:flex;flex-direction:column}
+.teamPicker{flex:1;overflow-y:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:16px 0;padding-right:4px;scrollbar-width:thin;scrollbar-color:#52645b #0a1514}
+.teamPicker::-webkit-scrollbar{width:6px}
+.teamPicker::-webkit-scrollbar-track{background:#0a1514}
+.teamPicker::-webkit-scrollbar-thumb{background:#52645b;border-radius:3px}
+
+/* Team card */
+.teamCard{display:flex;align-items:center;gap:10px;padding:9px 12px;border:1px solid #2a3832;background:#0d1a19;cursor:pointer;transition:border-color .12s,background .12s;position:relative}
+.teamCard:hover{border-color:#52645b;background:#111f1d}
+.teamCard input[type=radio]{position:absolute;opacity:0;width:0;height:0}
+.teamCard input[type=radio]:checked ~ .teamName{color:#e4ca3e}
+.teamCard:has(input:checked){border-color:#e4ca3e;background:#161f1a}
+.teamLogo{width:40px;height:40px;object-fit:contain;flex-shrink:0;image-rendering:pixelated;border:1px solid #2a3832;background:#080f0e}
+.teamName{font-size:13px;letter-spacing:1px;font-weight:700;color:#d9e2d8;line-height:1.2;flex:1}
+.teamMotto{display:none}/* hidden in grid view — shown on hover via title attr */
+
+/* Selected team detail strip at bottom */
+.teamCard:has(input:checked) .teamMotto{display:block;font-size:10px;color:#7a9a8a;letter-spacing:0.5px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:140px}
+.teamCard:has(input:checked) .teamName{display:block}
+
+.teamContinueBtn{width:100%;margin-top:4px;padding:14px;font-size:18px;letter-spacing:3px}
+
+/* AI type badge shown on selected team's bots in HUD feed */
+.aiBadge{display:inline-block;padding:1px 5px;font-size:10px;letter-spacing:1px;border:1px solid #52645b;color:#aebeb5;margin-left:6px;vertical-align:middle}
+
+@media(max-width:540px){
+  .teamPicker{grid-template-columns:1fr 1fr}
+  .teamLogo{width:32px;height:32px}
+  .teamName{font-size:11px}
+}
+
+
+/* ── BOT LAB BUILD SCREEN — portrait layout ─────────────────────────────── */
+/*
+  Portrait stack (phone):
+    [TOP BAR      ]  ~44px
+    [3D VIEWPORT  ]  ~40vh  — canvas shows through, overlaid grid + label
+    [CATEGORY TABS]  ~52px
+    [PART LIST    ]  flex-1, scrollable rows
+    [BOTTOM BAR   ]  ~96px
+*/
+#buildScreen{
+  position:fixed;inset:0;z-index:10;
+  display:flex;flex-direction:column;
+  /* No background — let canvas show through the viewport */
+  background:transparent;
+  overflow:hidden;
+}
+
+/* ── Top bar ─────────────────────────────────── */
+.blTopBar{
+  display:flex;align-items:center;gap:10px;
+  padding:0 12px;height:44px;flex-shrink:0;
+  background:#1a1f1e;
+  border-bottom:2px solid #3a4a40;
+}
+.blTitle{
+  font:800 18px 'Barlow Condensed';letter-spacing:3px;color:#e4ca3e;
+  margin-right:auto;
+}
+.blStats{display:flex;gap:12px}
+.blStat{display:flex;flex-direction:column;align-items:center;gap:0}
+.blStatLabel{font-size:9px;letter-spacing:1px;color:#52645b}
+.blStatVal{font:700 13px 'Barlow Condensed';letter-spacing:1px;color:#d9e2d8}
+
+/* ── 3D viewport area ────────────────────────── */
+.blViewport{
+  flex:0 0 40vh;
+  position:relative;
+  overflow:hidden;
+  /* transparent — Three.js canvas shows through from #game behind */
+  background:transparent;
+  border-bottom:2px solid #3a4a40;
+}
+/* Blueprint grid overlay on top of the canvas */
+.blViewport::before{
+  content:'';
+  position:absolute;inset:0;
+  background:
+    linear-gradient(rgba(42,72,66,0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42,72,66,0.12) 1px, transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+  z-index:1;
+}
+.blViewportLabel{
+  position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
+  font-size:10px;letter-spacing:2px;color:#3a5a50;
+  pointer-events:none;white-space:nowrap;
+}
+.blGrid{display:none} /* blueprint grid is CSS-only now */
+
+/* ── Category tabs ───────────────────────────── */
+.blCatBar{
+  display:flex;flex-shrink:0;
+  background:#1a1f1e;
+  border-bottom:2px solid #3a4a40;
+  overflow-x:auto;scrollbar-width:none;
+}
+.blCatBar::-webkit-scrollbar{display:none}
+
+.blCatBtn{
+  flex:1 1 0;min-width:52px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:8px 4px;
+  border:none;border-right:1px solid #2a3832;
+  background:transparent;
+  color:#6a8a7a;
+  font:700 9px 'Barlow Condensed';letter-spacing:1px;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background .1s,color .1s;
+}
+.blCatBtn:last-child{border-right:none}
+.blCatBtn .blCatIcon{font-size:16px;line-height:1}
+.blCatBtn .blCatLabel{font-size:9px;letter-spacing:1px;margin-top:1px}
+.blCatBtn.active{background:#c85a1a;color:#fff;border-bottom:2px solid #e07030}
+.blCatBtn:active{opacity:.75}
+
+/* ── Part list ───────────────────────────────── */
+.blPartList{
+  flex:1;overflow-y:auto;overflow-x:hidden;
+  background:#181e1c;
+  scrollbar-width:thin;scrollbar-color:#3a4a40 #181e1c;
+}
+.blPartList::-webkit-scrollbar{width:4px}
+.blPartList::-webkit-scrollbar-thumb{background:#3a4a40}
+
+/* Each row = one part option, like the original RA2 list */
+.blPartRow{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 14px;
+  border-bottom:1px solid #222a28;
+  background:#181e1c;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background .1s;
+  min-height:64px;
+}
+.blPartRow:active{background:#1e2a26}
+.blPartRow.selected{background:#2a1a0a;border-left:3px solid #c85a1a}
+.blPartRow:not(.selected){border-left:3px solid transparent}
+
+.blPartThumb{
+  width:52px;height:52px;flex-shrink:0;
+  background:#222a28;border:1px solid #3a4a40;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;border-radius:2px;
+}
+.blPartRow.selected .blPartThumb{border-color:#c85a1a;background:#2a1a0a}
+
+.blPartInfo{flex:1;min-width:0}
+.blPartName{
+  font:800 15px 'Barlow Condensed';letter-spacing:1px;color:#e2d8c8;
+  margin-bottom:2px;
+}
+.blPartRow.selected .blPartName{color:#e07030}
+.blPartMeta{
+  display:flex;gap:10px;flex-wrap:wrap;
+}
+.blPartStat{font-size:11px;letter-spacing:1px;color:#7a9a7a}
+.blPartDesc{font-size:10px;letter-spacing:0.5px;color:#4a6a5a;margin-top:1px}
+
+.blPartCheck{
+  width:22px;height:22px;flex-shrink:0;
+  border:2px solid #3a4a40;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:transparent;font-size:13px;
+}
+.blPartRow.selected .blPartCheck{
+  background:#c85a1a;border-color:#c85a1a;color:#fff;
+}
+
+/* Color picker row (inside part list when COLOR tab active) */
+.blColorRow2{
+  padding:16px 14px;
+  display:flex;flex-direction:column;gap:12px;
+}
+.blColorRow2 label{
+  display:flex;align-items:center;gap:12px;
+  font:700 12px 'Barlow Condensed';letter-spacing:2px;color:#aebeb5;
+}
+.blColorRow2 input[type=color]{
+  width:52px;height:52px;border:2px solid #3a4a40;
+  padding:2px;background:#222a28;cursor:pointer;
+}
+.blColorPreview{
+  flex:1;height:52px;border:1px solid #3a4a40;border-radius:2px;
+}
+
+/* ── Bottom bar ──────────────────────────────── */
+.blBottomBar{
+  flex-shrink:0;
+  background:#1a1f1e;
+  border-top:2px solid #3a4a40;
+  padding:6px 10px 8px;
+  display:flex;flex-direction:column;gap:5px;
+}
+.blNameRow{
+  display:flex;align-items:center;gap:8px;
+}
+.blNameLabel{font-size:10px;letter-spacing:2px;color:#52645b;white-space:nowrap}
+.blNameInput{
+  flex:1;background:#0e1614;border:1px solid #3a4a40;
+  color:#e2d8c8;font:700 14px 'Barlow Condensed';letter-spacing:2px;
+  padding:5px 8px;outline:none;
+}
+.blNameInput:focus{border-color:#e4ca3e}
+.blColorRow{
+  display:flex;align-items:center;gap:8px;
+}
+.blColorLabel{font-size:10px;letter-spacing:2px;color:#52645b;white-space:nowrap}
+.blColorSwatch{
+  display:flex;align-items:center;gap:6px;cursor:pointer;
+  border:1px solid #3a4a40;background:#0e1614;padding:3px 8px;flex:1;
+}
+.blColorSwatch input[type=color]{
+  width:28px;height:28px;border:none;padding:0;background:none;cursor:pointer;
+}
+.blColorSwatch span{font-size:12px;letter-spacing:1px;color:#aebeb5}
+.blLaunchBtn{
+  flex-shrink:0;
+  padding:8px 16px;
+  background:#c85a1a;border:2px solid #e07030;
+  color:#fff;font:800 13px 'Barlow Condensed';letter-spacing:2px;
+  cursor:pointer;white-space:nowrap;
+}
+.blLaunchBtn:disabled{opacity:.4;cursor:default}
+.blLaunchBtn:active{transform:scale(.96)}
+.blLoadStatus{
+  font-size:10px;letter-spacing:1px;color:#7a9a7a;min-height:14px;text-align:center;
+}
+
+/* ── Landscape override: side-by-side ────────────── */
+@media(min-width:600px) and (orientation:landscape){
+  #buildScreen{flex-direction:row;flex-wrap:wrap}
+  .blTopBar{width:100%;order:0}
+  .blViewport{flex:0 0 45%;order:1;height:calc(100vh - 44px - 96px)}
+  .blCatBar{flex:0 0 55%;order:2;height:auto}
+  .blPartList{flex:0 0 55%;order:3;height:calc(100vh - 44px - 52px - 96px)}
+  .blBottomBar{width:100%;order:4}
+}
