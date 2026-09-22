@@ -1,0 +1,1423 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name gametype grp
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[OptionGroup]
+Selection deathmatch checkbox
+PassMouse true
+Notes buttons in this group select which type of game to play
+Name game type optiongroup
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 6
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select deathmatch
+Name deathmatch checkbox
+ID -1
+Position 0.02 1 0.03 1
+Size 0.31 1 0.33 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\deathmatch.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0.578125 0 0.773438 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\deathmatch.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.578125 0 0.773438 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\deathmatch.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0.578125 0 0.773438 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select battle royal
+Name battle royal checkbox
+ID -1
+Position 0.348 1 0.03 1
+Size 0.31 1 0.33 1
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\battleroyal.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0.773438 0 0.96875 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\battleroyal.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.773438 0 0.96875 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\battleroyal.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0.773438 0 0.96875 0.136719
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select team match
+Name teams checkbox
+ID -1
+Position 0.675 1 0.03 1
+Size 0.31 1 0.33 1
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\teams.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0 0.1875 0.195313 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\teams.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0.1875 0.195313 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\teams.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0.1875 0.195313 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select table top
+Name tabletop checkbox
+ID -1
+Position 0.17 1 0.39 1
+Size 0.31 1 0.33 1
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\tabletop.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0.195313 0.1875 0.390625 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\tabletop.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.195313 0.1875 0.390625 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\tabletop.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0.195313 0.1875 0.390625 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select king of the hill
+Name kingofhill checkbox
+ID -1
+Position 0.52 1 0.39 1
+Size 0.31 1 0.33 1
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\kingofthehill.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0.390625 0.1875 0.585938 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\kingofthehill.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.390625 0.1875 0.585938 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\kingofthehill.bmp
+_BufferWidth 0 0 0 0
+_Size 198 0 158 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0.390625 0.1875 0.585938 0.324219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 25 0 360 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name other rules
+ID -1
+Position 0.04 1 1 1
+Size 0.92 1 0.25 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 6
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 588 0 1 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name horiz bar
+ID -1
+Position 0 0 0 0
+Size 1 1 1 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_dcn14
+_Text Weight class:
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 0.27 1
+Name weight class label
+ID -1
+Position 4 0 0.27 1
+Size 151 0 9 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 588 0 1 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 0.5 1
+0 0 1 1
+Name horiz bar
+ID -1
+Position 0 0 0.5 1
+Size 1 1 1 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_dcn14
+_Text Match Time:
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 0.75 1
+Name time label
+ID -1
+Position 4 0 0.75 1
+Size 151 0 9 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 75 0 19 0
+Alignment 17
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name weight optgroup owner
+ID -1
+Position 75 0 0.25 1
+Size 340 0 22 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[OptionGroup]
+Selection all classes cb
+PassMouse true
+Notes use to pick a weight class
+Name weight class optiongroup
+ID -1
+Position 0 0 0 0
+Size 340 0 22 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes allow only lightweight
+Name lightweight cb
+ID -1
+Position 89 0 1 0
+Size 72 0 18 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\lightweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 0.5
+_Name 
+_Position 0 0 0 0
+0.585938 0.1875 0.65625 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\lightweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.585938 0.1875 0.65625 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes allow only medium weight
+Name mediumweight cb
+ID -1
+Position 167 0 1 0
+Size 72 0 18 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\mediumweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 0.5
+_Name 
+_Position 0 0 0 0
+0.65625 0.1875 0.726563 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\mediumweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.65625 0.1875 0.726563 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes allow only heavyweight
+Name heavyweight cb
+ID -1
+Position 245 0 1 0
+Size 72 0 18 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\heavyweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 0.5
+_Name 
+_Position 0 0 0 0
+0.726563 0.1875 0.796875 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\heavyweight_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.726563 0.1875 0.796875 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes allow any weight class
+Name all classes cb
+ID -1
+Position 11 0 1 0
+Size 72 0 18 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename exhibition\allclasses_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 0.5
+_Name 
+_Position 0 0 0 0
+0.796875 0.1875 0.867188 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\allclasses_button.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.796875 0.1875 0.867188 0.205078
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 84 0 81 0
+Alignment 17
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name time field owner
+ID -1
+Position 84 0 0.75 1
+Size 104 0 18 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[DropDown]
+DownButton 0
+DecoratedList 1
+List 10
+Text 11
+Items 0
+PassMouse true
+Notes user selects time for match duration (1, 2, 3, 4, 5, 10, 15, 20 minutes?, default to 5?)
+Name time dropdown
+ID -1
+Position 0 0 0 0
+Size 104 0 20 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 2
+StateImage 2 true 1
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down Button
+ID -1
+Position 88 0 1 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[ListBox]
+ForeColor 0.9 0.9 0.9 1
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Rows 1
+Columns 1
+RowHeight 18
+ColWidths 88 17
+BorderColor 0.5 0.5 0.5 1
+BorderWidth 0
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes 
+Name 
+ID 10
+Position 0 0 0 0
+Size 104 0 100 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 0 0
+Size 104 0 18 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 104 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 104 0 0 0
+Point 104 0 0 0
+Point 104 0 18 0
+Point 104 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.2
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 0 0
+Size 88 0 18 0
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 88 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 88 0 0 0
+Point 88 0 0 0
+Point 88 0 18 0
+Point 88 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 104 0 100 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 104 0 100 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse false
+Notes 
+Name 
+ID -1
+Position 0 0 18 0
+Size 104 0 100 0
+Visible false
+ChildOrder 2
+ClipMode 2
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 88 0 0 0
+Size 16 0 1 1
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 84 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 38 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 68 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 68 0
+Visible false
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 68 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 4.25
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.4 0.4 0.4 1
+Widget true
+[TextBox]
+Scrollable false
+Editable false
+MultiLine false
+Buffer 12
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name 
+ID 11
+Position 0 0 0 0
+Size 86 0 17 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text 5 minutes
+_ForeColor 1 0.8 0.3 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position -1 0 -1 0
+Size 88 0 19 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position -1 0 -1 0
+Size 88 0 19 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 88 0 19 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

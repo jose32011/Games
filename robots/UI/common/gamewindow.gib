@@ -1,0 +1,693 @@
+T 1.09
+[Window]
+ReportedPos 0 0 0 0
+Draggable false
+Alignment 9
+PassMouse true
+Notes window used for a match
+Name Game Window
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 10
+[Group]
+ReportedPos 6 0 406 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load 'statusmeters.gib' here
+Name player3 status
+ID -1
+Position 0.01 1 0.98 1
+Size 84 0 64 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 549 0 406 0
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load 'statusmeters.gib' here
+Name player4 status
+ID -1
+Position 0.99 1 0.98 1
+Size 84 0 64 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 276 0 448 0
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes show 'time group' when match begins
+Name time group
+ID -1
+Position 0.5 1 0.98 1
+Size 88 0 22 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_dcn16
+_Text Time:
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 6 0 14 0
+Name time label
+ID -1
+Position 6 0 14 0
+Size 63 0 5 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes time counts down here
+Name time
+ID -1
+Position 47 0 2 0
+Size 40 0 17 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text 5:00
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 276 0 448 0
+Size 88 0 22 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 88 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 10 0 228 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes show/hide this group using the "chat" key (backslash?)
+Name chat group
+ID -1
+Position 10 0 228 0
+Size 200 0 20 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_dcn14
+_Text CHAT:
+_ForeColor 1 1 1 1
+_Name 
+_Position 1 0 12 0
+Name New [Text]
+ID -1
+Position 1 0 12 0
+Size 42 0 6 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes player enters chat here
+Name chat entry
+ID -1
+Position 37 0 1 0
+Size 159 0 17 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 10 0 228 0
+Size 200 0 20 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 200 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[DisplayBox]
+Display <text font fg_mcn14> </text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 200 100
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text  
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes display a few lines of chats here and clear after a few seconds. (use <text font fg_mcn14>)
+Name chat displaybox
+ID -1
+Position 10 0 110 0
+Size 200 0 100 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes display camera name here
+Name camera textbox
+ID -1
+Position 140 0 0.02 1
+Size 130 0 16 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 6 0 9 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load 'statusmeters.gib' here
+Name player1 status
+ID -1
+Position 0.01 1 0.02 1
+Size 84 0 64 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 549 0 9 0
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load 'statusmeters.gib' here
+Name player2 status
+ID -1
+Position 0.99 1 0.02 1
+Size 84 0 64 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 215 0 192 0
+Alignment 18
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes show 'countdown group' when match is ready to begin, then hide during match
+Name countdown group
+ID -1
+Position 0.5 1 0.5 1
+Size 210 0 96 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes 
+Name competitors ready
+ID -1
+Position 0 0 0 0
+Size 1 1 28 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text COMPETITORS READY!
+_ForeColor 1 1 1 1
+_Name 
+_Position 20 0 18 0
+Name 
+ID 0
+Position 20 0 18 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0 0 24 0
+Size 1 1 23 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text MATCH BEGINS IN...
+_ForeColor 1 1 1 1
+_Name 
+_Position 46 0 15 0
+Name 
+ID 0
+Position 46 0 15 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 3
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes show 3..2..1.. in this text box
+Name count number
+ID -1
+Position 77 0 54 0
+Size 50 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d26
+_Text 3
+_ForeColor 0 1 0.4 1
+_Name 
+_Position 17 0 22 0
+Name 
+ID 0
+Position 17 0 22 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 74 0 51 0
+Size 56 0 38 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 74 0 51 0
+Size 56 0 38 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 56 0 38 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 214 0 191 0
+Size 212 0 98 0
+Visible false
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 214 0 191 0
+Size 212 0 98 0
+Visible false
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 212 0 98 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 278 0 435 0
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes hide skip group after the intro is over or player has skipped it.
+Name skip group
+ID -1
+Position 0.5 1 1 1
+Size 84 0 45 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.8 0.8 0.8 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to skip past the announcer intro
+Name skip button
+ID -1
+Position 2 0 2 0
+Size 80 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 80 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 80 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 80 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 80 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 2 0 2 0
+Size 80 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Skip Intro
+_ForeColor 1 1 1 1
+_Name 
+_Position 15 0 13 0
+Name 
+ID -1
+Position 15 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 1 0
+Size 82 0 22 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0

@@ -1,0 +1,478 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name ws paintshop help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 14
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 8 0
+Size 189 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Robot Workshop
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 66 0
+Size 580 0 54 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text The Paint Shop lets you customize the appearance of your chassis.  You're creative, right?  You'll see a dropdown menu with several appearance effect filters that you can use to help you.  If you would rather paint the chassis by hand using your own paint program, you can use the Export and Import buttons to save a template, go paint it, and then reload it back in.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 134 0 137 0
+Size 450 0 34 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Color Fill lets you select any color and fill your chassis with it, or you can click a single panel to just fill in one side of your chassis.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 38 0
+Size 189 0 26 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Paint Shop
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 386 0
+Size 580 0 34 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text See the HTML tutorials included with the game for more details on how to build a robot.
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 8 0
+Name 
+ID 0
+Position 0 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 41 0 138 0
+Size 84 0 15 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Color Fill
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 41 0 179 0
+Size 84 0 15 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Texture Fill
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 134 0 178 0
+Size 450 0 34 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Texture Fill is similar to Color Fill, but you can pick a graphic texture instead of a solid color.  You can add BMP files to your game Texture Library folder to have more choices for this filter.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 41 0 220 0
+Size 84 0 15 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Surface Layers
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 134 0 219 0
+Size 450 0 54 0
+Visible true
+ChildOrder 9
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Surface Layers adds a semi-transparent layer on top of your existing chassis paint job.  For example, you could use Color Fill to paint the chassis blue, then use Surface Layers to add layers of dirt and scratches on top of it.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 41 0 281 0
+Size 84 0 15 0
+Visible true
+ChildOrder 10
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Edge Lines
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 134 0 280 0
+Size 450 0 34 0
+Visible true
+ChildOrder 11
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Edge Lines gives you several choices for modifying the appearance of the edge seams for each panel of your chassis.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 41 0 322 0
+Size 84 0 15 0
+Visible true
+ChildOrder 12
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Decals
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 134 0 321 0
+Size 450 0 34 0
+Visible true
+ChildOrder 13
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text You can apply Decals to a specific point on any panel of your chassis, without filling the entire panel (as Texture Fill does).  You can add custom  graphics  to your Texture Library\Decals folder.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

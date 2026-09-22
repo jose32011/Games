@@ -1,0 +1,855 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.5 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes load this into content slot
+Name armor split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name left
+ID -1
+Position 0 0 0 0
+Size 400 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 0.5 1 0.07 1
+Alignment 10
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name 3d grp
+ID -1
+Position 0.5 1 0.07 1
+Size 0.92 1 368 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes common 3d view for various areas of botlab
+Name 3d placeholder
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name mouse instructions grp
+ID -1
+Position 1 1 1 1
+Size 54 0 36 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\mouse_zr.tga
+_BufferWidth 0 0 0 0
+_Size 48 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.339844 0.511719 0.386719 0.542969
+Name mouse img
+ID -1
+Position 0 0 0 0
+Size 48 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 639 0 69 0
+Size 1179 0 370 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 15 0 30 0
+Size 370 0 370 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1179 0 370 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.15 0.15 0.15 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 400 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name right content slot
+ID -1
+Position 400 0 0 0
+Size 400 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 1 1 1 1
+Size 102 0 36 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to return to main chassis menu
+Name finished button
+ID -1
+Position 2 0 2 0
+Size 78 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 2 0 2 0
+Size 78 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Finished
+_ForeColor 1 1 1 1
+_Name 
+_Position 14 0 14 0
+Name 
+ID -1
+Position 14 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 1 0
+Size 80 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0.5 1 0.07 1
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name grid group
+ID -1
+Position 0.5 1 0.07 1
+Size 320 0 0.83 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Grid]
+Rows 4
+Columns 1
+RowHeight 84
+ColWidths 300 17
+BorderColor 0 0 0 1
+BorderWidth 1
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes load this grid with the four armor cells
+Name armor grid
+ID -1
+Position 0 0 0 0
+Size 301 0 0.897 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.5 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 252 0
+Size 300 0 84 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 300 0 84 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 300 0 0 0
+Point 300 0 0 0
+Point 300 0 84 0
+Point 300 0 84 0
+Point 0 0 84 0
+Point 0 0 84 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.15
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 252 0
+Size 300 0 84 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 300 0 84 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.15
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 300 0 0 0
+Point 300 0 0 0
+Point 300 0 84 0
+Point 300 0 84 0
+Point 0 0 84 0
+Point 0 0 84 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 301 0 0.897 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 301 0 336 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 336 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 301 0 0.897 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 285 0 0 0
+Size 16 0 1 1
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 119 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 73 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 103 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 103 0
+Visible false
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 103 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 6.4375
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 1 1
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 0 0 1 1
+Size 320 0 34 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes if checked, apply chassis appearance filters when picking armor
+Name default appearance checkbox
+ID -1
+Position 6 0 9 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename .\common\checkbox_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename .\common\checkbox_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name default appearance label
+ID -1
+Position 29 0 8 0
+Size 300 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text When selecting armor, apply default chassis appearance.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

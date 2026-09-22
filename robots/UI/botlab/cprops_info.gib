@@ -1,0 +1,462 @@
+T 1.09
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 0.4 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name info property split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 1 1 192 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_mcn14
+_Text Weight:
+_ForeColor 0 0 0 1
+_Name 
+_Position 20 0 31 0
+Name weight label
+ID -1
+Position 20 0 31 0
+Size 68 0 8 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes 
+Name weight
+ID -1
+Position 68 0 21 0
+Size 47 0 15 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 25
+_ForeColor 1 0.3 0 1
+_Name 
+_Position 16 0 10 0
+Name 
+ID 0
+Position 16 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 68 0 21 0
+Size 47 0 15 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 47 0 15 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 192 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 192 0
+Size 1 1 288 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0.5 1 0 0
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name desc group
+ID -1
+Position 0.5 1 0 0
+Size 0.95 1 0.96 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[DisplayBox]
+Display <text font fg_dcn16>SuperVolt 12V\n</text><text font fg_mcn14 color .1 .1 .1 1>The SuperVolt is a great battery. 100 units of power, 6 units per second output.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 591 276
+Params 2
+Param 2 0
+_Font fg_dcn16
+_Text SuperVolt 12V\n
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Param 2 0
+_Font fg_mcn14
+_Text The SuperVolt is a great battery. 100 units of power, 6 units per second output.
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name description
+ID -1
+Position 0 0 0 0
+Size 591 0 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 591 0 0 0
+Size 16 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 260 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 214 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 244 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 244 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 244 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 15.25
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 17 0 0 0
+Size 0.95 1 0.96 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1215 0 964 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

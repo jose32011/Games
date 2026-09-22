@@ -1,0 +1,696 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name arena group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.4 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name arena split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 182 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.5 0.5 0.5 1
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[ListBox]
+ForeColor 1 1 1 1
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Rows 6
+Columns 1
+RowHeight 18
+ColWidths 300 17
+BorderColor 0.3 0.3 0.3 1
+BorderWidth 0
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes populate with arena names
+Name arena listbox
+ID -1
+Position 1 0 1 0
+Size 159 0 175 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 90 0
+Size 159 0 18 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 159 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 159 0 0 0
+Point 159 0 0 0
+Point 159 0 18 0
+Point 159 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.15
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 54 0
+Size 159 0 18 0
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 159 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.15
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 159 0 0 0
+Point 159 0 0 0
+Point 159 0 18 0
+Point 159 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 1 0
+Size 159 0 175 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 159 0 175 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 161 0 177 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0.1 1 0.08 1
+Size 0.89 1 0.585 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 129 0 0 0
+Size 16 0 1 1
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 166 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 120 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 150 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 150 0
+Visible false
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 150 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.1 1 0.72 1
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name hazard grp
+ID -1
+Position 0.1 1 0.72 1
+Size 161 0 31 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes enable or disable hazards for this arena
+Name hazard checkbox
+ID -1
+Position 1 0 9 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\checkbox_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\checkbox_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Hazards enabled
+_ForeColor 1 1 1 1
+_Name 
+_Position 26 0 21 0
+Name hazard label
+ID -1
+Position 26 0 21 0
+Size 90 0 14 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 182 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 182 0 0 0
+Size 273 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 0.5 1 0.08 1
+Alignment 10
+AspectSetting 1
+AspectRatio 0.75
+PassMouse true
+Notes child image of this group is the preview bitmap of the arena
+Name arena preview grp
+ID -1
+Position 0.5 1 0.08 1
+Size 0.86 1 175 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename exhibition\sample_arena.bmp
+_BufferWidth 0 0 0 0
+_Size 234 0 175 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0.451172 0.25 0.638672
+Name arena preview img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 639 0 79 0
+Size 1102 0 177 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0.5 1 0.7 1
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name description grp
+ID -1
+Position 0.5 1 0.7 1
+Size 0.86 1 0.28 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[DisplayBox]
+Display <text font fg_mcn14>This arena has hammers and other nice hazards to smash your bot.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 234 281
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text This arena has hammers and other nice hazards to smash your bot.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes arena description displayed here
+Name description
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0

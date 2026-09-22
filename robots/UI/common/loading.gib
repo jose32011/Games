@@ -1,0 +1,144 @@
+T 1.09
+[Window]
+ReportedPos 240 0 210 0
+Draggable false
+Alignment 18
+PassMouse true
+Notes main window to load
+Name loading window
+ID -1
+Position 0.5 1 0.5 1
+Size 160 0 60 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 1 0 1 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name background group
+ID -1
+Position 1 0 1 0
+Size 158 0 58 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes says "loading", change if needed
+Name caption bar
+ID -1
+Position 0 0 14 0
+Size 1 1 30 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Loading...
+_ForeColor 1 0.7 0.26 1
+_Name 
+_Position 51 0 19 0
+Name 
+ID 0
+Position 51 0 19 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 14 0
+Size 1 1 30 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 158 0 30 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 2
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\metaldots_pattern.bmp
+_BufferWidth 0 0 0 0
+_Size 160 0 60 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 2.5 0.9375
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

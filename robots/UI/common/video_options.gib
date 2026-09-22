@@ -1,0 +1,2213 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name video options group
+ID -1
+Position 0 0 0 0
+Size 400 0 241 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 14
+[Text]
+_Font fg_mcn16
+_Text Screen Resolution
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 32 0
+Name resolution txt
+ID -1
+Position 4 0 32 0
+Size 124 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Graphic Detail
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 88 0
+Name Graphic Detail txt
+ID -1
+Position 4 0 88 0
+Size 124 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Effects
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 138 0
+Name Effects txt
+ID -1
+Position 4 0 138 0
+Size 124 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[DropDown]
+DownButton 0
+DecoratedList 2
+List 10
+Text 11
+Items 0
+PassMouse true
+Notes fill with screen resolution options
+Name resolution dropdown
+ID -1
+Position 157 0 21 0
+Size 147 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 2
+StateImage 2 true 1
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down Button
+ID -1
+Position 131 0 1 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable false
+Editable false
+MultiLine false
+Buffer 8
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name 
+ID 11
+Position 0 0 0 0
+Size 131 0 18 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 
+_ForeColor 1 0.6 0.2 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[ListBox]
+ForeColor 1 1 1 1
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Rows 6
+Columns 1
+RowHeight 18
+ColWidths 147 17
+BorderColor 0.5 0.5 0.5 1
+BorderWidth 0
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes 
+Name 
+ID 10
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.4 0.4 1 0.6
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.4 0.4 1 0.6
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.3
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 131 0 80 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse false
+Notes 
+Name 
+ID -1
+Position 0 0 18 0
+Size 147 0 80 0
+Visible false
+ChildOrder 2
+ClipMode 2
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 131 0 0 0
+Size 16 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 64 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 18 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 48 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 3
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 157 0 21 0
+Size 147 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name fullscreen label
+ID -1
+Position 182 0 46 0
+Size 81 0 16 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Fullscreen
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes checked for fullscreen, unchecked for windowed
+Name fullscreen checkbox
+ID -1
+Position 158 0 46 0
+Size 16 0 16 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename .\common\checkbox_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename .\common\checkbox_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Status Messages
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 163 0
+Name Status Messages txt
+ID -1
+Position 4 0 163 0
+Size 124 0 20 0
+Visible true
+ChildOrder 10
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Default Camera Type
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 188 0
+Name Default Camera txt
+ID -1
+Position 4 0 188 0
+Size 124 0 20 0
+Visible true
+ChildOrder 11
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[DropDown]
+DownButton 0
+DecoratedList 2
+List 10
+Text 11
+Items 0
+PassMouse true
+Notes fill with camera options
+Name Camera dropdown
+ID -1
+Position 157 0 175 0
+Size 147 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 2
+StateImage 2 true 1
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down Button
+ID -1
+Position 131 0 1 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable false
+Editable false
+MultiLine false
+Buffer 8
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name 
+ID 11
+Position 0 0 0 0
+Size 131 0 18 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 
+_ForeColor 1 0.6 0.2 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[ListBox]
+ForeColor 1 1 1 1
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Rows 6
+Columns 1
+RowHeight 18
+ColWidths 147 17
+BorderColor 0.5 0.5 0.5 1
+BorderWidth 0
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes 
+Name 
+ID 10
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.4 0.4 1 0.6
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.4 0.4 1 0.6
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.3
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 131 0 80 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse false
+Notes 
+Name 
+ID -1
+Position 0 0 18 0
+Size 147 0 80 0
+Visible false
+ChildOrder 2
+ClipMode 2
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 131 0 0 0
+Size 16 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 64 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 18 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 48 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 3
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name Camera Dropdown
+ID -1
+Position 157 0 175 0
+Size 147 0 18 0
+Visible true
+ChildOrder 12
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Event Size
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 113 0
+Name Event Size txt
+ID -1
+Position 4 0 113 0
+Size 124 0 20 0
+Visible true
+ChildOrder 13
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection effects on checkbox
+PassMouse true
+Notes use to turn on or off some effects
+Name effects optiongrp
+ID -1
+Position 150 0 121 0
+Size 217 0 28 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select effects off
+Name effects off checkbox
+ID -1
+Position 10 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select effects on
+Name effects on checkbox
+ID -1
+Position 100 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Off
+_ForeColor 1 1 1 1
+_Name 
+_Position 36 0 18 0
+Name eff off txt
+ID -1
+Position 36 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text On
+_ForeColor 1 1 1 1
+_Name 
+_Position 126 0 18 0
+Name eff on txt
+ID -1
+Position 126 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection damage on checkbox
+PassMouse true
+Notes use to turn on or off some effects
+Name damage optiongrp
+ID -1
+Position 150 0 146 0
+Size 217 0 28 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select effects off
+Name damage off checkbox
+ID -1
+Position 10 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select effects on
+Name damage on checkbox
+ID -1
+Position 100 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Off
+_ForeColor 1 1 1 1
+_Name 
+_Position 36 0 18 0
+Name dmg off txt
+ID -1
+Position 36 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text On
+_ForeColor 1 1 1 1
+_Name 
+_Position 126 0 18 0
+Name dmg on txt
+ID -1
+Position 126 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection 4 player checkbox
+PassMouse true
+Notes use to turn set number of players in events
+Name event size optiongrp
+ID -1
+Position 150 0 96 0
+Size 217 0 28 0
+Visible true
+ChildOrder 14
+ClipMode 1
+NumChildren 4
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select 2 player events
+Name 2 player checkbox
+ID -1
+Position 10 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select 4 player events
+Name 4 player checkbox
+ID -1
+Position 100 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text 2 Player
+_ForeColor 1 1 1 1
+_Name 
+_Position 36 0 18 0
+Name 2 txt
+ID -1
+Position 36 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text 4 Player
+_ForeColor 1 1 1 1
+_Name 
+_Position 126 0 18 0
+Name 4 txt
+ID -1
+Position 126 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection detail med checkbox
+PassMouse true
+Notes use to select low or high graphic detail
+Name detail optiongrp
+ID -1
+Position 85 0 71 0
+Size 220 0 28 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 6
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select low graphic detail
+Name detail low checkbox
+ID -1
+Position 10 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select high graphic detail
+Name detail high checkbox
+ID -1
+Position 165 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Low
+_ForeColor 1 1 1 1
+_Name 
+_Position 32 0 18 0
+Name low txt
+ID -1
+Position 32 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text High
+_ForeColor 1 1 1 1
+_Name 
+_Position 191 0 18 0
+Name high txt
+ID -1
+Position 191 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select high graphic detail
+Name detail med checkbox
+ID -1
+Position 75 0 6 0
+Size 16 0 16 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Medium
+_ForeColor 1 1 1 1
+_Name 
+_Position 101 0 18 0
+Name med txt
+ID -1
+Position 101 0 18 0
+Size 56 0 12 0
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0

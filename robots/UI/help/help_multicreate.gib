@@ -1,0 +1,214 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name multiplayer create help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 6
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 22 0
+Size 189 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Multiplayer Create Game
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 54 0
+Size 580 0 34 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text The settings on this screen are similar to the ones for an exhibition match.  You have several additional options for your multiplayer settings.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 99 0
+Size 580 0 84 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Give your game a server  name, so other players can recognize it when they browse for the match.  You can choose to make your game available only over a local network, or open it up to players over the Internet.  Note that you might not be able to host a game if your computer is behind a firewall.  This game uses GameSpy for hosting and joining Internet games.  Go to www.gamespy.com to read more about hosting games from behind a firewall or other network configurations.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 183 0
+Size 580 0 34 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Optionally, you can set a password so that other players who try to join the game must enter the password.  This is to set up a private match between you and your friends and keep out anyone you have not invited beforehand.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 230 0
+Size 580 0 74 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text  The other settings for game rules and the arena are identical to an exhibition match setup.  See the help info on that screen for more details.  You will also notice that there is no button for choosing robots here.  Robots are not selected until the game is hosted and players have joined the prematch area.  This way, you can stay connected, but change which robot you use for repeated matches.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 313 0
+Size 580 0 34 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text When you are ready, click Create Game to start hosting the game.  You can change the game settings and arena later if you need to, but the server name and other host settings cannot be changed after this point.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

@@ -1,0 +1,148 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name ws testrobot help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 8 0
+Size 189 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Robot Workshop
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 82 0
+Size 580 0 74 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text This small test garage lets you try out your robot with the components and wiring that you have done to see if it works the way you wanted it to.  You can also select a few options to put cinder blocks, crates, or other obstacles in the test area to crash into.  You will also see how your battery and air power are lasting while driving your robot or firing its weapons.  Remember that your robot won't move at all if you forgot to add any batteries!
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 52 0
+Size 189 0 26 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Test Robot
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 386 0
+Size 580 0 34 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text See the HTML tutorials included with the game for more details on how to build a robot.
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 8 0
+Name 
+ID 0
+Position 0 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

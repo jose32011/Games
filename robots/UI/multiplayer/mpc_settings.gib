@@ -1,0 +1,985 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name MP settings grp
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 7
+[Text]
+_Font fg_dcn16
+_Text Server name:
+_ForeColor 1 1 1 1
+_Name 
+_Position 50 0 50 0
+Name Server name label
+ID -1
+Position 50 0 50 0
+Size 125 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.4 0.4 0.4 1
+Widget true
+[TextBox]
+Scrollable true
+Editable true
+MultiLine false
+Buffer 10
+BlinkRate 0.5
+MaxCharacters 32
+Alignment 17
+Text true 0
+PassMouse true
+Notes player types server name here
+Name server name textbox
+ID -1
+Position 140 0 33 0
+Size 198 0 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text New Exhibition Match
+_ForeColor 1 0.5 0.3 1
+_Name 
+_Position 0 0 15 0
+Name 
+ID 0
+Position 0 0 15 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 139 0 32 0
+Size 200 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 139 0 32 0
+Size 200 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 200 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_dcn16
+_Text Password:
+_ForeColor 1 1 1 1
+_Name 
+_Position 50 0 184 0
+Name password label
+ID -1
+Position 50 0 184 0
+Size 125 0 24 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.4 0.4 0.4 1
+Widget true
+[TextBox]
+Scrollable true
+Editable true
+MultiLine false
+Buffer 10
+BlinkRate 0.5
+MaxCharacters 16
+Alignment 17
+Text true 0
+PassMouse true
+Notes optional password for the server
+Name password textbox
+ID -1
+Position 124 0 169 0
+Size 108 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text 
+_ForeColor 1 0.5 0.3 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 123 0 168 0
+Size 110 0 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 123 0 168 0
+Size 110 0 24 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 110 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection LAN radio but
+PassMouse true
+Notes 
+Name LAN internet optgrp
+ID -1
+Position 50 0 80 0
+Size 150 0 55 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select if LAN game only
+Name LAN radio but
+ID -1
+Position 1 0 1 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select if game is published via Gamespy
+Name internet radio but
+ID -1
+Position 1 0 27 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Local network only
+_ForeColor 1 1 1 1
+_Name 
+_Position 30 0 13 0
+Name lan label
+ID -1
+Position 30 0 13 0
+Size 83 0 13 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Internet server
+_ForeColor 1 1 1 1
+_Name 
+_Position 30 0 39 0
+Name internet label
+ID -1
+Position 30 0 39 0
+Size 83 0 13 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Connection Speed
+_ForeColor 1 1 1 1
+_Name 
+_Position 80 0 145 0
+Name connection speed label
+ID -1
+Position 80 0 145 0
+Size 83 0 13 0
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[DropDown]
+DownButton 0
+DecoratedList 2
+List 10
+Text 11
+Items 0
+PassMouse true
+Notes fill with screen resolution options
+Name connection dropdown
+ID -1
+Position 192 0 134 0
+Size 147 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 2
+StateImage 2 true 1
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down Button
+ID -1
+Position 131 0 1 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable false
+Editable false
+MultiLine false
+Buffer 8
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name 
+ID 11
+Position 0 0 0 0
+Size 131 0 18 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 
+_ForeColor 1 0.6 0.2 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Scroller]
+Orientations 1
+Vertical true 0
+Horizontal false
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[ListBox]
+ForeColor 1 1 1 1
+_Font fg_mcn14
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Rows 6
+Columns 1
+RowHeight 18
+ColWidths 147 17
+BorderColor 0.5 0.5 0.5 1
+BorderWidth 0
+BufferWidth 0
+RowSelect true
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes 
+Name 
+ID 10
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 0.4 0.4 1 0.6
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.4 0.4 1 0.6
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled true
+FillColor 0.3 0.3 1 0.3
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 18 0
+Size 147 0 18 0
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 147 0 0 0
+Point 147 0 0 0
+Point 147 0 18 0
+Point 147 0 18 0
+Point 0 0 18 0
+Point 0 0 18 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 131 0 80 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 131 0 80 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse false
+Notes 
+Name 
+ID -1
+Position 0 0 18 0
+Size 147 0 80 0
+Visible false
+ChildOrder 2
+ClipMode 2
+NumChildren 1
+[ScrollBar]
+Orientation 1
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 131 0 0 0
+Size 16 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollUpArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 0 0 64 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollDownArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 0 0
+To 0 0 18 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 30 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 0.015625 0.0292969
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 16 0 48 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollBack.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 48 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 3
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 192 0 134 0
+Size 147 0 18 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 147 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

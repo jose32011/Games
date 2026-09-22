@@ -1,0 +1,1832 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.5 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes load this into content slot
+Name components split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name left
+ID -1
+Position 0 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 13 0 33 0
+Alignment 10
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name 3d grp
+ID -1
+Position 0.5 1 0.07 1
+Size 0.92 1 294 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes 3d view for component placement
+Name 3d component placeholder
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Group]
+ReportedPos 210 0 258 0
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes mouse instruction tip. Needs more thought.
+Name mouse instructions grp
+ID -1
+Position 1 1 1 1
+Size 84 0 36 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\mouse_azr.tga
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.833984 0 0.912109 0.03125
+Name mouse img
+ID -1
+Position 0 0 0 0
+Size 80 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 6 0 272 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes temporary tip to show using shift
+Name tips group
+ID -1
+Position 6 0 1 1
+Size 88 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename botlab\shift_rotate.tga
+_BufferWidth 0 0 0 0
+_Size 44 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.59375 0 0.636719 0.015625
+Name shift tip
+ID -1
+Position 0 0 0 0
+Size 44 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_updown.tga
+_BufferWidth 0 0 0 0
+_Size 40 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 48 0 0 0
+0.636719 0 0.675781 0.015625
+Name shift tip
+ID -1
+Position 48 0 0 0
+Size 40 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 121 0 254 0
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 0.5 1 1 1
+Size 52 0 40 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to remove a selected component
+Name remove button
+ID -1
+Position 0 0 0 0
+Size 52 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\remove_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 52 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0.173828 0.353516 0.224609 0.384766
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\remove_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 52 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.173828 0.353516 0.224609 0.384766
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\remove_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 52 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.173828 0.353516 0.224609 0.384766
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\remove_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 52 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.25
+_Name 
+_Position 0 0 0 0
+0.173828 0.353516 0.224609 0.384766
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 32 0
+Size 296 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 32 0
+Size 296 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 296 0 296 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.15 0.15 0.15 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 16 0 430 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name weight group
+ID -1
+Position 0.05 1 0.94 1
+Size 282 0 21 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes display class here: Lightweight or Heavyweight
+Name weightclass
+ID -1
+Position 165 0 1 0
+Size 80 0 18 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Lightweight
+_ForeColor 0.5 0.6 1 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn14
+_Text Weight:
+_ForeColor 1 1 1 1
+_Name 
+_Position 6 0 13 0
+Name weight label
+ID -1
+Position 6 0 13 0
+Size 84 0 6 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes show bot weight here
+Name weight
+ID -1
+Position 52 0 1 0
+Size 40 0 18 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 185
+_ForeColor 0.5 0.6 1 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn14
+_Text Classification:
+_ForeColor 1 1 1 1
+_Name 
+_Position 90 0 13 0
+Name weight label
+ID -1
+Position 90 0 13 0
+Size 84 0 6 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 16 0 430 0
+Size 282 0 21 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 282 0 21 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 320 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name right content slot
+ID -1
+Position 320 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name component main group
+ID -1
+Position 0 0 0 0
+Size 0.98 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0 0 33 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name comp upper grp
+ID -1
+Position 0 0 0.07 1
+Size 1 1 0.12 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name labels grp
+ID -1
+Position 0 0 0 0
+Size 1 1 14 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 6
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0 0 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Power
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 12 0 8 0
+Name 
+ID 0
+Position 12 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0.172 1 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Extenders
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 5 0 8 0
+Name 
+ID 0
+Position 5 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0.338 1 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Mechanics
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 2 0 8 0
+Name 
+ID 0
+Position 2 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0.503 1 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Wheels
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 10 0 8 0
+Name 
+ID 0
+Position 10 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0.67 1 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Weapons
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 7 0 8 0
+Name 
+ID 0
+Position 7 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 10
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 0.835 1 2 0
+Size 0.16 1 15 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Extras
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 12 0 8 0
+Name 
+ID 0
+Position 12 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection power button
+PassMouse true
+Notes grid is filtered based on the category selected in this optiongroup
+Name category optiongroup
+ID -1
+Position 0 0 16 0
+Size 1 1 0.65 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 6
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show power components in grid
+Name power button
+ID -1
+Position 1 0 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_power_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_power_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_power_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show extenders components in grid
+Name extenders button
+ID -1
+Position 0.172 1 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_extender_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_extender_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_extender_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 52 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show motors and pistons in grid
+Name mechanics button
+ID -1
+Position 0.338 1 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_mechanics_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_mechanics_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_mechanics_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 104 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show wheels and mobility in grid
+Name mobility button
+ID -1
+Position 0.503 1 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_mobility_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_mobility_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_mobility_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 156 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show weapons in grid
+Name weapons button
+ID -1
+Position 0.67 1 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_weapons_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_weapons_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_weapons_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 208 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to display extras components in grid
+Name extras button
+ID -1
+Position 0.835 1 1 0
+Size 0.16 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\co_extras_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_extras_n.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\co_extras_s.bmp
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 50 0 35 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 260 0 0 0
+Size 52 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 33 0
+Size 1 1 0.12 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 313 0 57 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Scroller]
+Orientations 2
+Vertical false
+Horizontal true 0
+Widget true
+[Grid]
+Rows 1
+Columns 4
+RowHeight 72
+ColWidths 78 17 78 17 78 17 78 17
+BorderColor 0 0 0 1
+BorderWidth 1
+BufferWidth 0
+RowSelect false
+Highlight 101
+Selection 100
+PermScrolls true
+PassMouse true
+Notes fill with components in the current category, click to show preview
+Name components grid
+ID -1
+Position 0 0 0 0
+Size 1 1 74 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled false
+FillColor 0.3 0.3 1 0.5
+BorderWidth 3
+BorderColor 0.5 0.3 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 0 0
+Size 78 0 72 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 72 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 0.5 0.3 1 1
+Width 3
+Points 8
+Point 0 0 0 0
+Point 78 0 0 0
+Point 76.5 0 0 0
+Point 76.5 0 72 0
+Point 78 0 72 0
+Point 0 0 72 0
+Point 1.5 0 72 0
+Point 1.5 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled false
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 78 0 0 0
+Size 78 0 72 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 78 0 72 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 78 0 0 0
+Point 78 0 0 0
+Point 78 0 72 0
+Point 78 0 72 0
+Point 0 0 72 0
+Point 0 0 72 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0.189 1
+Size 1 1 90 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[ScrollBar]
+Orientation 2
+Less true 0
+More true 1
+Slider true 2
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 74 0
+Size 1 1 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Less
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollLeftArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollLeftArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollLeftArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0.05
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 false
+PassMouse true
+Notes 
+Name Down
+ID -1
+Position 297 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename UI_ScrollRightArrow_N.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollRightArrow_R.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename UI_ScrollRightArrow_C.bmp
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 16 0
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Slider]
+Horiz true
+From 0 0 0 0
+To 251 0 0 0
+Thumb true 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 16 0 0 0
+Size 281 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollHSlider_N.bmp
+_BufferWidth 0 0 0 0
+_Size 30 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.224609 0.353516 0.253906 0.369141
+Name 
+ID -1
+Position 0 0 0 0
+Size 30 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 16 0 0 0
+Size 281 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename UI_ScrollHBack.bmp
+_BufferWidth 0 0 0 0
+_Size 281 0 16 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 17.5625 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0.189 1
+Size 1 1 90 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 313 0 90 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 211 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes contains either component preview, adjustments, or appearance
+Name component content group
+ID -1
+Position 0 0 0.96 1
+Size 1 1 0.52 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0

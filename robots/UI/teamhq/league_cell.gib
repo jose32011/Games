@@ -1,0 +1,227 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 112 0
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes load this into each cell of the grid and fill with data
+Name league cell split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 'league team logo' child of this slot gets the logo for this team
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 112 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename teamhq\orange_skull.bmp
+_BufferWidth 0 0 0 0
+_Size 60 0 60 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 50 0 4 0
+0 0 1 1
+Name league team logo
+ID -1
+Position 50 0 4 0
+Size 60 0 60 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.5 0.5 0.5 1
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes team rank
+Name rank
+ID -1
+Position 7 0 4 0
+Size 30 0 30 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d20
+_Text 16
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 4 0 19 0
+Name 
+ID 0
+Position 4 0 19 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 6 0 3 0
+Size 32 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 112 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 112 0 0 0
+Size 528 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes team name
+Name league team name
+ID -1
+Position 10 0 4 0
+Size 0.9 1 21 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text The Fantastic Roboteers
+_ForeColor 0.15 0.3 0.5 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes show number of points for this team
+Name points
+ID -1
+Position 55 0 43 0
+Size 67 0 19 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text 125
+_ForeColor 0.2 0.6 0.3 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Points:
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 10 0 56 0
+Name points label
+ID -1
+Position 10 0 56 0
+Size 48 0 8 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes team motto
+Name motto
+ID -1
+Position 10 0 26 0
+Size 0.92 1 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Four guys with bad B.O. making robots in their kitchen.
+_ForeColor 0.3 0.3 0.3 1
+_Name 
+_Position 0 0 8 0
+Name 
+ID 0
+Position 0 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

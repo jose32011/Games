@@ -1,0 +1,564 @@
+T 1.09
+[SplitFrame]
+Horizontal false
+Master 1
+MasterSize 0.2 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name color fill split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 1 1 384 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 115 0 133 0
+Alignment 18
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 'selected color img' child of this group should be filled with the chosen color
+Name selected color group
+ID -1
+Position 0.23 1 0.43 1
+Size 64 0 64 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 64 0 64 0
+_Alpha false
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name selected color img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name selected label
+ID -1
+Position -4 0 66 0
+Size 70 0 18 0
+Visible true
+ChildOrder 1
+ClipMode 2
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Selected Color
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 114 0 132 0
+Size 66 0 66 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 282 0 29 0
+Alignment 20
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name color selector
+ID -1
+Position 0.96 1 0.51 1
+Size 0.52 1 332 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 265 0
+Alignment 9
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name lum group
+ID -1
+Position 0 0 0.8 1
+Size 1 1 0.2 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Slider]
+Horiz true
+From 0 0 0 0
+To 1 1 0 0
+Thumb true 0
+PassMouse true
+Notes use slider to set lightness (default to .5)
+Name lum slider
+ID -1
+Position 0 0 0 0
+Size 1 1 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\slider_hmini.tga
+_BufferWidth 0 0 0 0
+_Size 12 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.71875 0.511719 0.730469 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 12 0 24 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\color_lum.bmp
+_BufferWidth 0 0 0 0
+_Size 338 0 10 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position -1 0 4 0
+0 0 1 1
+Name 
+ID -1
+Position -1 0 4 0
+Size 1.02 1 10 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name shade label
+ID -1
+Position 0 0 21 0
+Size 50 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Shade
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 8 0
+Name 
+ID 0
+Position 0 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 12
+Text true 0
+PassMouse true
+Notes 
+Name tint label
+ID -1
+Position 0 0 21 0
+Size 1 1 20 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Tint
+_ForeColor 1 1 1 1
+_Name 
+_Position 315 0 8 0
+Name 
+ID 0
+Position 315 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.2 0.2 0.2 1
+Widget true
+[Group]
+ReportedPos 1 0 1 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes use this group for picking hue and saturation (set 'picker target' location to mouse spot)
+Name hue group
+ID -1
+Position 1 0 1 0
+Size 0.99 1 0.75 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename botlab\colorpicker.bmp
+_BufferWidth 0 0 0 0
+_Size 334 0 253 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position -1 0 -1 0
+0.527344 0.380859 0.589844 0.429688
+Name color picker img
+ID -1
+Position -1 0 -1 0
+Size 1.02 1 1.02 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\colorpicker_target.tga
+_BufferWidth 0 0 0 0
+_Size 8 0 8 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 40 0 42 0
+0 0 1 1
+Name picker target
+ID -1
+Position 40 0 42 0
+Size 8 0 8 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 330 0 251 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 384 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 384 0
+Size 1 1 96 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 614 0 1 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.3 0.3 0.3 1
+_Name 
+_Position 0.02 1 0 0
+0 0 1 1
+Name horiz bar
+ID -1
+Position 0.02 1 0 0
+Size 0.96 1 1 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 493 0 30 0
+Alignment 20
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 0.94 1 0.5 1
+Size 108 0 36 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to apply the color to the entire chassis
+Name paint entire
+ID -1
+Position 1 0 8 0
+Size 106 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 106 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 106 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 106 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 106 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 8 0
+Size 106 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Paint Entire Chassis
+_ForeColor 1 1 1 1
+_Name 
+_Position 5 0 13 0
+Name 
+ID -1
+Position 5 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 7 0
+Size 108 0 22 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[DisplayBox]
+Display <text font fg_mcn12 color .1 .1 .1 1>Click a panel on your chassis to paint it with this color.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 320 62
+Params 1
+Param 2 0
+_Font fg_mcn12
+_Text Click a panel on your chassis to paint it with this color.
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name instructions
+ID -1
+Position 0.05 1 0.2 1
+Size 0.5 1 0.65 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 0

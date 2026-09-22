@@ -1,0 +1,879 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.5 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes load this into content slot
+Name wiring split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name left
+ID -1
+Position 0 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 0.5 1 0.07 1
+Alignment 10
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name 3d grp
+ID -1
+Position 0.5 1 0.07 1
+Size 0.92 1 294 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes common 3d view for various areas of botlab
+Name 3d wiring placeholder
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes mouse instruction tip. Needs more thought.
+Name mouse instructions grp
+ID -1
+Position 1 1 1 1
+Size 84 0 36 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\mouse_azr.tga
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.618164 0 0.696289 0.03125
+Name mouse img
+ID -1
+Position 0 0 0 0
+Size 80 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 639 0 69 0
+Size 1179 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 32 0
+Size 296 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1179 0 296 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.15 0.15 0.15 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 320 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name right content slot
+ID -1
+Position 320 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Group]
+ReportedPos 0.5 1 0.5 1
+Alignment 18
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name controller grp
+ID -1
+Position 0.5 1 0.5 1
+Size 0.95 1 303 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename botlab\wiring_controller.tga
+_BufferWidth 0 0 0 0
+_Size 303 0 303 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name New [Image]
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.504 1 0.943 1
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 0.504 1 0.943 1
+Size 0.88 1 0.7 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Grid]
+Rows 3
+Columns 4
+RowHeight 70
+ColWidths 66 17 66 17 66 17 66 17
+BorderColor 0.4 0.4 0.4 1
+BorderWidth 1
+BufferWidth 1
+RowSelect false
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes controls can be dragged and dropped here
+Name control grid
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 1 1 1 0.2
+BorderWidth 3
+BorderColor 0.5 0.3 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 0 0
+Size 66 0 70 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 66 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 0.5 0.3 1 1
+Width 3
+Points 8
+Point 0 0 0 0
+Point 1 1 0 1
+Point 1 1 0 1
+Point 1 1 1 1
+Point 1 1 1 1
+Point 0 1 1 1
+Point 0 1 1 1
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled false
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 140 0
+Size 66 0 70 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 66 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 1 1 0 1
+Point 1 1 0 1
+Point 1 1 1 1
+Point 1 1 1 1
+Point 0 1 1 1
+Point 0 1 1 1
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 12 0 0.1 1
+Alignment 17
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name header group
+ID -1
+Position 12 0 0.1 1
+Size 0.95 1 48 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 1 1 0.5 1
+Alignment 20
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name inst grp
+ID -1
+Position 1 1 0.5 1
+Size 0.46 1 45 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[DisplayBox]
+Display <text font fg_mcn12 color .85 .85 .85 1>Click and drag controls onto the grid below to build your robot controller.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 139 45
+Params 1
+Param 2 0
+_Font fg_mcn12
+_Text Click and drag controls onto the grid below to build your robot controller.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name instructions
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 10 0 0.5 1
+Alignment 17
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 10 0 0.5 1
+Size 130 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to start dragging a new switch onto the controller
+Name new switch
+ID -1
+Position 6 0 2 0
+Size 32 0 28 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_switch.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 0 0 0 0
+0.222656 0.398438 0.253906 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_switch.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.222656 0.398438 0.253906 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_switch.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.222656 0.398438 0.253906 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_switch.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.25
+_Name 
+_Position 0 0 0 0
+0.222656 0.398438 0.253906 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to start dragging a new button onto the controller
+Name new button
+ID -1
+Position 46 0 2 0
+Size 32 0 28 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_button.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 0 0 0 0
+0.253906 0.398438 0.285156 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_button.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.253906 0.398438 0.285156 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_button.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.253906 0.398438 0.285156 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_button.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.25
+_Name 
+_Position 0 0 0 0
+0.253906 0.398438 0.285156 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to start dragging a new analog control onto the controller
+Name new analog
+ID -1
+Position 86 0 2 0
+Size 32 0 28 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_analog.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 0 0 0 0
+0.285156 0.398438 0.316406 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_analog.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.285156 0.398438 0.316406 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_analog.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.285156 0.398438 0.316406 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ctrl_icon_analog.bmp
+_BufferWidth 0 0 0 0
+_Size 32 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.25
+_Name 
+_Position 0 0 0 0
+0.285156 0.398438 0.316406 0.425781
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 24 0
+Size 0.95 1 48 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1215 0 48 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name delete control grp
+ID -1
+Position 1 1 1 1
+Size 90 0 28 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to delete the selected control
+Name delete button
+ID -1
+Position 1 0 1 0
+Size 74 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 1 0
+Size 74 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Delete Control
+_ForeColor 0 0 0 1
+_Name 
+_Position 3 0 13 0
+Name 
+ID -1
+Position 3 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 76 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0

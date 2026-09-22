@@ -1,0 +1,101 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes team cell group is loaded into the select team grid. Logo img gets the team logo (no notes field).
+Name team cell
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename teamhq\orange_skull.bmp
+_BufferWidth 0 0 0 0
+_Size 72 0 72 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 4 0
+0 0 1 1
+Name logo img
+ID -1
+Position 4 0 4 0
+Size 72 0 72 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes team name in this text box
+Name team name textbox
+ID -1
+Position 86 0 5 0
+Size 360 0 28 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d20
+_Text TEAM BOT-SMASHERS
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 18 0
+Name 
+ID 0
+Position 0 0 18 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes team motto in this text box
+Name team motto textbox
+ID -1
+Position 86 0 34 0
+Size 360 0 37 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text We like to smash metal objects into tiny fragments, and then eat them for breakfast
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

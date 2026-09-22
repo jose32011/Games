@@ -1,0 +1,272 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 9
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes if a position slot is empty, show this group
+Name loading grp
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 53 0 3 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name p4 img group
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 0 0 0 0
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name select player grp
+ID -1
+Position 0.5 1 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes 
+Name message textbox
+ID -1
+Position 0 0 34 0
+Size 1 1 30 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Loading player...
+_ForeColor 1 1 1 1
+_Name 
+_Position 8 0 18 0
+Name 
+ID 0
+Position 8 0 18 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 96 0 96 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 52 0 2 0
+Size 98 0 98 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 26 0 105 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name name group
+ID -1
+Position 26 0 105 0
+Size 150 0 34 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.1 0.1 0.1 1
+Widget true
+[Group]
+ReportedPos 16 0 13 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 'progress bar' img child of this group can have width from 0 to 120
+Name progress group
+ID -1
+Position 16 0 13 0
+Size 120 0 8 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1 0 8 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.3 0.5 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name progress bar
+ID -1
+Position 0 0 0 0
+Size 1 0 8 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 15 0 12 0
+Size 122 0 10 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 15 0 12 0
+Size 122 0 10 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 122 0 10 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 152 0 36 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

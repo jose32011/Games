@@ -1,0 +1,599 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 9
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes this group is shown when a player has entered the match
+Name active player group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 8
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 53 0 3 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes player bot image loaded into 'bot img' (child of this group)
+Name bot img group
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename .\exhibition\sample_bot.bmp
+_BufferWidth 0 0 0 0
+_Size 96 0 96 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name bot img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 96 0 96 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 52 0 2 0
+Size 98 0 98 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 0
+[Text]
+_Font fg_mcn14
+_Text Ready:
+_ForeColor 0 0 0 1
+_Name 
+_Position 8 0 76 0
+Name ready label
+ID -1
+Position 8 0 76 0
+Size 44 0 9 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes player checks this when he's ready
+Name ready checkbox
+ID -1
+Position 26 0 84 0
+Size 15 0 15 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 15 0 15 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 15 0 15 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 1 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 15 0 15 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 83 0
+Size 17 0 17 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 0
+[Image]
+_Tiling false
+_Filename .\multiplayer\remote_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 20 0 2 0
+0.328125 0 0.351563 0.0234375
+Name player icon img
+ID -1
+Position 20 0 2 0
+Size 24 0 24 0
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 26 0 105 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name name group
+ID -1
+Position 26 0 105 0
+Size 150 0 34 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 4
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes team name here
+Name team name
+ID -1
+Position 0 0 0 0
+Size 150 0 14 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Team Ugly Dudes
+_ForeColor 0 0 0.3 1
+_Name 
+_Position 30 0 10 0
+Name 
+ID 0
+Position 30 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 4
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes bot name here
+Name bot name
+ID -1
+Position 0 0 15 0
+Size 150 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Wacky Robot Named Bob
+_ForeColor 1 1 1 1
+_Name 
+_Position 1 0 12 0
+Name 
+ID 0
+Position 1 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 152 0 36 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to remove this player from the match, pop up confirmation dialog
+Name eject button
+ID -1
+Position 153 0 2 0
+Size 38 0 13 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 38 0 13 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 38 0 13 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.2 0.2 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 38 0 13 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 0.2 0.2 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 38 0 13 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 153 0 2 0
+Size 38 0 13 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Eject
+_ForeColor 1 1 1 1
+_Name 
+_Position 8 0 9 0
+Name 
+ID -1
+Position 8 0 9 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes player clicks this to change his team or robot
+Name change robot button
+ID -1
+Position 20 0 36 0
+Size 24 0 24 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename multiplayer\robot_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.351563 0 0.375 0.0234375
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\robot_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.351563 0 0.375 0.0234375
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\robot_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.351563 0 0.375 0.0234375
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name spectator [TextBox]
+ID -1
+Position 0 0 41 0
+Size 49 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Spectator
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

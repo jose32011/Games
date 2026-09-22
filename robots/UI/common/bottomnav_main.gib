@@ -1,0 +1,534 @@
+T 1.09
+[Group]
+ReportedPos 0.5 1 1 1
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name common buts
+ID -1
+Position 0.5 1 1 1
+Size 256 0 36 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name gray grp
+ID -1
+Position 0 0 0 0
+Size 264 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 8
+[Image]
+_Tiling false
+_Filename \common\little_gear.tga
+_BufferWidth 0 0 0 0
+_Size 32 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 -2 0
+0 0 1 1
+Name gear img
+ID -1
+Position 0 0 -2 0
+Size 32 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename \common\little_gear.tga
+_BufferWidth 0 0 0 0
+_Size 32 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 225 0 -2 0
+0 0 1 1
+Name gear img
+ID -1
+Position 225 0 -2 0
+Size 32 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Caption]
+Caption true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to bring up options dialog
+Name Options button
+ID -1
+Position 32 0 5 0
+Size 67 0 17 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 67 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 67 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 67 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 67 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 31 0 4 0
+Size 69 0 19 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 31 0 4 0
+Size 69 0 19 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text Options
+_ForeColor 0 0 0 1
+_Name 
+_Position 14 0 13 0
+Name 
+ID -1
+Position 14 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Caption]
+Caption true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to view credits.gib
+Name credits button
+ID -1
+Position 105 0 5 0
+Size 72 0 17 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 72 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 104 0 4 0
+Size 74 0 19 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 104 0 4 0
+Size 74 0 19 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text Credits
+_ForeColor 0 0 0 1
+_Name 
+_Position 18 0 13 0
+Name 
+ID -1
+Position 18 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Caption]
+Caption true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to quit
+Name Quit button
+ID -1
+Position 183 0 5 0
+Size 40 0 17 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 40 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 40 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 40 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 40 0 17 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 182 0 4 0
+Size 42 0 19 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 182 0 4 0
+Size 42 0 19 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text Quit
+_ForeColor 0 0 0 1
+_Name 
+_Position 9 0 13 0
+Name 
+ID -1
+Position 9 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\rounded_rectL.tga
+_BufferWidth 0 0 0 0
+_Size 32 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name round left
+ID -1
+Position 0 0 0 0
+Size 32 0 32 0
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\rounded_rectR.tga
+_BufferWidth 0 0 0 0
+_Size 32 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 224 0 0 0
+0 0 1 1
+Name round right
+ID -1
+Position 224 0 0 0
+Size 32 0 32 0
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 206 0 28 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.2
+_Name 
+_Position 25 0 0 0
+0 0 1 1
+Name gray block
+ID -1
+Position 25 0 0 0
+Size 206 0 28 0
+Visible true
+ChildOrder 7
+ClipMode 0
+NumChildren 0

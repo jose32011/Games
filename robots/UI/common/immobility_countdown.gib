@@ -1,0 +1,68 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name immobility countdown group
+ID -1
+Position 0 0 0 0
+Size 80 0 32 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename common\immobility_warning.tga
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.608398 0 0.686523 0.03125
+Name New [Image]
+ID -1
+Position 0 0 0 0
+Size 80 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes show numbers counting down
+Name immobile countdown
+ID -1
+Position 54 0 15 0
+Size 18 0 12 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text 10
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 9 0
+Name 
+ID 0
+Position 2 0 9 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

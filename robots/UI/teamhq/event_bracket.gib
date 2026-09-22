@@ -1,0 +1,730 @@
+T 1.09
+[Window]
+ReportedPos 0 0 0 0
+Draggable false
+Alignment 9
+PassMouse true
+Notes 
+Name event bracket win
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name background grp
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 120 0
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name main split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 1 1 120 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 28 0 12 0
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 'event graphic' child of this group gets the event preview image
+Name heading group
+ID -1
+Position 0.5 1 12 0
+Size 585 0 84 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename .\teamhq\event_powerbolt.tga
+_BufferWidth 0 0 0 0
+_Size 140 0 80 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.84375 0 0.980469 0.078125
+Name event graphic
+ID -1
+Position 0 0 0 0
+Size 140 0 80 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes put event title here
+Name event title
+ID -1
+Position 174 0 6 0
+Size 430 0 20 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d20
+_Text THE POWERBOLT CHAMPIONSHIP
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[DisplayBox]
+Display <text font fg_mcn14 color .8 .8 .8 1>The PowerBolt Championship was started in 1998 by Bob YogurtSlurper to celebrate destruction and mayhem through robotic combat.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 400 50
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text The PowerBolt Championship was started in 1998 by Bob YogurtSlurper to celebrate destruction and mayhem through robotic combat.
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes put event description here
+Name event description
+ID -1
+Position 175 0 32 0
+Size 400 0 50 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 120 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 120 0
+Size 1 1 360 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name white area
+ID -1
+Position 0 0 0 0
+Size 1 1 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 6
+[Rectangle]
+Filled true
+FillColor 0 0 0 1
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name New [Rectangle]
+ID -1
+Position 0 0 1 1
+Size 1 1 4 0
+Visible true
+ChildOrder 0
+ClipMode 2
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 640 0 4 0
+_Alpha false
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 640 0 0 0
+Point 640 0 0 0
+Point 640 0 4 0
+Point 640 0 4 0
+Point 0 0 4 0
+Point 0 0 4 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes display the current round here: "ROUND 2" or "FINAL MATCH" or whatever
+Name round heading textbox
+ID -1
+Position 0 0 -20 0
+Size 1 1 24 0
+Visible true
+ChildOrder -1
+ClipMode 2
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text ROUND 1
+_ForeColor 0.2 1 0.4 1
+_Name 
+_Position 293 0 16 0
+Name 
+ID 0
+Position 293 0 16 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 -20 0
+Size 1 1 24 0
+Visible true
+ChildOrder 1
+ClipMode 2
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 640 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 544 0 250 0
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name nextround grp
+ID -1
+Position 1 1 1 1
+Size 96 0 56 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to play the next match
+Name play button
+ID -1
+Position 0 0 0 0
+Size 84 0 44 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\play_nextround_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 44 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 0 0
+0.40625 0 0.488281 0.0429688
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\play_nextround_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 44 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.40625 0 0.488281 0.0429688
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\play_nextround_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 44 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.40625 0 0.488281 0.0429688
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\play_nextround_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 44 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.4
+_Name 
+_Position 0 0 0 0
+0.40625 0 0.488281 0.0429688
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 262 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name nextround grp
+ID -1
+Position 0 0 1 1
+Size 96 0 44 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to return to team HQ and pause this event
+Name later button
+ID -1
+Position 10 0 0 0
+Size 84 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\finishlater_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 0 0
+0.488281 0 0.570313 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\finishlater_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.488281 0 0.570313 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\finishlater_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.488281 0 0.570313 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\finishlater_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.4
+_Name 
+_Position 0 0 0 0
+0.488281 0 0.570313 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 17 0 8 0
+Alignment 18
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes build the event bracket inside this group (see sample on wiki page)
+Name bracket group
+ID -1
+Position 0.5 1 0.5 1
+Size 0.95 1 0.95 1
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 90 0 262 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name forfeit event grp
+ID -1
+Position 90 0 1 1
+Size 96 0 44 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 1
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to return to team HQ and pause this event
+Name forfeit button
+ID -1
+Position 10 0 0 0
+Size 84 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\forfeit_event_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 0 0
+0.734375 0.417969 0.816406 0.449219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\forfeit_event_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.734375 0.417969 0.816406 0.449219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\forfeit_event_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.734375 0.417969 0.816406 0.449219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\forfeit_event_s.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 0.4
+_Name 
+_Position 0 0 0 0
+0.734375 0.417969 0.816406 0.449219
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 640 0 306 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Proxy]
+Filename common\bottomnav.gib
+Name nav proxy
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes image child of this background gets the arena preview bitmap for the upcoming round.
+Name background
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename exhibition\sample_arena.bmp
+_BufferWidth 0 0 0 0
+_Size 640 0 480 0
+_Alpha true
+_Filtering 1
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name background img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

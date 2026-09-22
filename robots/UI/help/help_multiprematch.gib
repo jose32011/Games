@@ -1,0 +1,247 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name multiplayer prematch help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 7
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 18 0
+Size 189 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Multiplayer Lobby
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 46 0
+Size 580 0 64 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text This screen is the multiplayer lobby area.  Players (including the host) enter this area and can choose robots to compete.  Only up to four robots can compete at a time (2 in a Deathmatch).  But more than four people can join the lobby screen.  Players who do not end up competing will be spectators.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 109 0
+Size 580 0 34 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text At the bottom of the screen is your chat alias.  This is the name that shows up in the player list and before any chat messages you type.  This way your name is distinct from any teams or robots you may select.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 156 0
+Size 580 0 94 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text To enter a robot in the match, click the player button in one of the four robot slots.  If all slots are full, you'll need to wait until one comes open, or ask politely to take a turn.  If you've been competing for a while and you see spectators waiting to compete, how about letting someone else play for a while?  Remember, robotic combat is all about being friendly and kind and gentle, r ight?  Ok, the combat is violent, but the people competing are always respectful to one another.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 239 0
+Size 580 0 34 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text When you have chosen a robot, it will be transferred over the network to your opponents.  Likewise, their robots will be sent to your computer.  When you are ready, click the Ready box next to your robot.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 284 0
+Size 580 0 64 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text The host has a few extra options here.  You can eject players from a slot if they aren't playing nicely.  You can also change the game settings to pick a new game type or different arena.  When all players are ready, the host clicks the Begin Game button to actually start the match.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 349 0
+Size 580 0 34 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text At the end of the match, all players and spectators return to this screen to either begin again or select new robots.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

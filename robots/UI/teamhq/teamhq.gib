@@ -1,0 +1,1478 @@
+T 1.09
+[Window]
+ReportedPos 0 0 0 0
+Draggable false
+Alignment 9
+PassMouse true
+Notes 
+Name team hq win
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\cement_background.bmp
+_BufferWidth 0 0 0 0
+_Size 1280 0 1005 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name cement img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Proxy]
+Filename common\bottomnav.gib
+Name common buts proxy
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.26 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name LR split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name left slot
+ID -1
+Position 0 0 0 0
+Size 166 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 0.3 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name Left TB split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name UL slot
+ID -1
+Position 0 0 0 0
+Size 1 1 144 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Border]
+Width 2
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 0.9 1 0.1 1
+Alignment 12
+AspectSetting 2
+AspectRatio 1
+PassMouse true
+Notes put team logo in the child image ('hq logo img')of this group
+Name logo grp
+ID -1
+Position 0.9 1 0.1 1
+Size 122 0 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename \teamhq\orange_skull.bmp
+_BufferWidth 0 0 0 0
+_Size 122 0 122 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name hq logo img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1149 0 98 0
+Size 126 0 858 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 144 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name LL slot
+ID -1
+Position 0 0 144 0
+Size 1 1 336 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Group]
+ReportedPos 0 0 1 1
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name junk1 grp
+ID -1
+Position 0 0 1 1
+Size 80 0 184 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename \common\junk_wirebolts.tga
+_BufferWidth 0 0 0 0
+_Size 80 0 184 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.195313 0 0.273438 0.179688
+Name junk wirebolts img
+ID -1
+Position 0 0 0 0
+Size 80 0 184 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.92 1 0.06 1
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name button group
+ID -1
+Position 0.92 1 0.06 1
+Size 124 0 225 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[OptionGroup]
+Selection robots button
+PassMouse true
+Notes group of buttons to select which hq gib is in the content area
+Name hq button optiongroup
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes load hq_robots.gib into hq content group
+Name robots button
+ID -1
+Position 1 0 1 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.3 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 1 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Robot Inventory
+_ForeColor 1 1 1 1
+_Name 
+_Position 20 0 16 0
+Name 
+ID -1
+Position 20 0 16 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 122 0 28 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes load hq_league.gib into hq content group
+Name league button
+ID -1
+Position 1 0 42 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.3 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 42 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text League Standings
+_ForeColor 1 1 1 1
+_Name 
+_Position 10 0 16 0
+Name 
+ID -1
+Position 10 0 16 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 41 0
+Size 122 0 28 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes load hq_events.gib into hq content group
+Name events button
+ID -1
+Position 1 0 82 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.3 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 82 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Event Schedule
+_ForeColor 1 1 1 1
+_Name 
+_Position 18 0 16 0
+Name 
+ID -1
+Position 18 0 16 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 81 0
+Size 122 0 28 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes load hq_history.gib into hq content group
+Name history button
+ID -1
+Position 1 0 122 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.3 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 26 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 122 0
+Size 120 0 26 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Team History
+_ForeColor 1 1 1 1
+_Name 
+_Position 26 0 16 0
+Name 
+ID -1
+Position 26 0 16 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 121 0
+Size 122 0 28 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0.91 1 0.86 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name lower button grp
+ID -1
+Position 0.91 1 0.86 1
+Size 124 0 40 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to go back to the select team screen
+Name select team button
+ID -1
+Position 2 0 1 0
+Size 120 0 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 0.7
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.6
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 120 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 2 0 1 0
+Size 120 0 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Select Different Team
+_ForeColor 0.9 0.9 0.9 1
+_Name 
+_Position 8 0 15 0
+Name 
+ID -1
+Position 8 0 15 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 0 0
+Size 122 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 166 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name right slot
+ID -1
+Position 166 0 0 0
+Size 474 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 0.335 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name Right TB split
+ID -1
+Position 0 0 0 0
+Size 1 1 0.9 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name UR slot
+ID -1
+Position 0 0 0 0
+Size 1 1 144 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Group]
+ReportedPos 10 0 14 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name team heading group
+ID -1
+Position 10 0 14 0
+Size 0.9 1 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 5
+[Text]
+_Font fg_dcn16
+_Text TEAM HQ
+_ForeColor 0 0 0 1
+_Name 
+_Position 12 0 0.13 1
+Name team hq label
+ID -1
+Position 12 0 0.13 1
+Size 89 0 15 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes display team motto here
+Name hq motto textbox
+ID -1
+Position 12 0 0.45 1
+Size 0.92 1 40 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn16
+_Text We like to smash metal objects into tiny fragments and then eat them.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 1 1 0 0
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name edit team but grp
+ID -1
+Position 1 1 0 0
+Size 70 0 42 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to open edit team window (editteam.gib)
+Name edit team button
+ID -1
+Position 1 0 10 0
+Size 60 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 60 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 60 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 60 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 60 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 1 0 10 0
+Size 60 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Edit Team
+_ForeColor 1 1 1 1
+_Name 
+_Position 6 0 12 0
+Name 
+ID -1
+Position 6 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 9 0
+Size 62 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes display team name here
+Name hq team name textbox
+ID -1
+Position 12 0 0.2 1
+Size 0.66 1 30 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d26
+_Text TEAM BOT-SMASHERS
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 21 0
+Name 
+ID 0
+Position 0 0 21 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 1 1
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name kills full group
+ID -1
+Position 0 0 1 1
+Size 1 1 28 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 2
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes 
+Name kills label
+ID -1
+Position 12 0 2 0
+Size 35 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text KILLS:
+_ForeColor 1 0.2 0.2 1
+_Name 
+_Position 2 0 11 0
+Name 
+ID 0
+Position 2 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 2 0
+Size 35 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 35 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 50 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes display the kills skulls here
+Name kills group
+ID -1
+Position 50 0 0 0
+Size 0.85 1 24 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 9 0 13 0
+Size 1153 0 856 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 9 0 13 0
+Size 428 0 124 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1153 0 856 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 144 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name LR slot
+ID -1
+Position 0 0 144 0
+Size 1 1 287 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Group]
+ReportedPos 10 0 0.05 1
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load stuff into this group
+Name hq content group
+ID -1
+Position 10 0 0.05 1
+Size 0.9 1 0.92 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 9 0 49 0
+Size 1153 0 926 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 9 0 13 0
+Size 428 0 266 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1153 0 926 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name junk2 grp
+ID -1
+Position 1 1 1 1
+Size 64 0 128 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\junk_canister.tga
+_BufferWidth 0 0 0 0
+_Size 64 0 128 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name New [Image]
+ID -1
+Position 0 0 0 0
+Size 64 0 128 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0

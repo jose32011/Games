@@ -1,0 +1,365 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load group into result slots; set 'team logo' and 'bot preview' images as well as other noted gui items
+Name result group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 9
+[Image]
+_Tiling false
+_Filename teamhq\orange_skull.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 80 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 1 0
+0 0 1 1
+Name team logo
+ID -1
+Position 2 0 1 0
+Size 80 0 80 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\sample_bot.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 80 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 86 0 1 0
+0 0 1 1
+Name bot preview
+ID -1
+Position 86 0 1 0
+Size 80 0 80 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_dcn14
+_Text POINTS:
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 409 0 31 0
+Name points label
+ID -1
+Position 409 0 31 0
+Size 73 0 10 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes display the bot's total points here
+Name points
+ID -1
+Position 398 0 37 0
+Size 60 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d20
+_Text 248
+_ForeColor 1 1 1 1
+_Name 
+_Position 13 0 15 0
+Name 
+ID 0
+Position 13 0 15 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 398 0 37 0
+Size 60 0 22 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 60 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 0.3 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes hide this unless the bot was immobilized during the match
+Name immobilized text
+ID -1
+Position 391 0 63 0
+Size 74 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text IMMOBILIZED
+_ForeColor 0.9 0 0 1
+_Name 
+_Position 3 0 11 0
+Name 
+ID 0
+Position 3 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 391 0 63 0
+Size 74 0 16 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes show this for the bot(s) who win this match or round
+Name winner text
+ID -1
+Position 384 0 3 0
+Size 86 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text MATCH WINNER
+_ForeColor 1 1 1 1
+_Name 
+_Position 3 0 11 0
+Name 
+ID 0
+Position 3 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 384 0 3 0
+Size 86 0 16 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 86 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes display bot name
+Name bot name
+ID -1
+Position 176 0 46 0
+Size 204 0 20 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text The Wrangler
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes display team name
+Name team name
+ID -1
+Position 176 0 23 0
+Size 204 0 20 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text TEAM STINKBOMBS
+_ForeColor 0.3 0.3 0.3 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name Spectator [TextBox]
+ID -1
+Position 177 0 6 0
+Size 150 0 16 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Spectator
+_ForeColor 0 0 0 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

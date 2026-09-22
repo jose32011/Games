@@ -1,0 +1,940 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 1
+MasterSize 0.46 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes step 1 of the chassis creation process
+Name chassis split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 346 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Group]
+ReportedPos 0.04 1 0.04 1
+Alignment 0
+AspectSetting 1
+AspectRatio 1.1
+PassMouse true
+Notes 
+Name blueprint
+ID -1
+Position 0.04 1 0.04 1
+Size 0.88 1 334 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename .\botlab\blueprint.bmp
+_BufferWidth 0 0 0 0
+_Size 304 0 334 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.363281 0.0742188 0.667969 0.398438
+Name blueprint img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\baseplate_label.bmp
+_BufferWidth 0 0 0 0
+_Size 58 0 12 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0.25 1 0.936 1
+0.667969 0.0742188 0.724609 0.0859375
+Name label img
+ID -1
+Position 0.25 1 0.936 1
+Size 58 0 12 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.02 1 0.02 1
+Alignment 0
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name Group: Editing Area
+ID -1
+Position 0.02 1 0.02 1
+Size 0.96 1 291 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes Placeholder for chassis outline editing.
+Name Editing Area
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 50 0 39 0
+Size 1128 0 336 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 346 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 346 0 0 0
+Size 294 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[DisplayBox]
+Display <text font fg_dcn16>Draw Baseplate Outline\n</text><text font fg_mcn14>On the blueprint, draw the top-down outline of the baseplate of your chassis. Click the Step 2 button to edit the outline of the robot topplate.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 264 80
+Params 2
+Param 2 0
+_Font fg_dcn16
+_Text Draw Baseplate Outline\n
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Param 2 0
+_Font fg_mcn14
+_Text On the blueprint, draw the top-down outline of the baseplate of your chassis. Click the Step 2 button to edit the outline of the robot topplate.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name Instructions
+ID -1
+Position 5 0 0.04 1
+Size 0.9 1 80 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 1 1
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name lower left buttons
+ID -1
+Position 0 0 1 1
+Size 107 0 74 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to erase the outline
+Name clear outline button
+ID -1
+Position 9 0 11 0
+Size 74 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 74 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 9 0 11 0
+Size 74 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Clear Outline
+_ForeColor 1 1 1 1
+_Name 
+_Position 5 0 13 0
+Name 
+ID -1
+Position 5 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 8 0 10 0
+Size 76 0 22 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 0.23 1
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name style grp
+ID -1
+Position 0 0 0.23 1
+Size 0.9 1 220 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 5
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 264 0 3 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 57 0
+0 0 1 1
+Name horz line
+ID -1
+Position 0 0 57 0
+Size 1 1 3 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 264 0 3 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.6 0.6 0.6 1
+_Name 
+_Position 0 0 115 0
+0 0 1 1
+Name horz line
+ID -1
+Position 0 0 115 0
+Size 1 1 3 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection freeform checkbox
+PassMouse true
+Notes optiongroup to choose style of drawing (freeform, circle, rectangle)
+Name drawstyle optiongroup
+ID -1
+Position 10 0 10 0
+Size 110 0 160 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 6
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select to plot points manually
+Name freeform checkbox
+ID -1
+Position 2 0 13 0
+Size 16 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select to create a circle
+Name circle checkbox
+ID -1
+Position 2 0 71 0
+Size 16 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 false
+StateImage 2 true 1
+StateImage 3 true 2
+PassMouse true
+Notes select to create a rectangle
+Name rectangle checkbox
+ID -1
+Position 2 0 124 0
+Size 16 0 16 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename common\radio_unchecked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\radio_checked.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 16 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Draw Freeform
+_ForeColor 1 1 1 1
+_Name 
+_Position 28 0 24 0
+Name freeform label
+ID -1
+Position 28 0 24 0
+Size 82 0 7 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Circle
+_ForeColor 1 1 1 1
+_Name 
+_Position 28 0 82 0
+Name circle label
+ID -1
+Position 28 0 82 0
+Size 82 0 7 0
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn16
+_Text Rectangle
+_ForeColor 1 1 1 1
+_Name 
+_Position 28 0 135 0
+Name rectangle label
+ID -1
+Position 28 0 135 0
+Size 82 0 7 0
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 136 0 63 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name radius group
+ID -1
+Position 136 0 63 0
+Size 0.48 1 48 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_mcn14
+_Text Radius:
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 10 0
+Name radius label
+ID -1
+Position 2 0 10 0
+Size 75 0 15 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Slider]
+Horiz true
+From 0 0 0 0
+To 1 1 0 0
+Thumb true 0
+PassMouse true
+Notes set radius of circle
+Name radius slider
+ID -1
+Position 0 0 19 0
+Size 1 1 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\slider_h.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 19 0
+Size 1 1 32 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1280 0 5 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 0 0 9 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 9 0
+Size 1 1 5 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 136 0 121 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name rect size group
+ID -1
+Position 136 0 121 0
+Size 0.48 1 120 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 4
+[Text]
+_Font fg_mcn14
+_Text Length:
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 10 0
+Name length label
+ID -1
+Position 2 0 10 0
+Size 75 0 15 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Slider]
+Horiz true
+From 0 0 0 0
+To 1 1 0 0
+Thumb true 0
+PassMouse true
+Notes set length of rectangle
+Name length slider
+ID -1
+Position 0 0 16 0
+Size 1 1 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\slider_h.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 16 0
+Size 1 1 32 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1280 0 5 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 0 0 9 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 9 0
+Size 1 1 5 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Slider]
+Horiz true
+From 0 0 0 0
+To 1 1 0 0
+Thumb true 0
+PassMouse true
+Notes set width of rectangle
+Name width slider
+ID -1
+Position 0 0 63 0
+Size 1 1 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\slider_h.tga
+_BufferWidth 0 0 0 0
+_Size 16 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 16 0 32 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 63 0
+Size 1 1 32 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1280 0 5 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.2 0.2 0.2 1
+_Name 
+_Position 0 0 9 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 9 0
+Size 1 1 5 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn14
+_Text Width:
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 56 0
+Name width label
+ID -1
+Position 2 0 56 0
+Size 75 0 15 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0

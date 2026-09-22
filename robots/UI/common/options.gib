@@ -1,0 +1,619 @@
+T 1.09
+[Window]
+ReportedPos 0.5 1 0.5 1
+Draggable false
+Alignment 18
+PassMouse true
+Notes 
+Name options win
+ID -1
+Position 0.5 1 0.5 1
+Size 400 0 300 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 1 0 1 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name bg group
+ID -1
+Position 1 0 1 0
+Size 399 0 299 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 7
+[Image]
+_Tiling false
+_Filename common\junk1.tga
+_BufferWidth 0 0 0 0
+_Size 40 0 84 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 10 0 10 0
+0.0380859 0 0.0771484 0.0820313
+Name junk img
+ID -1
+Position 10 0 10 0
+Size 40 0 84 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 337 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 61 0 19 0
+0 0 1 1
+Name black bar img
+ID -1
+Position 61 0 19 0
+Size 337 0 22 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_d18
+_Text OPTIONS
+_ForeColor 1 1 1 1
+_Name 
+_Position 69 0 35 0
+Name options title text
+ID -1
+Position 69 0 35 0
+Size 97 0 22 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[OptionGroup]
+Selection video tab
+PassMouse true
+Notes buttons in this optgroup set which options are shown in the content area
+Name option category
+ID -1
+Position 138 0 5 0
+Size 259 0 50 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to load video_options.gib into 'options content group'
+Name video tab
+ID -1
+Position 32 0 8 0
+Size 80 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename common\opt_video_bn.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.015625 0 0.09375 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_video_bc.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.09375 0 0.171875 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_video_bc.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.09375 0 0.171875 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_video_bn.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.015625 0 0.09375 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to load audio_options.gib into 'options content group'
+Name audio tab
+ID -1
+Position 122 0 8 0
+Size 80 0 32 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename common\opt_audio_bn.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.171875 0 0.25 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_audio_bc.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.25 0 0.328125 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_audio_bc.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.25 0 0.328125 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\opt_audio_bn.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.171875 0 0.25 0.03125
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to close options window
+Name ok button
+ID -1
+Position 228 0 269 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 228 0 269 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text OK
+_ForeColor 1 1 1 1
+_Name 
+_Position 26 0 13 0
+Name 
+ID -1
+Position 26 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 227 0 268 0
+Size 75 0 22 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 62 0 60 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load video or audio options gibs here
+Name options content group
+ID -1
+Position 62 0 60 0
+Size 327 0 193 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to close options window but NOT apply changes
+Name cancel button
+ID -1
+Position 313 0 269 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 313 0 269 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Cancel
+_ForeColor 1 1 1 1
+_Name 
+_Position 17 0 13 0
+Name 
+ID -1
+Position 17 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 312 0 268 0
+Size 75 0 22 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 401 0 301 0
+Visible true
+ChildOrder -1
+ClipMode 2
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 401 0 301 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\metaldots_pattern.bmp
+_BufferWidth 0 0 0 0
+_Size 401 0 301 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 6.26563 4.70313
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

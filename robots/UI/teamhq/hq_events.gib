@@ -1,0 +1,273 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name events group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 22 0 6 0
+Alignment 10
+AspectSetting 0
+AspectRatio 0.66
+PassMouse true
+Notes 
+Name calendar group
+ID -1
+Position 0.5 1 0.024 1
+Size 0.9 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 26 0
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name calendar split
+ID -1
+Position 0.05 1 0.07 1
+Size 0.95 1 0.9 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 0.95 1 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes title of schedule ("Event Schedule - Amateur Season 3")
+Name schedule title
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Event Schedule - Season 3
+_ForeColor 0.4 0.5 0.9 1
+_Name 
+_Position 75 0 17 0
+Name 
+ID 0
+Position 75 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 26 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 26 0
+Size 0.95 1 198 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Grid]
+Rows 3
+Columns 3
+RowHeight 64
+ColWidths 114 17 114 17 114 17
+BorderColor 0 0 0 1
+BorderWidth 1
+BufferWidth 2
+RowSelect false
+Highlight 101
+Selection 100
+PermScrolls true
+PassMouse true
+Notes fill with this season's events (event_cell.gib)
+Name event grid
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled false
+FillColor 1 1 1 1
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 0 0
+Size 114 0 64 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 114 0 64 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 114 0 0 0
+Point 114 0 0 0
+Point 114 0 64 0
+Point 114 0 64 0
+Point 0 0 64 0
+Point 0 0 64 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled false
+FillColor 1 1 1 0.4
+BorderWidth 3
+BorderColor 0.4 0.3 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 0 0 128 0
+Size 114 0 64 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 114 0 64 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 0.4 0.3 1 1
+Width 3
+Points 8
+Point 0 0 0 0
+Point 114 0 0 0
+Point 112.5 0 0 0
+Point 112.5 0 64 0
+Point 114 0 64 0
+Point 0 0 64 0
+Point 1.5 0 64 0
+Point 1.5 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 22 0 6 0
+Size 0.9 1 0.95 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename teamhq\event_calendar.tga
+_BufferWidth 0 0 0 0
+_Size 383 0 250 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0.59375 0.46875 0.96875
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

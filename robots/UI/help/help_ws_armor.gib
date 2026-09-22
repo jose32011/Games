@@ -1,0 +1,181 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name ws armor help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 5
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 8 0
+Size 189 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Robot Workshop
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 69 0
+Size 580 0 54 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text You have a choice between four armor types for the construction of your chassis.  Each type has a strength and weight.  You might want a lighter weight material so that your robot can make a certain weight class or to drive faster.  Or, if you aren't concerned about weight and speed, you can p ick a heavier material to give your bot more protection.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 38 0
+Size 189 0 26 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Armor
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 132 0
+Size 580 0 74 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text There is a checkbox here to "use default chassis appearance" when selecting your armor.  If this is checked when you pick an armor type, your chassis appearance will be modified to look like that particular armor.  If you prefer to paint the chassis surface yourself (or have already done so), you can uncheck this option and your chassis appearance will not be changed.  Note that you are always setting weight and strength by selecting armor, this option only affects visual appearance.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 386 0
+Size 580 0 34 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text See the HTML tutorials included with the game for more details on how to build a robot.
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 8 0
+Name 
+ID 0
+Position 0 0 8 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

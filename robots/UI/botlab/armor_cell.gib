@@ -1,0 +1,348 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 100 0
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name armor cell split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 'armor img' child should be the preview for each armor type
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 100 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\armor_plastic.tga
+_BufferWidth 0 0 0 0
+_Size 88 0 72 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 6 0 10 0
+0.548828 0.511719 0.634766 0.582031
+Name armor img
+ID -1
+Position 6 0 10 0
+Size 88 0 72 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 100 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 100 0 0 0
+Size 200 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[DisplayBox]
+Display <text font fg_mcn14 color .8 .8 .8 1>Plastic armor is very lightweight, but offers little protection from attack.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 189 56
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text Plastic armor is very lightweight, but offers little protection from attack.
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes armor description displayed here
+Name description
+ID -1
+Position 9 0 32 0
+Size 0.95 1 56 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 90 0 4 0
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name armor props group
+ID -1
+Position 0.97 1 4 0
+Size 104 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name property grp
+ID -1
+Position 0 0 0 0
+Size 48 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename botlab\icon_weight.tga
+_BufferWidth 0 0 0 0
+_Size 20 0 12 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 5 0 5 0
+0.634766 0.511719 0.654297 0.523438
+Name icon
+ID -1
+Position 5 0 5 0
+Size 20 0 12 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes show weight value here
+Name weight value
+ID -1
+Position 24 0 4 0
+Size 20 0 16 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text 12
+_ForeColor 0.6 1 0.8 1
+_Name 
+_Position 5 0 10 0
+Name 
+ID 0
+Position 5 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 48 0 22 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 48 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 55 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name property grp
+ID -1
+Position 55 0 0 0
+Size 48 0 22 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename botlab\icon_puncture.tga
+_BufferWidth 0 0 0 0
+_Size 18 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 4 0 4 0
+0.654297 0.511719 0.671875 0.529297
+Name icon
+ID -1
+Position 4 0 4 0
+Size 18 0 18 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 18
+Text true 0
+PassMouse true
+Notes show concussion value here
+Name concussion value
+ID -1
+Position 25 0 4 0
+Size 20 0 16 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text 12
+_ForeColor 0.6 1 0.8 1
+_Name 
+_Position 5 0 10 0
+Name 
+ID 0
+Position 5 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 55 0 0 0
+Size 48 0 22 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 48 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes change to "plastic", "aluminum", etc.
+Name armor name
+ID -1
+Position 9 0 6 0
+Size 69 0 17 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Plastic
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

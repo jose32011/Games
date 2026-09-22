@@ -1,0 +1,35 @@
+T 1.09
+[DisplayBox]
+Display <text font fg_mcn14>Hi.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 1280 1005
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text Hi.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name help text
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0

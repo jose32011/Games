@@ -1,0 +1,610 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name exhibition help group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 18
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 7 0
+Size 149 0 26 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d18
+_Text Exhibition Match
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 32 0
+Size 580 0 54 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Not sure what to do here?  An exhibition match is simply a quick one-time match where you choose game settings, arena, and which robots will compete.  It has no effect on your team staticstics and is just an easy way to quickly get into the arena and fight with some bots.  
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 92 0
+Size 149 0 26 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Game Settings
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 117 0
+Size 580 0 36 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Click the Game Settings button to set up the rules of the match.  You choose a game type, optional weight class, and time limit for the match.  The game types are described below:
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 54 0 153 0
+Size 100 0 20 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Deathmatch:
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 54 0 170 0
+Size 100 0 20 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Battle Royal:
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 54 0 187 0
+Size 100 0 20 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Teams:
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 54 0 205 0
+Size 100 0 20 0
+Visible true
+ChildOrder 7
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text TableTop:
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 54 0 223 0
+Size 100 0 20 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text King of the Hill:
+_ForeColor 1 0.9 0.4 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 144 0 153 0
+Size 400 0 20 0
+Visible true
+ChildOrder 9
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Two robots compete against one another.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 144 0 171 0
+Size 400 0 20 0
+Visible true
+ChildOrder 10
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Up to four robots compete in a free-for-all match.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 144 0 188 0
+Size 400 0 20 0
+Visible true
+ChildOrder 11
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Two robots partner on a team to compete against another team.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 144 0 205 0
+Size 420 0 20 0
+Visible true
+ChildOrder 12
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Up to four robots compete in a special arena to push one another off of the arena surface.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 144 0 223 0
+Size 420 0 20 0
+Visible true
+ChildOrder 13
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Up to four robots compete to occupy a central zone to score points.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 243 0
+Size 149 0 26 0
+Visible true
+ChildOrder 14
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Arena
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 266 0
+Size 580 0 36 0
+Visible true
+ChildOrder 15
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text You can select any of the arenas in which to compete.  TableTop and King of the Hill game types have special arenas made for them.  You can also optionally turn off the hazards in the arena.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 303 0
+Size 149 0 26 0
+Visible true
+ChildOrder 16
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Robots
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 17 0
+Name 
+ID 0
+Position 0 0 17 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine true
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 9
+Text true 0
+PassMouse true
+Notes 
+Name New [TextBox]
+ID -1
+Position 19 0 327 0
+Size 580 0 86 0
+Visible true
+ChildOrder 17
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text In the robot selection screen, you can select any combination of human and computer AI players.  You might decide to play head-to-head against a friend, or go alone against the computer.  If you have more than one  human player, each robot must have  unique keyboard or gamepad controls assigned (done in the Workshop in Team HQ).  When selecting robots, if you specified a weight class in the Game Settings, you will only be allowed to select robots that are in that class.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 10 0
+Name 
+ID 0
+Position 0 0 10 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

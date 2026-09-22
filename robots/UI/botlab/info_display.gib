@@ -1,0 +1,35 @@
+T 1.09
+[DisplayBox]
+Display <text>text in here</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 320 18
+Params 1
+Param 2 0
+_Font System
+_Text text in here
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes bot lab info text area
+Name Info Display
+ID -1
+Position 0.1 1 2 0
+Size 0.8 1 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0

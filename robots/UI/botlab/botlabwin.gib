@@ -1,0 +1,1047 @@
+T 1.09
+[Window]
+ReportedPos 0 0 0 0
+Draggable false
+Alignment 9
+PassMouse true
+Notes 
+Name botlab win
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename common\cement_background.bmp
+_BufferWidth 0 0 0 0
+_Size 1280 0 1005 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name cement img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[SplitFrame]
+Horizontal false
+Master 0
+MasterSize 0.14 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name botlab splt
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 1 1 67 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Group]
+ReportedPos 0.5 1 1 1
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name blab button grp
+ID -1
+Position 0.5 1 1 1
+Size 630 0 30 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[OptionGroup]
+Selection overview button
+PassMouse true
+Notes 
+Name blab option group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 6
+[CheckBox]
+Checked true
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show 3dview.gib and overview.gib
+Name overview button
+ID -1
+Position 0 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\overviewbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.220703 0.511719 0.318359 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\overviewbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.220703 0.511719 0.318359 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\overviewbut_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.318359 0.511719 0.416016 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\overviewbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.220703 0.511719 0.318359 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show 3dview.gib and chassis.gib
+Name chassis button
+ID -1
+Position 106 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\chassisbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.416016 0.511719 0.513672 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\chassisbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.416016 0.511719 0.513672 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\chassisbut_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.513672 0.511719 0.611328 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\chassisbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.416016 0.511719 0.513672 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show 3dview.gib and components.gib
+Name components button
+ID -1
+Position 212 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\componentbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.611328 0.511719 0.708984 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\componentbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.611328 0.511719 0.708984 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\componentbut_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.708984 0.511719 0.806641 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\componentbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.611328 0.511719 0.708984 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show 3dview.gib and wiring.gib
+Name wiring button
+ID -1
+Position 318 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\wiringbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.806641 0.511719 0.904297 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\wiringbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.806641 0.511719 0.904297 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\wiringbut_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0.535156 0.0976563 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\wiringbut_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.806641 0.511719 0.904297 0.535156
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes go to chassis appearance effects
+Name paintshop button
+ID -1
+Position 424 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\paintshop_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.0976563 0.535156 0.195313 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\paintshop_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.0976563 0.535156 0.195313 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\paintshop_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.195313 0.535156 0.292969 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\paintshop_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.0976563 0.535156 0.195313 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[CheckBox]
+Checked false
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to show testarena.gib
+Name test robot button
+ID -1
+Position 530 0 0 0
+Size 100 0 24 0
+Visible true
+ChildOrder 6
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\testrobot_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.7
+_Name 
+_Position 0 0 0 0
+0.292969 0.535156 0.390625 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\testrobot_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.292969 0.535156 0.390625 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\testrobot_s.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.390625 0.535156 0.488281 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\testrobot_n.bmp
+_BufferWidth 0 0 0 0
+_Size 100 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.292969 0.535156 0.390625 0.558594
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Group]
+ReportedPos -1 0 -3 0
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name wires grp
+ID -1
+Position -1 0 -3 0
+Size 350 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 2
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position -351 0 -3 0
+Size 350 0 32 0
+Visible true
+ChildOrder 2
+ClipMode 2
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\crossing_wires.tga
+_BufferWidth 0 0 0 0
+_Size 350 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 2.73438 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Group]
+ReportedPos 1 1 -3 0
+Alignment 9
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name wires grp 2
+ID -1
+Position 1 1 -3 0
+Size 320 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 630 0 -3 0
+Size 320 0 32 0
+Visible true
+ChildOrder 3
+ClipMode 2
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\crossing_wires.tga
+_BufferWidth 0 0 0 0
+_Size 320 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 2.5 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.5 1 0.02 1
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name title grp
+ID -1
+Position 0.5 1 0.02 1
+Size 165 0 32 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_d20
+_Text ROBOT WORKSHOP
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 22 0
+Name title txt
+ID -1
+Position 0 0 22 0
+Size 164 0 13 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.5 0.5 0.5 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to return to HQ
+Name back button
+ID -1
+Position 0.022 1 9 0
+Size 68 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 68 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 68 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 68 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 68 0 18 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0.022 1 9 0
+Size 68 0 18 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text Back to HQ
+_ForeColor 1 1 1 1
+_Name 
+_Position 7 0 11 0
+Name 
+ID -1
+Position 7 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 27 0 8 0
+Size 70 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 0 0 67 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 67 0
+Size 1 1 413 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[SplitFrame]
+Horizontal false
+Master 1
+MasterSize 0.12 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes 
+Name lowersplit
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes load stuff into this slot
+Name content slot
+ID -1
+Position 0 0 0 0
+Size 1 1 364 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1280 0 364 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name white backdrop img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 364 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 0 0 364 0
+Size 1 1 49 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 2
+[Proxy]
+Filename common\bottomnav.gib
+Name New [Proxy]
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0 0 1 1
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name junk washers grp
+ID -1
+Position 0 0 1 1
+Size 53 0 39 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\junk_washers.tga
+_BufferWidth 0 0 0 0
+_Size 22 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 16 0 0 0
+0.0214844 0.96875 0.0429688 1
+Name New [Image]
+ID -1
+Position 16 0 0 0
+Size 22 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0

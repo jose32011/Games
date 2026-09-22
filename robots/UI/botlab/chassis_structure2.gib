@@ -1,0 +1,385 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 1
+MasterSize 0.46 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes step 2 of the chassis creation process
+Name chassis split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot0
+ID -1
+Position 0 0 0 0
+Size 346 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Group]
+ReportedPos 0.04 1 0.04 1
+Alignment 0
+AspectSetting 1
+AspectRatio 1.1
+PassMouse true
+Notes 
+Name blueprint
+ID -1
+Position 0.04 1 0.04 1
+Size 0.88 1 334 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 3
+[Image]
+_Tiling false
+_Filename .\botlab\blueprint.bmp
+_BufferWidth 0 0 0 0
+_Size 304 0 334 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.363281 0.0742188 0.667969 0.398438
+Name blueprint img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\topplate_label.bmp
+_BufferWidth 0 0 0 0
+_Size 56 0 12 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0.25 1 0.936 1
+0.724609 0.0742188 0.779297 0.0859375
+Name label img
+ID -1
+Position 0.25 1 0.936 1
+Size 56 0 12 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 0.02 1 0.02 1
+Alignment 0
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name Group: Editing Area
+ID -1
+Position 0.02 1 0.02 1
+Size 0.96 1 291 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes Placeholder for chassis outline editing.
+Name Editing Area
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 50 0 39 0
+Size 1128 0 336 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 346 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Slot1
+ID -1
+Position 346 0 0 0
+Size 294 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[DisplayBox]
+Display <text font fg_dcn16>Adjust Top Outline\n</text><text font fg_mcn14>Your baseplate has been extruded into three dimensions. You can adjust the top of your robot by selecting and dragging the corner points.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 264 80
+Params 2
+Param 2 0
+_Font fg_dcn16
+_Text Adjust Top Outline\n
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Param 2 0
+_Font fg_mcn14
+_Text Your baseplate has been extruded into three dimensions. You can adjust the top of your robot by selecting and dragging the corner points.
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name Instructions
+ID -1
+Position 5 0 18 0
+Size 0.9 1 80 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.7 0.7 0.7 1
+Widget true
+[Group]
+ReportedPos 0 0 100 0
+Alignment 9
+AspectSetting 1
+AspectRatio 0.75
+PassMouse true
+Notes 
+Name 3d view grp
+ID -1
+Position 0 0 100 0
+Size 0.81 1 178 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes show extruded model here
+Name 3d view placeholder
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name mouse instructions grp
+ID -1
+Position 1 1 1 1
+Size 54 0 36 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\mouse_zr.tga
+_BufferWidth 0 0 0 0
+_Size 48 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.00878906 0 0.0556641 0.03125
+Name mouse img
+ID -1
+Position 0 0 0 0
+Size 48 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position -1 0 99 0
+Size 1038 0 180 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position -1 0 99 0
+Size 240 0 180 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1038 0 180 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 1 1 100 0
+Alignment 12
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name height slider grp
+ID -1
+Position 1 1 100 0
+Size 0.18 1 0.45 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_dcn16
+_Text Height:
+_ForeColor 1 1 1 1
+_Name 
+_Position 3 0 18 0
+Name New [Text]
+ID -1
+Position 3 0 18 0
+Size 46 0 13 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Slider]
+Horiz false
+From 0 0 1 1
+To 0 0 0 1
+Thumb true 0
+PassMouse true
+Notes adjust height of extrusion
+Name height slider
+ID -1
+Position 12 0 33 0
+Size 26 0 121 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\slider_v.tga
+_BufferWidth 0 0 0 0
+_Size 24 0 16 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.594727 0 0.618164 0.015625
+Name 
+ID -1
+Position 0 0 0 0
+Size 24 0 16 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 33 0
+Size 26 0 121 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 11 0 0 0
+_Size 4 0 121 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

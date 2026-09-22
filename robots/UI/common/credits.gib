@@ -1,0 +1,624 @@
+T 1.09
+[Window]
+ReportedPos 28 0 28 0
+Draggable false
+Alignment 18
+PassMouse true
+Notes the infamous credits window
+Name credits win
+ID -1
+Position 0.5 1 0.5 1
+Size 585 0 425 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling true
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 1 0 1 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name bg group
+ID -1
+Position 1 0 1 0
+Size 583 0 423 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 13
+[Image]
+_Tiling false
+_Filename common\junk1.tga
+_BufferWidth 0 0 0 0
+_Size 40 0 84 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 10 0 10 0
+0 0 0.0390625 0.0820313
+Name junk img
+ID -1
+Position 10 0 10 0
+Size 40 0 84 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 525 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 61 0 14 0
+0 0 1 1
+Name black bar img
+ID -1
+Position 61 0 14 0
+Size 525 0 22 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_d18
+_Text .::   CREDITS
+_ForeColor 1 1 1 1
+_Name 
+_Position 65 0 29 0
+Name credits title text
+ID -1
+Position 65 0 29 0
+Size 97 0 22 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Caption]
+Caption true 0
+Widget true
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to close window
+Name close button
+ID -1
+Position 495 0 391 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.75 0.75 0.75 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 73 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 495 0 391 0
+Size 73 0 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text Close
+_ForeColor 1 1 1 1
+_Name 
+_Position 22 0 13 0
+Name 
+ID -1
+Position 22 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 494 0 390 0
+Size 75 0 22 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\gabriel_logo.tga
+_BufferWidth 0 0 0 0
+_Size 215 0 47 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 58 0 52 0
+0.0390625 0 0.249023 0.0458984
+Name gabriel img
+ID -1
+Position 58 0 52 0
+Size 215 0 47 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\infogrames_logo.tga
+_BufferWidth 0 0 0 0
+_Size 55 0 45 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 330 0 52 0
+0.249023 0 0.302734 0.0439453
+Name infogrames logo
+ID -1
+Position 330 0 52 0
+Size 55 0 45 0
+Visible true
+ChildOrder 5
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 525 0 22 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 61 0 271 0
+0 0 1 1
+Name black bar bottom img
+ID -1
+Position 61 0 271 0
+Size 525 0 22 0
+Visible true
+ChildOrder 6
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_d18
+_Text .::   TECHNOLOGY
+_ForeColor 1 1 1 1
+_Name 
+_Position 65 0 286 0
+Name Technology title text
+ID -1
+Position 65 0 286 0
+Size 97 0 22 0
+Visible true
+ChildOrder 7
+ClipMode 0
+NumChildren 0
+[DisplayBox]
+Display <text font fg_mcn14 color .85 .85 .85 1>Producer:   Michael Root\nGame Design, Lead Artist:   Perry Board\nGame Design, Lead Programmer:   Charlie Barrows\nProgrammer:   Sam Bloomquist\nProgrammer:   William Rieder\nArtist:   Troy Buckley\nMusic:  Randy Ryan - Hamsterball Studios\nMusic:  Mike Bloomquist - Endemic Audio Prod.</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 240 142
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text Producer:   Michael Root\nGame Design, Lead Artist:   Perry Board\nGame Design, Lead Programmer:   Charlie Barrows\nProgrammer:   Sam Bloomquist\nProgrammer:   William Rieder\nArtist:   Troy Buckley\nMusic:  Randy Ryan - Hamsterball Studios\nMusic:  Mike Bloomquist - Endemic Audio Prod.
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name Gabriel Names dispbox
+ID -1
+Position 70 0 110 0
+Size 240 0 142 0
+Visible true
+ChildOrder 8
+ClipMode 1
+NumChildren 0
+[DisplayBox]
+Display <text font fg_mcn14 color .85 .85 .85 1>VP of Product Development:  Paul Rinde\nDirector of Product Development:  Peter Armstrong\nProducer:  Nate Birkholz\nAssociate Producer:  Amy Jordan\nQA:  Dave Degnan, Michael Vong Hathaway\n
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 240 140
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text VP of Product Development:  Paul Rinde\nDirector of Product Development:  Peter Armstrong\nProducer:  Nate Birkholz\nAssociate Producer:  Amy Jordan\nQA:  Dave Degnan, Michael Vong Hathaway\n\n
+_ForeColor 0.85 0.85 0.85 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name Infogrames Names dispbox
+ID -1
+Position 337 0 110 0
+Size 240 0 140 0
+Visible true
+ChildOrder 9
+ClipMode 1
+NumChildren 0
+[Group]
+ReportedPos 58 0 303 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Logos [Group]
+ID -1
+Position 58 0 303 0
+Size 445 0 110 0
+Visible true
+ChildOrder 10
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename common\havok_logo.tga
+_BufferWidth 0 0 0 0
+_Size 81 0 30 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 35 0 9 0
+0.302734 0 0.381836 0.0292969
+Name havok logo
+ID -1
+Position 35 0 9 0
+Size 81 0 30 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\gamespy_logo.tga
+_BufferWidth 0 0 0 0
+_Size 130 0 30 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 64 0
+0.381836 0 0.508789 0.0292969
+Name gamespy logo
+ID -1
+Position 2 0 64 0
+Size 130 0 30 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 145 0 5 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Havok Text [Group]
+ID -1
+Position 145 0 5 0
+Size 292 0 30 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Text]
+_Font fg_mcn12
+_Text Havok.com (TM),  (c)Copyright 1999-2003 Telekinesys Research
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 12 0
+Name Havok Line1 [Text]
+ID -1
+Position 2 0 12 0
+Size 291 0 20 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn12
+_Text Limited.  All Rights Reserved.
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 24 0
+Name Havok Line2 [Text]
+ID -1
+Position 2 0 24 0
+Size 291 0 20 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 145 0 50 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name Gamespy Text [Group]
+ID -1
+Position 145 0 50 0
+Size 292 0 54 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Text]
+_Font fg_mcn12
+_Text This product contains software technology licensed from GameSpy
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 12 0
+Name GS Line1 [Text]
+ID -1
+Position 2 0 12 0
+Size 291 0 20 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn12
+_Text Industries, Inc. (c) 1999-2002 GameSpy Industries, Inc. GameSpy and
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 24 0
+Name GS Line2 [Text]
+ID -1
+Position 2 0 24 0
+Size 291 0 20 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn12
+_Text the "Powered by GameSpy" design are trademarks of GameSpy
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 36 0
+Name GS Line3 [Text]
+ID -1
+Position 2 0 36 0
+Size 291 0 20 0
+Visible true
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_mcn12
+_Text Industries, Inc. All rights reserved.
+_ForeColor 1 1 1 1
+_Name 
+_Position 2 0 48 0
+Name GS Line4 [Text]
+ID -1
+Position 2 0 48 0
+Size 291 0 20 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename common\junk1.tga
+_BufferWidth 0 0 0 0
+_Size 40 0 84 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 10 0 266 0
+0 0 0.0390625 0.0820313
+Name junk2 img
+ID -1
+Position 10 0 266 0
+Size 40 0 84 0
+Visible true
+ChildOrder 11
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable true
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes Version Control Text Box
+Name Version [TextBox]
+ID -1
+Position 500 0 17 0
+Size 75 0 16 0
+Visible true
+ChildOrder 12
+ClipMode 1
+NumChildren 1
+[Text]
+_Font System
+_Text 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 11 0
+Name 
+ID 0
+Position 0 0 11 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 585 0 425 0
+Visible true
+ChildOrder -1
+ClipMode 2
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 585 0 425 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename common\metaldots_pattern.bmp
+_BufferWidth 0 0 0 0
+_Size 585 0 425 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 9.14063 6.64063
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

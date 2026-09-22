@@ -1,0 +1,483 @@
+T 1.09
+[SplitFrame]
+Horizontal true
+Master 0
+MasterSize 0.5 1
+Slot0 true 0
+Slot1 true 1
+PassMouse true
+Notes load this into content slot
+Name chassis intro split
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name left
+ID -1
+Position 0 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0.6 0.6 0.6 1
+Widget true
+[Group]
+ReportedPos 0.5 1 0.07 1
+Alignment 10
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name 3d grp
+ID -1
+Position 0.5 1 0.07 1
+Size 0.92 1 294 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Placeholder]
+PassMouse true
+Notes common 3d view for various areas of botlab
+Name 3d placeholder
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 1 1 1 1
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name mouse instructions grp
+ID -1
+Position 1 1 1 1
+Size 54 0 36 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename botlab\mouse_zr.tga
+_BufferWidth 0 0 0 0
+_Size 48 0 32 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.287109 0.511719 0.333984 0.542969
+Name mouse img
+ID -1
+Position 0 0 0 0
+Size 48 0 32 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 639 0 69 0
+Size 1179 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 12 0 24 0
+Size 296 0 296 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 1179 0 296 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.15 0.15 0.15 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 320 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name right content slot
+ID -1
+Position 320 0 0 0
+Size 320 0 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 4 0 0.08 1
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name chassis choices grp
+ID -1
+Position 4 0 0.08 1
+Size 0.95 1 0.88 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 6
+[DisplayBox]
+Display <text font fg_d18>Chassis\n</text> <text font fg_mcn14>The chassis is a very important part of your robot. It defines the overall shape of your bot, protects your interior components, and looks pretty cool, too. </text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 303 130
+Params 2
+Param 2 0
+_Font fg_d18
+_Text Chassis\n
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Param 2 0
+_Font fg_mcn14
+_Text The chassis is a very important part of your robot. It defines the overall shape of your bot, protects your interior components, and looks pretty cool, too. 
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name New [DisplayBox]
+ID -1
+Position 0 0 1 0
+Size 1 1 130 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to go to chassis step 1 (may want to pop up warning dialog if a chassis was already designed)
+Name structure design button
+ID -1
+Position 7 0 103 0
+Size 124 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\ch_structure_n.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.585938 0.03125 0.707031 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_structure_s.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.707031 0.03125 0.828125 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_structure_s.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.707031 0.03125 0.828125 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_structure_n.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0.585938 0.03125 0.707031 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to load ch_armor.gib into 'right content slot'
+Name armor button
+ID -1
+Position 7 0 168 0
+Size 124 0 24 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\ch_armor_n.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.828125 0.03125 0.949219 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_armor_s.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0 0.0566406 0.121094 0.0820313
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_armor_s.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0.0566406 0.121094 0.0820313
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename botlab\ch_armor_n.bmp
+_BufferWidth 0 0 0 0
+_Size 124 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.3
+_Name 
+_Position 0 0 0 0
+0.828125 0.03125 0.949219 0.0566406
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name structure note
+ID -1
+Position 15 0 125 0
+Size 296 0 20 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Build a new chassis shape
+_ForeColor 0.9 0.9 0.9 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 303 0 1 0
+_Alpha false
+_Filtering 0
+_ForeColor 0.7 0.7 0.7 1
+_Name 
+_Position 0 0 153 0
+0 0 1 1
+Name horiz bar
+ID -1
+Position 0 0 153 0
+Size 1 1 1 0
+Visible true
+ChildOrder 4
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name armor note
+ID -1
+Position 8 0 193 0
+Size 296 0 20 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn12
+_Text Select a construction material
+_ForeColor 0.9 0.9 0.9 1
+_Name 
+_Position 0 0 12 0
+Name 
+ID 0
+Position 0 0 12 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

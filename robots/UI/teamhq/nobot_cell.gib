@@ -1,0 +1,116 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name robot cell group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 3
+[Group]
+ReportedPos 3 0 0.5 1
+Alignment 17
+AspectSetting 2
+AspectRatio 1
+PassMouse true
+Notes load bot image into 'bot snapshot img' child of this group
+Name bot img group
+ID -1
+Position 3 0 0.5 1
+Size 75 0 0.95 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename teamhq\nobot.bmp
+_BufferWidth 0 0 0 0
+_Size 75 0 954 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.5
+_Name 
+_Position 0 0 0 0
+0.730469 0.324219 0.808594 0.402344
+Name bot snapshot img
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes robot name here
+Name bot name
+ID -1
+Position 0.38 1 0.25 1
+Size 0.6 1 23 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn16
+_Text New Robot
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 15 0
+Name 
+ID 0
+Position 0 0 15 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 0
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 'Lightweight' or 'Heavyweight' here
+Name weight class
+ID -1
+Position 0.38 1 0.5 1
+Size 0.6 1 23 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_mcn14
+_Text 
+_ForeColor 1 0.2 0.2 1
+_Name 
+_Position 0 0 14 0
+Name 
+ID 0
+Position 0 0 14 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

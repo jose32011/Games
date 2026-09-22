@@ -1,0 +1,54 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name bot cell
+ID -1
+Position 0 0 0 0
+Size 90 0 90 0
+Visible true
+ChildOrder 4
+ClipMode 1
+NumChildren 2
+[Image]
+_Tiling false
+_Filename exhibition\sample_bot.bmp
+_BufferWidth 0 0 0 0
+_Size 84 0 84 0
+_Alpha false
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 3 0 3 0
+0 0 1 1
+Name bot preview
+ID -1
+Position 3 0 3 0
+Size 84 0 84 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename exhibition\light_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 10 0 10 0
+_Alpha false
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 6 0 74 0
+0.601563 0.699219 0.611328 0.708984
+Name weight icon
+ID -1
+Position 6 0 74 0
+Size 10 0 10 0
+Visible true
+ChildOrder 1
+ClipMode 0
+NumChildren 0

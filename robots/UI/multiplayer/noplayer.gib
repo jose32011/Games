@@ -1,0 +1,359 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 9
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes if a position slot is empty, show this group
+Name noplayer grp
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 2
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 53 0 3 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name p4 img group
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Group]
+ReportedPos 0.5 1 0 0
+Alignment 10
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name select player grp
+ID -1
+Position 0.5 1 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to join the match in this player slot (open bot selection window)
+Name human player button
+ID -1
+Position 37 0 37 0
+Size 24 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename multiplayer\local_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.773438 0.324219 0.796875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\local_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.773438 0.324219 0.796875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\local_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.773438 0.324219 0.796875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Text]
+_Font fg_dcn16
+_Text OPEN
+_ForeColor 1 1 1 1
+_Name 
+_Position 30 0 24 0
+Name open label
+ID -1
+Position 30 0 24 0
+Size 80 0 9 0
+Visible true
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes host clicks to add a computer AI bot (open select computer bot window)
+Name computer player button
+ID -1
+Position 37 0 65 0
+Size 24 0 24 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename multiplayer\computer_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.796875 0.324219 0.820313 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\computer_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 0 0
+0.796875 0.324219 0.820313 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename multiplayer\computer_player_icon.bmp
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.796875 0.324219 0.820313 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 24 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.25 0.25 0.25 0.25
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 53 0 3 0
+Size 96 0 96 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 96 0 96 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 52 0 2 0
+Size 98 0 98 0
+Visible true
+ChildOrder 5
+ClipMode 1
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Border]
+Width 1
+Inner 1 1 1 1
+Outer 0 0 0 1
+Widget true
+[Group]
+ReportedPos 26 0 105 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name name group
+ID -1
+Position 26 0 105 0
+Size 150 0 34 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 25 0 104 0
+Size 152 0 36 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 152 0 36 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.3
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

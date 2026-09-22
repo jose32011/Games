@@ -1,0 +1,408 @@
+T 1.09
+[Window]
+ReportedPos 170 0 50 0
+Draggable false
+Alignment 18
+PassMouse true
+Notes 
+Name controls reminder
+ID -1
+Position 0.5 1 0.5 1
+Size 300 0 380 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 2
+[Group]
+ReportedPos 8 0 0 0
+Alignment 10
+AspectSetting 1
+AspectRatio 1
+PassMouse true
+Notes 
+Name controller grp
+ID -1
+Position 0.5 1 0 1
+Size 0.95 1 284 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename botlab\wiring_controller.tga
+_BufferWidth 0 0 0 0
+_Size 284 0 284 0
+_Alpha true
+_Filtering 1
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name New [Image]
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 19 0 69 0
+Alignment 34
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name New [Group]
+ID -1
+Position 0.504 1 0.943 1
+Size 0.88 1 0.7 1
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Grid]
+Rows 3
+Columns 4
+RowHeight 70
+ColWidths 62 17 62 17 62 17 62 17
+BorderColor 0.4 0.4 0.4 1
+BorderWidth 1
+BufferWidth 1
+RowSelect false
+Highlight 101
+Selection 100
+PermScrolls false
+PassMouse true
+Notes fill grid with controls like in the wiring screen
+Name control grid
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled false
+FillColor 1 1 1 0.2
+BorderWidth 0
+BorderColor 0.5 0.3 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 62 0 70 0
+Size 62 0 70 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 62 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.2
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 0.5 0.3 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 62 0 0 0
+Point 62 0 0 0
+Point 62 0 70 0
+Point 62 0 70 0
+Point 0 0 70 0
+Point 0 0 70 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled false
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 186 0 70 0
+Size 62 0 70 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 62 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 62 0 0 0
+Point 62 0 0 0
+Point 62 0 70 0
+Point 62 0 70 0
+Point 0 0 70 0
+Point 0 0 70 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 12
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 17
+Text true 0
+PassMouse true
+Notes 
+Name controls label
+ID -1
+Position 0 0 3 0
+Size 0.5 1 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Robot Controls:
+_ForeColor 0.8 0.8 0.8 1
+_Name 
+_Position 0 0 13 0
+Name 
+ID 0
+Position 0 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 3 0
+Size 0.5 1 20 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 142 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[TextBox]
+Scrollable true
+Editable false
+MultiLine false
+Buffer 12
+BlinkRate 0.5
+MaxCharacters 0
+Alignment 20
+Text true 0
+PassMouse true
+Notes display robot name here
+Name bot name
+ID -1
+Position 0.5 1 3 0
+Size 0.5 1 20 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Text]
+_Font fg_dcn14
+_Text Meany Bot
+_ForeColor 1 1 1 1
+_Name 
+_Position 66 0 13 0
+Name 
+ID 0
+Position 66 0 13 0
+Size 0 0 0 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0.5 1 3 0
+Size 0.5 1 20 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 142 0 20 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Group]
+ReportedPos 0 0 288 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name common keys group
+ID -1
+Position 0 0 1 1
+Size 1 1 92 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[DisplayBox]
+Display <text font fg_mcn14>F1 = Cycle bot controls reminder\nF2 = Orbit Camera (L-mouse drag)\nF3 = Cycle static cameras\nF4 = Cycle watch cameras\n\ = Multiplayer chat</text>
+Composition true
+[Glyph]
+Compositor true
+1
+ParamLimit 0
+Margins _Size 1
+_Margin 0 250 100
+Params 1
+Param 2 0
+_Font fg_mcn14
+_Text F1 = Cycle bot controls reminder\nF2 = Orbit Camera (L-mouse drag)\nF3 = Cycle static cameras\nF4 = Cycle watch cameras\n\ = Multiplayer chat
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name New [DisplayBox]
+ID -1
+Position 70 0 2 0
+Size 250 0 100 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 288 0
+Size 1 1 92 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 300 0 92 0
+_Alpha true
+_Filtering 0
+_ForeColor 0 0 0 0.4
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0

@@ -1,0 +1,585 @@
+T 1.09
+[Group]
+ReportedPos 0 0 0 0
+Alignment 0
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name robot inventory group
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 3
+[Background]
+Tiling false
+Image true 0
+Widget true
+[Grid]
+Rows 3
+Columns 2
+RowHeight 70
+ColWidths 213 17 213 17
+BorderColor 0.7 0.7 0.7 1
+BorderWidth 0
+BufferWidth 0
+RowSelect false
+Highlight 101
+Selection 100
+PermScrolls true
+PassMouse true
+Notes fill grid with team robots (robot_cell.gib)
+Name robot grid
+ID -1
+Position 0 0 0 0
+Size 1 1 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 2
+[Rectangle]
+Filled true
+FillColor 1 1 1 0.1
+BorderWidth 3
+BorderColor 0.3 0.3 1 1
+Fill 0
+Border 1
+Name Sel Bar
+ID 100
+Position 0 0 140 0
+Size 213 0 70 0
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 213 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 0.3 0.3 1 1
+Width 3
+Points 8
+Point 0 0 0 0
+Point 213 0 0 0
+Point 211.5 0 0 0
+Point 211.5 0 70 0
+Point 213 0 70 0
+Point 0 0 70 0
+Point 1.5 0 70 0
+Point 1.5 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible true
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+[Rectangle]
+Filled false
+FillColor 0.3 0.3 1 0.5
+BorderWidth 0
+BorderColor 1 1 1 1
+Fill 0
+Border 1
+Name High Bar
+ID 101
+Position 213 0 140 0
+Size 213 0 70 0
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 2
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 213 0 70 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.3 0.3 1 0.5
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Lines]
+Color 1 1 1 1
+Width 0
+Points 8
+Point 0 0 0 0
+Point 213 0 0 0
+Point 213 0 0 0
+Point 213 0 70 0
+Point 213 0 70 0
+Point 0 0 70 0
+Point 0 0 70 0
+Point 0 0 0 0
+Name 
+ID -1
+Position 0 0 0 0
+Size 0 0 0 0
+Visible false
+ChildOrder -1
+ClipMode 0
+NumChildren 0
+PassMouse true
+Notes 
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 0.85 1
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Image]
+_Tiling false
+_Filename 
+_BufferWidth 0 0 0 0
+_Size 426 0 224 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.1 0.1 0.1 1
+_Name 
+_Position 0 0 0 0
+0 0 1 1
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 326 0 234 0
+Alignment 36
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name buttons grp
+ID -1
+Position 1 1 1 1
+Size 100 0 30 0
+Visible true
+ChildOrder -1
+ClipMode 1
+NumChildren 1
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to go to the bot workshop
+Name workshop button
+ID -1
+Position 0 0 0 0
+Size 92 0 24 0
+Visible true
+ChildOrder 0
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\workshop_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 92 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.0820313 0.324219 0.171875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\workshop_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 92 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.0820313 0.324219 0.171875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\workshop_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 92 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.171875 0.324219 0.261719 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\workshop_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 92 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.0820313 0.324219 0.171875 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Group]
+ReportedPos 10 0 234 0
+Alignment 33
+AspectSetting 0
+AspectRatio 0
+PassMouse true
+Notes 
+Name export import group
+ID -1
+Position 10 0 1 1
+Size 280 0 30 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 3
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to export selected bot
+Name export button
+ID -1
+Position 0 0 0 0
+Size 80 0 24 0
+Visible true
+ChildOrder 1
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\export_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.261719 0.324219 0.339844 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\export_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.261719 0.324219 0.339844 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\export_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.339844 0.324219 0.417969 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\export_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.261719 0.324219 0.339844 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to import a bot into the selected slot
+Name import button
+ID -1
+Position 86 0 0 0
+Size 80 0 24 0
+Visible true
+ChildOrder 2
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\import_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.417969 0.324219 0.496094 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\import_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.417969 0.324219 0.496094 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\import_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.496094 0.324219 0.574219 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\import_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.417969 0.324219 0.496094 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0
+[Button]
+RepeatRate 0
+RepeatDelay 0.4
+OnClick false
+StateImage 0 true 0
+StateImage 1 true 1
+StateImage 2 true 2
+StateImage 3 true 3
+PassMouse true
+Notes click to delete selected bot
+Name scrap button
+ID -1
+Position 172 0 0 0
+Size 80 0 24 0
+Visible true
+ChildOrder 3
+ClipMode 1
+NumChildren 4
+[Image]
+_Tiling false
+_Filename teamhq\scrap_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 0.8
+_Name 
+_Position 0 0 0 0
+0.574219 0.324219 0.652344 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible true
+ChildOrder 0
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\scrap_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.574219 0.324219 0.652344 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 1
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\scrap_button_s.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 1 1 1 1
+_Name 
+_Position 0 0 0 0
+0.652344 0.324219 0.730469 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 2
+ClipMode 0
+NumChildren 0
+[Image]
+_Tiling false
+_Filename teamhq\scrap_button_n.bmp
+_BufferWidth 0 0 0 0
+_Size 80 0 24 0
+_Alpha true
+_Filtering 0
+_ForeColor 0.5 0.5 0.5 1
+_Name 
+_Position 0 0 0 0
+0.574219 0.324219 0.652344 0.347656
+Name 
+ID -1
+Position 0 0 0 0
+Size 1 1 1 1
+Visible false
+ChildOrder 3
+ClipMode 0
+NumChildren 0

@@ -1,0 +1,1080 @@
+index 0
+RA1 Revenge
+"Did you miss us?"
+AI\robotarena.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 1
+RA2 Revamped
+"Like Mega Man boss re-fights!"
+AI\robotarena2.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 2
+RFS Greatest Hits
+"Remixed RA2 tournament entries!"
+AI\rfshits.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 3
+Firepower 2000
+"Be prepared to get blown away."
+AI\firepower.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 4
+Second Chance Team
+"Saved from the edge of oblivion."
+AI\second.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 5
+The Blast Works
+"Turn up the heat!"
+AI\blastworks.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 6
+Spare Partz
+"Think you can beat us??"
+AI\spareparts.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 7
+Atari Age
+"Have you played Atari today?"
+AI\atariage.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 8
+Robotic Ruiners
+"Professional razers."
+AI\ruiners.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 9
+Team MegaSparkRiotStorm
+"What the fuck is a 'motto'?"
+AI\megasparkriotstorm.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 10
+The Sparksters
+"We'll fry you!"
+AI\sparks.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 11
+Retro Bits
+"Gonna take you back to the past..."
+AI\retrobits.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 12
+Battle Clash Legends
+"Replicas from another era."
+AI\battleclash.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 13
+BattleBots Update
+"Memes and bots designed by fans."
+AI\bbu.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 14
+Too Much Head
+"Designed by a hydra!"
+AI\heads.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 15
+Sgt. Stone
+"Indestructable forces."
+AI\red_zone.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 16
+Alien Research Team
+"The PROOF is out there!"
+AI\dino.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 17
+United Commoners
+"We don't need the fancy crap to whoop your ASS!"
+AI\good_ol_boys.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 18
+Lethal Dosage
+"100 Rads can kill you, 4000 Rads will make you suffer."
+AI\dragon.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 19
+The Disturbed Ones
+"Oddly effective..."
+AI\black_storm.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 20
+United States Army
+"A ROBOT Army of one."
+AI\spark.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 21
+Pyros
+"All of our bots will make yours to explode and burn!"
+AI\spikeball.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 22
+Reptilian Team
+"Tough as nails. Deadly as a dragon."
+AI\northpolers.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 23
+Stoners
+"Dude we are so stoned right now."
+AI\high_voltage.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 24
+Mode II
+"Mortal robots beware!"
+AI\hex.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 25
+The rObO zOne
+"You're going down!"
+AI\z.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 26
+Brute Force
+"Pure Metal. Pure Force."
+AI\steeldog.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 27
+Under Pressure
+"How good can your bots do, under Pressure?"
+AI\riot.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 28
+chAos
+"Take no prisoners."
+AI\megaton.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 29
+C0MPU73R H4CK3R5
+"Terminate."
+AI\the_scrappers.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 30
+Pokemon Robotics
+"Forget the kids' stuff."
+AI\pokemon.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 31
+p0werh0use tw0
+"Full of it, power, that is."
+AI\powerhouse.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 32
+Aquas
+"Water-proof, Robot-proof."
+AI\aquas.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 33
+Team Plastic Fruit
+"You could say we are a bit fruity."
+AI\fruit.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 34
+Sinister Squad
+"We would rather die on our feet than live on our knees!"
+AI\sinister.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 35
+New Island Technologies
+"We use only the best stuff available."
+AI\nit.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 36
+Inventive Minds
+"We find ALL of the loopholes!"
+AI\minds.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 37
+X-Force
+"If you think we're aggressive now, wait until mating season."
+AI\xforce.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 38
+United States Navy
+"Our torpedoes will SINK your robots."
+AI\navy.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 39
+r3v3ng3 0f t3h n00bz!
+"OMG ur goin down!1!!one!1!eleven!!!"
+AI\newbs.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 40
+People In The Basement
+"We all got bored one day..."
+AI\ppl.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 41
+Maximum Resistance
+"You're a wimp! You're going DOWN!"
+AI\maxr.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 42
+toXic
+"This ain't no false alarm!"
+AI\toxic.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 43
+Destruction 101
+"Now for a class in Destruction 101."
+AI\d101.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
+index 44
+Radio F Software
+"You KNEW it was coming."
+AI\rfs.bmp
+Robots: 0 1 2 3 4 5
+Robot In Event: -1
+0
+16
+16
+0
+0
+0
+0
+0
+100000
+true
+0
+false
+0
+-1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+0
+0
