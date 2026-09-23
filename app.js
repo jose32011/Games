@@ -539,6 +539,14 @@ document.getElementById('gameSelectScreen').style.display = 'grid';
 document.getElementById('robotWarsCard').addEventListener('click', () => {
   document.getElementById('gameSelectScreen').style.display = 'none';
   document.getElementById('teamScreen').style.display = 'grid';
+  document.getElementById('backToGameSelectBtn').style.display = 'block';
+});
+
+// Back to game selection from team screen
+document.getElementById('backToGameSelectBtn').addEventListener('click', () => {
+  document.getElementById('teamScreen').style.display = 'none';
+  document.getElementById('gameSelectScreen').style.display = 'grid';
+  document.getElementById('backToGameSelectBtn').style.display = 'none';
 });
 
 // ── Bot configs ───────────────────────────────────────────────────────────────
