@@ -671,6 +671,7 @@ let opponentReady = false;
 let lobbyRefreshInterval = null;
 let myGameName = null;
 let activeLobbies = [];
+let opponentPlayer = null; // Store opponent's player robot for multiplayer
 
 // Firebase configuration for real-time lobby system
 const firebaseConfig = {
@@ -894,9 +895,9 @@ function handlePeerData(data) {
   switch (data.type) {
     case 'position':
       // Update opponent position (for multiplayer)
-      if (bots.length > 0) {
-        bots[0].r.position.set(data.x, data.y, data.z);
-        bots[0].r.rotation.y = data.rotation;
+      if (opponentPlayer) {
+        opponentPlayer.position.set(data.x, data.y, data.z);
+        opponentPlayer.rotation.y = data.rotation;
       }
       break;
     case 'shoot':
@@ -1423,6 +1424,13 @@ launchButton && launchButton.addEventListener('click', async () => {
             document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
             console.log('Guest entered multiplayer battle');
             launchButton.disabled = false;
+
+            // Create opponent player robot placeholder (will be updated by position data)
+            if (!opponentPlayer) {
+              opponentPlayer = buildRobot(0xff6848, false, 'medium', ['laser'], 'standard', 'tracked', 'medium');
+              opponentPlayer.position.set(0, 0, -5);
+              scene.add(opponentPlayer);
+            }
           }).catch((err) => {
             console.error('Guest arena loading failed:', err);
             document.getElementById('feed').textContent = 'ARENA LOAD FAILED - RETRYING';
@@ -1479,9 +1487,9 @@ function startMultiplayerGame() {
   if (opponentReady) {
     document.getElementById('feed').textContent = 'MULTIPLAYER MATCH STARTING...';
 
-    // Start the game for host
-    activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
-    spawnBots(activeBotConfigs);
+    // Don't spawn AI bots in multiplayer - will create opponent player robot instead
+    // activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
+    // spawnBots(activeBotConfigs);
 
     // Load arena for host
     loadArenaAsset().then(() => {
@@ -1489,6 +1497,13 @@ function startMultiplayerGame() {
       buildScreen.style.display = 'none';
       document.getElementById('hud').style.display = 'block';
       document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+
+      // Create opponent player robot placeholder (will be updated by position data)
+      if (!opponentPlayer) {
+        opponentPlayer = buildRobot(0xff6848, false, 'medium', ['laser'], 'standard', 'tracked', 'medium');
+        opponentPlayer.position.set(0, 0, -5);
+        scene.add(opponentPlayer);
+      }
 
       // Send start signal to guest after host arena is loaded
       if (conn && conn.open) {
@@ -1586,7 +1601,7 @@ function update(dt) {
   resolveArenaCollision(player.position);
 
   if (Math.abs(smoothInput.x) + Math.abs(smoothInput.y) > 0.1)
-    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y) + Math.PI;
+    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y);
 
   // Animate tracks (rotate road wheels)
   if (selectedEngine !== 'hover') {
@@ -1605,6 +1620,17 @@ function update(dt) {
     update.cooldown = 0.28;
   }
   update.cooldown = (update.cooldown || 0) - dt;
+
+  // Send position to opponent in multiplayer
+  if (conn && conn.open && gameStarted) {
+    sendToPeer({
+      type: 'position',
+      x: player.position.x,
+      y: player.position.y,
+      z: player.position.z,
+      rotation: player.rotation.y
+    });
+  }
 
   // Bot AI — behavior driven by aiType (maps to Python AI classes in robots/AI/)
   bots.forEach((bot, index) => {
