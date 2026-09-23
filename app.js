@@ -532,8 +532,14 @@ let smoothInput = { x: 0, y: 0 };
 let player = buildRobot(robotTint, true, 'medium', ['laser'], 'standard', 'tracked', 'medium');
 player.position.set(0, 0, 0);
 
-// Show team screen by default
-document.getElementById('teamScreen').style.display = 'grid';
+// Show game selection screen by default
+document.getElementById('gameSelectScreen').style.display = 'grid';
+
+// Game selection handlers
+document.getElementById('robotWarsCard').addEventListener('click', () => {
+  document.getElementById('gameSelectScreen').style.display = 'none';
+  document.getElementById('teamScreen').style.display = 'grid';
+});
 
 // ── Bot configs ───────────────────────────────────────────────────────────────
 const SPAWN_POSITIONS = [

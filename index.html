@@ -1,4 +1,40 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Robot Arena 2</title><link rel="stylesheet" href="styles.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Game Hub</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<!-- ─── GAME SELECTION SCREEN ─────────────────────────────────────── -->
+<div id="gameSelectScreen">
+  <div class="buildCard gameSelectCard">
+    <div class="eyebrow">GAME <b>HUB</b></div>
+    <h1>CHOOSE YOUR GAME</h1>
+    <p class="buildHint">Select a game to play. More games coming soon!</p>
+
+    <div class="gameGrid">
+      <div class="gameCard" id="robotWarsCard">
+        <div class="gameIcon">🤖</div>
+        <div class="gameTitle">ROBOT WARS</div>
+        <div class="gameDesc">Build and battle custom robots in the arena</div>
+        <div class="gameStatus">PLAY NOW</div>
+      </div>
+      <div class="gameCard" id="chessCard" style="opacity: 0.5; pointer-events: none;">
+        <div class="gameIcon">♟</div>
+        <div class="gameTitle">CHESS</div>
+        <div class="gameDesc">Classic strategy game (Coming Soon)</div>
+        <div class="gameStatus">COMING SOON</div>
+      </div>
+      <div class="gameCard" style="opacity: 0.5; pointer-events: none;">
+        <div class="gameIcon">🎮</div>
+        <div class="gameTitle">RACING</div>
+        <div class="gameDesc">High-speed racing (Coming Soon)</div>
+        <div class="gameStatus">COMING SOON</div>
+      </div>
+      <div class="gameCard" style="opacity: 0.5; pointer-events: none;">
+        <div class="gameIcon">⚔</div>
+        <div class="gameTitle">PUZZLE</div>
+        <div class="gameDesc">Brain teasers (Coming Soon)</div>
+        <div class="gameStatus">COMING SOON</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ─── LOBBY SCREEN ──────────────────────────────────────────────── -->
 <div id="lobbyScreen" style="display:none">
