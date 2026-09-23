@@ -132,8 +132,10 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
 
   // ── GUN (shared across all chassis) ──────────────────────────────────────
   function addGun(gunY) {
-    guns.forEach((gun, idx) => {
-      const offsetX = (idx - (guns.length - 1) / 2) * 0.25 * s;
+    // Ensure guns is always an array
+    const weaponArray = Array.isArray(guns) ? guns : [guns || 'laser'];
+    weaponArray.forEach((gun, idx) => {
+      const offsetX = (idx - (weaponArray.length - 1) / 2) * 0.25 * s;
       const weaponY = gunY + (idx * 0.05 * s);
 
       if (gun === 'cannon') {
@@ -526,7 +528,7 @@ let selectedSize = 'medium', selectedGun = 'laser', selectedEngine = 'standard';
 let robotTint = 0x56a48c;
 
 // Start with a placeholder robot centered for build preview
-let player = buildRobot(robotTint, true, 'medium', 'laser', 'standard', 'tracked', 'medium');
+let player = buildRobot(robotTint, true, 'medium', ['laser'], 'standard', 'tracked', 'medium');
 player.position.set(0, 0, 0);
 
 // Show team screen by default
