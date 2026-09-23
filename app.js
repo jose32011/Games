@@ -901,21 +901,9 @@ function handlePeerData(data) {
       break;
     case 'start':
       if (!isHost) {
-        // Guest receives start signal from host
-        console.log('Guest received start signal, loading arena');
-        loadStatus.textContent = 'LOADING ARENA...';
-        loadArenaAsset().then(() => {
-          gameStarted = true;
-          buildScreen.style.display = 'none';
-          document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
-          console.log('Guest entered multiplayer battle');
-          launchButton.disabled = false;
-        }).catch((err) => {
-          console.error('Guest arena loading failed:', err);
-          document.getElementById('feed').textContent = 'ARENA LOAD FAILED - RETRYING';
-          loadStatus.textContent = 'LOADING FAILED';
-          launchButton.disabled = false;
-        });
+        // Guest receives start signal from host - ONLY set the flag
+        console.log('Guest received start signal from host');
+        gameStarted = true;
       }
       break;
   }
@@ -1404,10 +1392,24 @@ launchButton && launchButton.addEventListener('click', async () => {
       document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
       loadStatus.textContent = 'WAITING FOR HOST...';
 
-      // Set up wait loop for start signal
+      // Set up wait loop for start signal - ONLY enter when host sends start
       const waitForStart = () => {
+        // Guest should ONLY enter when receiving explicit start signal from host
         if (gameStarted) {
-          console.log('Game started, returning');
+          console.log('Guest: Game started by host, entering arena');
+          loadStatus.textContent = 'LOADING ARENA...';
+          loadArenaAsset().then(() => {
+            buildScreen.style.display = 'none';
+            document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+            console.log('Guest entered multiplayer battle');
+            launchButton.disabled = false;
+          }).catch((err) => {
+            console.error('Guest arena loading failed:', err);
+            document.getElementById('feed').textContent = 'ARENA LOAD FAILED - RETRYING';
+            loadStatus.textContent = 'LOADING FAILED';
+            launchButton.disabled = false;
+            gameStarted = false; // Reset so they can try again
+          });
           return;
         }
 
