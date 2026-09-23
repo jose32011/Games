@@ -1586,7 +1586,7 @@ function update(dt) {
   resolveArenaCollision(player.position);
 
   if (Math.abs(smoothInput.x) + Math.abs(smoothInput.y) > 0.1)
-    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y);
+    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y) + Math.PI;
 
   // Animate tracks (rotate road wheels)
   if (selectedEngine !== 'hover') {
