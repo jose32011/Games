@@ -540,6 +540,10 @@ document.getElementById('robotWarsCard').addEventListener('click', () => {
   document.getElementById('gameSelectScreen').style.display = 'none';
   document.getElementById('teamScreen').style.display = 'grid';
   document.getElementById('backToGameSelectBtn').style.display = 'block';
+  // Hide game HUD when in menu screens
+  document.getElementById('hud').style.display = 'none';
+  // Ensure build screen is hidden
+  document.getElementById('buildScreen').style.display = 'none';
 });
 
 // Back to game selection from team screen
@@ -547,6 +551,7 @@ document.getElementById('backToGameSelectBtn').addEventListener('click', () => {
   document.getElementById('teamScreen').style.display = 'none';
   document.getElementById('gameSelectScreen').style.display = 'grid';
   document.getElementById('backToGameSelectBtn').style.display = 'none';
+  // Keep game HUD hidden in menu screens
 });
 
 // ── Bot configs ───────────────────────────────────────────────────────────────
@@ -1414,6 +1419,7 @@ launchButton && launchButton.addEventListener('click', async () => {
           loadStatus.textContent = 'LOADING ARENA...';
           loadArenaAsset().then(() => {
             buildScreen.style.display = 'none';
+            document.getElementById('hud').style.display = 'block';
             document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
             console.log('Guest entered multiplayer battle');
             launchButton.disabled = false;
@@ -1457,6 +1463,7 @@ launchButton && launchButton.addEventListener('click', async () => {
       await loadArenaAsset();
       gameStarted = true;
       buildScreen.style.display = 'none';
+      document.getElementById('hud').style.display = 'block';
       setTimeout(() => {
         document.getElementById('feed').textContent = 'BATTLE ONLINE — DESTROY ALL HOSTILES';
       }, 3000);
@@ -1480,6 +1487,7 @@ function startMultiplayerGame() {
     loadArenaAsset().then(() => {
       gameStarted = true;
       buildScreen.style.display = 'none';
+      document.getElementById('hud').style.display = 'block';
       document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
 
       // Send start signal to guest after host arena is loaded
