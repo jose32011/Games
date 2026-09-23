@@ -526,6 +526,7 @@ let activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
 // ── Player robot ──────────────────────────────────────────────────────────────
 let selectedSize = 'medium', selectedGun = 'laser', selectedEngine = 'standard';
 let robotTint = 0x56a48c;
+let smoothInput = { x: 0, y: 0 };
 
 // Start with a placeholder robot centered for build preview
 let player = buildRobot(robotTint, true, 'medium', ['laser'], 'standard', 'tracked', 'medium');
@@ -1387,47 +1388,46 @@ launchButton && launchButton.addEventListener('click', async () => {
   // Send ready status to peer if multiplayer
   if (conn && conn.open) {
     sendToPeer({ type: 'ready', ready: true });
-    console.log('Guest sent ready status, waiting for host to start');
+    console.log('Sent ready status, waiting for host to start');
 
     // Guest should wait for host to send start signal
-    document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
-    loadStatus.textContent = 'WAITING FOR HOST...';
-
-    // Set up wait loop for start signal
-    const waitForStart = () => {
-      if (gameStarted) {
-        console.log('Game started, returning');
-        return;
-      }
-
-      if (!conn || !conn.open) {
-        console.error('Connection lost while waiting for start');
-        document.getElementById('feed').textContent = 'CONNECTION LOST';
-        loadStatus.textContent = 'CONNECTION ERROR';
-        launchButton.disabled = false;
-        return;
-      }
-
-      setTimeout(waitForStart, 100);
-    };
-    waitForStart();
-    return;
-  }
-
-  // For single player or when host
-  if (!conn || isHost) {
-    // If multiplayer, check if opponent is ready
-    if (conn && conn.open) {
+    if (isHost) {
+      // Host logic - check if opponent is ready
       if (opponentReady) {
         startMultiplayerGame();
       } else {
         document.getElementById('feed').textContent = 'WAITING FOR OPPONENT TO BE READY...';
         loadStatus.textContent = 'WAITING FOR OPPONENT...';
       }
-      return;
-    }
+    } else {
+      // Guest logic - wait for host start signal
+      document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
+      loadStatus.textContent = 'WAITING FOR HOST...';
 
-    // Single player mode
+      // Set up wait loop for start signal
+      const waitForStart = () => {
+        if (gameStarted) {
+          console.log('Game started, returning');
+          return;
+        }
+
+        if (!conn || !conn.open) {
+          console.error('Connection lost while waiting for start');
+          document.getElementById('feed').textContent = 'CONNECTION LOST';
+          loadStatus.textContent = 'CONNECTION ERROR';
+          launchButton.disabled = false;
+          return;
+        }
+
+        setTimeout(waitForStart, 100);
+      };
+      waitForStart();
+    }
+    return;
+  }
+
+  // For single player mode only (no multiplayer connection)
+  if (!conn) {
     activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
     spawnBots(activeBotConfigs);
 
@@ -1449,30 +1449,6 @@ launchButton && launchButton.addEventListener('click', async () => {
       loadStatus.textContent = 'ASSET LOAD FAILED — CHECK LOCAL ASSETS';
       launchButton.disabled = false;
     }
-  } else {
-    // For multiplayer guest, wait for host to start
-    document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
-    sendToPeer({ type: 'ready', ready: true });
-    loadStatus.textContent = 'WAITING FOR HOST...';
-    
-    // Wait for host to send start signal
-    const waitForStart = () => {
-      if (gameStarted) {
-        // Host sent start signal, now load arena
-        loadArenaAsset().then(() => {
-          gameStarted = true;
-          buildScreen.style.display = 'none';
-          document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
-        }).catch((err) => {
-          console.error('Asset loading failed', err);
-          loadStatus.textContent = 'ASSET LOAD FAILED — CHECK LOCAL ASSETS';
-          launchButton.disabled = false;
-        });
-        return;
-      }
-      setTimeout(waitForStart, 100);
-    };
-    waitForStart();
   }
 });
 
