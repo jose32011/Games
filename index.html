@@ -89,7 +89,7 @@
 <!-- ─── BUILD SCREEN — BOT LAB ────────────────────────────────────── -->
 <div id="buildScreen" style="display:none">
 
-  <!-- Top bar -->
+  <!-- Top bar with stats -->
   <div class="blTopBar">
     <span class="blTitle">BOT LAB</span>
     <div class="blStats">
@@ -101,9 +101,30 @@
 
   <!-- 3D preview viewport (Three.js canvas shows through) -->
   <div class="blViewport">
-    <div class="blViewportLabel">TAP PARTS BELOW TO BUILD</div>
+    <div class="blViewportLabel">ROBOT PREVIEW</div>
     <!-- grid overlay like the original -->
     <div class="blGrid"></div>
+  </div>
+
+  <!-- Robot name and color section -->
+  <div class="blRobotInfo">
+    <div class="blNameRow">
+      <span class="blNameLabel">ROBOT NAME:</span>
+      <input id="robotNameInput" class="blNameInput" type="text" maxlength="16" value="NOVA-7" spellcheck="false" autocomplete="off">
+    </div>
+    <div class="blColorRow">
+      <span class="blColorLabel">COLOR:</span>
+      <label class="blColorSwatch">
+        <input id="buildColorPicker" type="color" value="#56a48c">
+        <span id="blColorName">Teal</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Full-width launch button -->
+  <div class="blLaunchSection">
+    <button id="launch" class="blLaunchBtn">ENTER ARENA ▶</button>
+    <div id="loadStatus" role="status" class="blLoadStatus"></div>
   </div>
 
   <!-- Category tabs -->
@@ -111,23 +132,6 @@
 
   <!-- Part list -->
   <div id="partGrid" class="blPartList"></div>
-
-  <!-- Bottom bar: robot name + color + launch -->
-  <div class="blBottomBar">
-    <div class="blTopRow">
-      <span class="blNameLabel">ROBOT NAME:</span>
-      <input id="robotNameInput" class="blNameInput" type="text" maxlength="16" value="NOVA-7" spellcheck="false" autocomplete="off">
-    </div>
-    <div class="blBottomRow">
-      <span class="blColorLabel">COLOR</span>
-      <label class="blColorSwatch">
-        <input id="buildColorPicker" type="color" value="#56a48c">
-        <span id="blColorName">Teal</span>
-      </label>
-      <button id="launch" class="blLaunchBtn">ENTER ARENA ▶</button>
-    </div>
-    <div id="loadStatus" role="status" class="blLoadStatus"></div>
-  </div>
 
 </div>
 

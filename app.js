@@ -99,13 +99,13 @@ for (let i = 0; i < 8; i++) {
  * @param {number}  color   - hex tint
  * @param {boolean} isPlayer
  * @param {string}  size    - 'small' | 'medium' | 'large'
- * @param {string}  gun     - 'laser' | 'cannon' | 'shotgun'
+ * @param {array}   guns    - array of weapon types ['laser', 'cannon', 'shotgun', etc.]
  * @param {string}  engine  - 'standard' | 'sprint' | 'tank' | 'hover'
  * @param {string}  chassis - 'tracked' | 'standing' | 'walking'
  * @param {string}  armor   - 'light' | 'medium' | 'heavy'
  */
 function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
-                    gun = 'laser', engine = 'standard',
+                    guns = ['laser'], engine = 'standard',
                     chassis = 'tracked', armor = 'medium') {
   const group = new THREE.Group();
   const s = { small: 0.78, medium: 1.0, large: 1.28 }[size] ?? 1.0;
@@ -132,88 +132,100 @@ function buildRobot(color = 0x56a48c, isPlayer = false, size = 'medium',
 
   // ── GUN (shared across all chassis) ──────────────────────────────────────
   function addGun(gunY) {
-    if (gun === 'cannon') {
-      part(new THREE.CylinderGeometry(0.09*s, 0.12*s, 0.72*s, 12), barrel, 0, gunY, -0.66*s, Math.PI/2, 0, 0);
-      part(new THREE.TorusGeometry(0.1*s, 0.025*s, 8, 16), barrel, 0, gunY, -1.0*s);
-      part(new THREE.BoxGeometry(0.26*s, 0.26*s, 0.28*s), structure, 0, gunY, -0.28*s);
-    } else if (gun === 'laser') {
-      for (const lx of [-0.14*s, 0.14*s]) {
-        part(new THREE.CylinderGeometry(0.035*s, 0.04*s, 0.9*s, 10), barrel, lx, gunY, -0.72*s, Math.PI/2, 0, 0);
-        part(new THREE.CylinderGeometry(0.05*s, 0.035*s, 0.06*s, 10), accent, lx, gunY, -1.17*s, Math.PI/2, 0, 0);
+    guns.forEach((gun, idx) => {
+      const offsetX = (idx - (guns.length - 1) / 2) * 0.25 * s;
+      const weaponY = gunY + (idx * 0.05 * s);
+
+      if (gun === 'cannon') {
+        part(new THREE.CylinderGeometry(0.09*s, 0.12*s, 0.72*s, 12), barrel, offsetX, weaponY, -0.66*s, Math.PI/2, 0, 0);
+        part(new THREE.TorusGeometry(0.1*s, 0.025*s, 8, 16), barrel, offsetX, weaponY, -1.0*s);
+        part(new THREE.BoxGeometry(0.26*s, 0.26*s, 0.28*s), structure, offsetX, weaponY, -0.28*s);
+      } else if (gun === 'laser') {
+        for (const lx of [-0.14*s, 0.14*s]) {
+          part(new THREE.CylinderGeometry(0.035*s, 0.04*s, 0.9*s, 10), barrel, offsetX + lx, weaponY, -0.72*s, Math.PI/2, 0, 0);
+          part(new THREE.CylinderGeometry(0.05*s, 0.035*s, 0.06*s, 10), accent, offsetX + lx, weaponY, -1.17*s, Math.PI/2, 0, 0);
+        }
+        part(new THREE.BoxGeometry(0.38*s, 0.18*s, 0.28*s), structure, offsetX, weaponY, -0.3*s);
+      } else if (gun === 'shotgun') {
+        for (const [sx2, sy2] of [[-0.16*s, weaponY+0.06*s], [0, weaponY], [0.16*s, weaponY+0.06*s]]) {
+          part(new THREE.CylinderGeometry(0.045*s, 0.05*s, 0.65*s, 10), barrel, offsetX + sx2, sy2, -0.66*s, Math.PI/2, 0, 0);
+        }
+        part(new THREE.BoxGeometry(0.5*s, 0.22*s, 0.32*s), structure, offsetX, weaponY, -0.3*s);
+        part(new THREE.BoxGeometry(0.1*s, 0.1*s, 0.2*s), structure, offsetX + 0.22*s, weaponY-0.1*s, -0.52*s);
+      } else if (gun === 'railgun') {
+        // Long slim single rail barrel with charge coils
+        part(new THREE.CylinderGeometry(0.05*s, 0.06*s, 1.2*s, 10), barrel, offsetX, weaponY, -0.86*s, Math.PI/2, 0, 0);
+        // Charge coil rings along barrel
+        for (let ci = 0; ci < 4; ci++) {
+          part(new THREE.TorusGeometry(0.09*s, 0.018*s, 6, 12), accent, offsetX, weaponY, -0.32*s - ci*0.22*s);
+        }
+        // Rail guides
+        for (const rx of [-0.07*s, 0.07*s]) {
+          part(new THREE.BoxGeometry(0.04*s, 0.04*s, 1.1*s), structure, offsetX + rx, weaponY, -0.75*s);
+        }
+        part(new THREE.BoxGeometry(0.22*s, 0.2*s, 0.22*s), structure, offsetX, weaponY, -0.18*s);
+      } else if (gun === 'plasma') {
+        // Wide plasma projector — orb emitter on a short mount
+        part(new THREE.SphereGeometry(0.14*s, 10, 8), accent, offsetX, weaponY+0.04*s, -0.72*s);
+        part(new THREE.CylinderGeometry(0.06*s, 0.1*s, 0.36*s, 10), barrel, offsetX, weaponY, -0.44*s, Math.PI/2, 0, 0);
+        // Side vanes
+        for (const vx of [-0.18*s, 0.18*s]) {
+          part(new THREE.BoxGeometry(0.06*s, 0.22*s, 0.28*s), structure, offsetX + vx, weaponY, -0.54*s);
+        }
+        part(new THREE.BoxGeometry(0.34*s, 0.18*s, 0.24*s), structure, offsetX, weaponY, -0.24*s);
+      } else if (gun === 'flail') {
+        // Overhead flail arm — vertical axle + chain + ball
+        part(new THREE.CylinderGeometry(0.04*s, 0.05*s, 0.42*s, 8), barrel, offsetX, weaponY+0.3*s, -0.26*s); // axle
+        part(new THREE.CylinderGeometry(0.025*s, 0.025*s, 0.3*s, 6), structure, offsetX + 0.08*s, weaponY+0.14*s, -0.48*s, 0.4, 0, 0.3); // chain link 1
+        part(new THREE.CylinderGeometry(0.025*s, 0.025*s, 0.3*s, 6), structure, offsetX + 0.14*s, weaponY-0.04*s, -0.62*s, 0.6, 0, 0.2); // chain link 2
+        part(new THREE.SphereGeometry(0.13*s, 10, 8), barrel, offsetX + 0.18*s, weaponY-0.18*s, -0.74*s); // ball
+        // Spike studs on ball
+        for (let si = 0; si < 6; si++) {
+          const sa = si * Math.PI / 3;
+          part(new THREE.CylinderGeometry(0.02*s, 0.01*s, 0.1*s, 6), structure,
+            offsetX + 0.18*s + Math.cos(sa)*0.14*s, weaponY-0.18*s + Math.sin(sa)*0.14*s, -0.74*s,
+            0, 0, sa);
+        }
+        part(new THREE.BoxGeometry(0.28*s, 0.22*s, 0.28*s), structure, offsetX, weaponY, -0.2*s);
+      } else if (gun === 'spinner') {
+        // Horizontal spinner disc — like a BattleBot bar spinner
+        part(new THREE.CylinderGeometry(0.42*s, 0.38*s, 0.1*s, 16), barrel, offsetX, weaponY-0.1*s, -0.52*s, 0, 0, 0);
+        // Spinner teeth
+        for (let ti = 0; ti < 3; ti++) {
+          const ta = ti * (Math.PI * 2 / 3);
+          part(new THREE.BoxGeometry(0.08*s, 0.08*s, 0.28*s), accent,
+            offsetX + Math.cos(ta)*0.36*s, weaponY-0.1*s, -0.52*s + Math.sin(ta)*0.36*s, 0, ta, 0);
+        }
+        // Motor housing
+        part(new THREE.CylinderGeometry(0.12*s, 0.14*s, 0.28*s, 12), structure, offsetX, weaponY, -0.52*s);
+      } else if (gun === 'sword') {
+        // Energy sword — long blade with hilt
+        part(new THREE.BoxGeometry(0.08*s, 0.04*s, 1.1*s), barrel, offsetX, weaponY, -0.65*s); // blade
+        part(new THREE.BoxGeometry(0.12*s, 0.08*s, 0.18*s), structure, offsetX, weaponY, -0.08*s); // hilt
+        part(new THREE.BoxGeometry(0.18*s, 0.06*s, 0.06*s), accent, offsetX, weaponY, 0.04*s); // pommel
+        // Energy glow effect (blade tip)
+        part(new THREE.ConeGeometry(0.04*s, 0.12*s, 8), accent, offsetX, weaponY, -1.2*s, 0, 0, Math.PI/2);
+      } else if (gun === 'chainsaw') {
+        // Chainsaw — spinning blade with teeth
+        part(new THREE.BoxGeometry(0.26*s, 0.28*s, 0.32*s), structure, offsetX, weaponY, -0.18*s); // motor housing
+        part(new THREE.CylinderGeometry(0.16*s, 0.16*s, 0.06*s, 16), barrel, offsetX, weaponY, -0.42*s, 0, 0, 0); // blade disc
+        // Teeth around the blade
+        for (let ti = 0; ti < 8; ti++) {
+          const ta = ti * (Math.PI / 4);
+          part(new THREE.BoxGeometry(0.04*s, 0.04*s, 0.08*s), accent,
+            offsetX + Math.cos(ta)*0.18*s, weaponY, -0.42*s + Math.sin(ta)*0.18*s, 0, ta, 0);
+        }
+        // Handle
+        part(new THREE.BoxGeometry(0.12*s, 0.06*s, 0.16*s), structure, offsetX, weaponY-0.1*s, 0.06*s);
+      } else {
+        // Default laser
+        for (const lx of [-0.14*s, 0.14*s]) {
+          part(new THREE.CylinderGeometry(0.035*s, 0.04*s, 0.9*s, 10), barrel, offsetX + lx, weaponY, -0.72*s, Math.PI/2, 0, 0);
+          part(new THREE.CylinderGeometry(0.05*s, 0.035*s, 0.06*s, 10), accent, offsetX + lx, weaponY, -1.17*s, Math.PI/2, 0, 0);
+        }
+        part(new THREE.BoxGeometry(0.38*s, 0.18*s, 0.28*s), structure, offsetX, weaponY, -0.3*s);
       }
-      part(new THREE.BoxGeometry(0.38*s, 0.18*s, 0.28*s), structure, 0, gunY, -0.3*s);
-    } else if (gun === 'shotgun') {
-      for (const [sx2, sy2] of [[-0.16*s, gunY+0.06*s], [0, gunY], [0.16*s, gunY+0.06*s]]) {
-        part(new THREE.CylinderGeometry(0.045*s, 0.05*s, 0.65*s, 10), barrel, sx2, sy2, -0.66*s, Math.PI/2, 0, 0);
-      }
-      part(new THREE.BoxGeometry(0.5*s, 0.22*s, 0.32*s), structure, 0, gunY, -0.3*s);
-      part(new THREE.BoxGeometry(0.1*s, 0.1*s, 0.2*s), structure, 0.22*s, gunY-0.1*s, -0.52*s);
-    } else if (gun === 'railgun') {
-      // Long slim single rail barrel with charge coils
-      part(new THREE.CylinderGeometry(0.05*s, 0.06*s, 1.2*s, 10), barrel, 0, gunY, -0.86*s, Math.PI/2, 0, 0);
-      // Charge coil rings along barrel
-      for (let ci = 0; ci < 4; ci++) {
-        part(new THREE.TorusGeometry(0.09*s, 0.018*s, 6, 12), accent, 0, gunY, -0.32*s - ci*0.22*s);
-      }
-      // Rail guides
-      for (const rx of [-0.07*s, 0.07*s]) {
-        part(new THREE.BoxGeometry(0.04*s, 0.04*s, 1.1*s), structure, rx, gunY, -0.75*s);
-      }
-      part(new THREE.BoxGeometry(0.22*s, 0.2*s, 0.22*s), structure, 0, gunY, -0.18*s);
-    } else if (gun === 'plasma') {
-      // Wide plasma projector — orb emitter on a short mount
-      part(new THREE.SphereGeometry(0.14*s, 10, 8), accent, 0, gunY+0.04*s, -0.72*s);
-      part(new THREE.CylinderGeometry(0.06*s, 0.1*s, 0.36*s, 10), barrel, 0, gunY, -0.44*s, Math.PI/2, 0, 0);
-      // Side vanes
-      for (const vx of [-0.18*s, 0.18*s]) {
-        part(new THREE.BoxGeometry(0.06*s, 0.22*s, 0.28*s), structure, vx, gunY, -0.54*s);
-      }
-      part(new THREE.BoxGeometry(0.34*s, 0.18*s, 0.24*s), structure, 0, gunY, -0.24*s);
-    } else if (gun === 'flail') {
-      // Overhead flail arm — vertical axle + chain + ball
-      part(new THREE.CylinderGeometry(0.04*s, 0.05*s, 0.42*s, 8), barrel, 0, gunY+0.3*s, -0.26*s); // axle
-      part(new THREE.CylinderGeometry(0.025*s, 0.025*s, 0.3*s, 6), structure, 0.08*s, gunY+0.14*s, -0.48*s, 0.4, 0, 0.3); // chain link 1
-      part(new THREE.CylinderGeometry(0.025*s, 0.025*s, 0.3*s, 6), structure, 0.14*s, gunY-0.04*s, -0.62*s, 0.6, 0, 0.2); // chain link 2
-      part(new THREE.SphereGeometry(0.13*s, 10, 8), barrel, 0.18*s, gunY-0.18*s, -0.74*s); // ball
-      // Spike studs on ball
-      for (let si = 0; si < 6; si++) {
-        const sa = si * Math.PI / 3;
-        part(new THREE.CylinderGeometry(0.02*s, 0.01*s, 0.1*s, 6), structure,
-          0.18*s + Math.cos(sa)*0.14*s, gunY-0.18*s + Math.sin(sa)*0.14*s, -0.74*s,
-          0, 0, sa);
-      }
-      part(new THREE.BoxGeometry(0.28*s, 0.22*s, 0.28*s), structure, 0, gunY, -0.2*s);
-    } else if (gun === 'spinner') {
-      // Horizontal spinner disc — like a BattleBot bar spinner
-      part(new THREE.CylinderGeometry(0.42*s, 0.38*s, 0.1*s, 16), barrel, 0, gunY-0.1*s, -0.52*s, 0, 0, 0);
-      // Spinner teeth
-      for (let ti = 0; ti < 3; ti++) {
-        const ta = ti * (Math.PI * 2 / 3);
-        part(new THREE.BoxGeometry(0.08*s, 0.08*s, 0.28*s), accent,
-          Math.cos(ta)*0.36*s, gunY-0.1*s, -0.52*s + Math.sin(ta)*0.36*s, 0, ta, 0);
-      }
-      // Motor housing
-      part(new THREE.CylinderGeometry(0.12*s, 0.14*s, 0.28*s, 12), structure, 0, gunY, -0.52*s);
-    } else if (gun === 'sword') {
-      // Energy sword — long blade with hilt
-      part(new THREE.BoxGeometry(0.08*s, 0.04*s, 1.1*s), barrel, 0, gunY, -0.65*s); // blade
-      part(new THREE.BoxGeometry(0.12*s, 0.08*s, 0.18*s), structure, 0, gunY, -0.08*s); // hilt
-      part(new THREE.BoxGeometry(0.18*s, 0.06*s, 0.06*s), accent, 0, gunY, 0.04*s); // pommel
-      // Energy glow effect (blade tip)
-      part(new THREE.ConeGeometry(0.04*s, 0.12*s, 8), accent, 0, gunY, -1.2*s, 0, 0, Math.PI/2);
-    } else if (gun === 'chainsaw') {
-      // Chainsaw — spinning blade with teeth
-      part(new THREE.BoxGeometry(0.26*s, 0.28*s, 0.32*s), structure, 0, gunY, -0.18*s); // motor housing
-      part(new THREE.CylinderGeometry(0.16*s, 0.16*s, 0.06*s, 16), barrel, 0, gunY, -0.42*s, 0, 0, 0); // blade disc
-      // Teeth around the blade
-      for (let ti = 0; ti < 8; ti++) {
-        const ta = ti * (Math.PI / 4);
-        part(new THREE.BoxGeometry(0.04*s, 0.04*s, 0.08*s), accent,
-          Math.cos(ta)*0.18*s, gunY, -0.42*s + Math.sin(ta)*0.18*s, 0, ta, 0);
-      }
-      // Handle
-      part(new THREE.BoxGeometry(0.12*s, 0.06*s, 0.16*s), structure, 0, gunY-0.1*s, 0.06*s);
-    }
+    });
   }
 
   // ── TURRET HEAD (shared) ──────────────────────────────────────────────────
@@ -533,7 +545,8 @@ function spawnBots(botConfigs) {
 
   botConfigs.slice(0, 1).forEach((cfg, i) => {
     const pos = SPAWN_POSITIONS[i] || { x: (Math.random() - 0.5) * 16, z: (Math.random() - 0.5) * 12 };
-    const r = buildRobot(cfg.color, false, cfg.size, cfg.gun, cfg.engine, cfg.chassis || 'tracked', cfg.armor || 'medium');
+    const botGuns = Array.isArray(cfg.gun) ? cfg.gun : [cfg.gun || 'laser']; // Convert to array if needed
+    const r = buildRobot(cfg.color, false, cfg.size, botGuns, cfg.engine, cfg.chassis || 'tracked', cfg.armor || 'medium');
     r.position.set(pos.x, 0, pos.z);
     bots.push({
       ...cfg,
@@ -617,7 +630,13 @@ function loadArenaAsset() {
       arena.position.y = -bounds.min.y * scale;
       scene.add(arena);
       resolve();
-    }, undefined, reject)
+    }, undefined, err => {
+      console.warn('Arena GLB load failed, falling back to procedural arena:', err);
+      // Fall back to procedural arena
+      proceduralArena.forEach(o => { o.visible = true; });
+      grid.visible = true;
+      resolve();
+    })
   );
 }
 
@@ -881,14 +900,18 @@ function handlePeerData(data) {
       if (!isHost) {
         // Guest receives start signal from host
         console.log('Guest received start signal, loading arena');
+        loadStatus.textContent = 'LOADING ARENA...';
         loadArenaAsset().then(() => {
           gameStarted = true;
           buildScreen.style.display = 'none';
           document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
+          console.log('Guest entered multiplayer battle');
+          launchButton.disabled = false;
         }).catch((err) => {
           console.error('Guest arena loading failed:', err);
-          document.getElementById('loadStatus').textContent = 'ARENA LOAD FAILED';
-          document.getElementById('launch').disabled = false;
+          document.getElementById('feed').textContent = 'ARENA LOAD FAILED - RETRYING';
+          loadStatus.textContent = 'LOADING FAILED';
+          launchButton.disabled = false;
         });
       }
       break;
@@ -900,11 +923,15 @@ function updateReadyStatus() {
   if (slot1Ready) {
     slot1Ready.textContent = opponentReady ? 'READY' : '';
   }
+  console.log('Ready status updated - isHost:', isHost, 'opponentReady:', opponentReady);
 }
 
 function sendToPeer(data) {
   if (conn && conn.open) {
+    console.log('Sending peer data:', data);
     conn.send(data);
+  } else {
+    console.warn('Cannot send peer data - connection not open');
   }
 }
 
@@ -1092,7 +1119,7 @@ document.getElementById('refreshLobbiesBtn')?.addEventListener('click', () => {
 const buildState = {
   chassis: 'tracked',
   size:    'medium',
-  gun:     'laser',
+  weapons: ['laser'], // Changed to array for multiple weapons
   engine:  'standard',
   armor:   'medium',
   color:   0x56a48c,
@@ -1119,7 +1146,7 @@ const PARTS = {
     { id:'medium', label:'Medium', icon:'▬', desc:'Balanced frame',         weight:0,   speed:'STD'  },
     { id:'large',  label:'Large',  icon:'▪', desc:'Heavy + slow',           weight:+40, speed:'-SPD' },
   ],
-  gun: [
+  weapons: [
     { id:'laser',   label:'Laser Twins',   icon:'⚡', desc:'Rapid twin energy beams', dps:'HIGH',   rng:'MED'  },
     { id:'cannon',  label:'Heavy Cannon',  icon:'💥', desc:'Single heavy shell',       dps:'MED',    rng:'HIGH' },
     { id:'shotgun', label:'Spread Burst',  icon:'🔫', desc:'Wide close-range spray',   dps:'V.HIGH', rng:'LOW'  },
@@ -1153,7 +1180,7 @@ const PARTS = {
 
 const CATEGORIES = [
   { id:'chassis', label:'CHASSIS', icon:'⬡' },
-  { id:'gun',     label:'WEAPONS', icon:'◎' },
+  { id:'weapons', label:'WEAPONS', icon:'◎' },
   { id:'engine',  label:'MOBILITY',icon:'⚙' },
   { id:'size',    label:'SIZE',    icon:'⤡' },
   { id:'armor',   label:'ARMOR',   icon:'◆' },
@@ -1168,7 +1195,7 @@ function rebuildPreview() {
   scene.remove(player);
   player = buildRobot(
     buildState.color, true,
-    buildState.size, buildState.gun, buildState.engine,
+    buildState.size, buildState.weapons, buildState.engine,
     buildState.chassis, buildState.armor
   );
   player.position.set(0, 0, 0);
@@ -1177,7 +1204,8 @@ function rebuildPreview() {
 
 function updateBotLabStats() {
   const w = (PART_STATS.chassis[buildState.chassis]?.w ?? 100)
-          + (PART_STATS.size[buildState.size]?.w ?? 0);
+          + (PART_STATS.size[buildState.size]?.w ?? 0)
+          + (buildState.weapons.length - 1) * 20; // Extra weight for additional weapons
   const sp = PART_STATS.engine[buildState.engine]?.s ?? 'STD';
   const ar = PART_STATS.armor[buildState.armor]?.a ?? 'MED';
   const wEl = document.getElementById('blWeight');
@@ -1237,8 +1265,19 @@ function renderPartList(categoryId) {
   }
 
   const options = PARTS[categoryId] || [];
+  console.log('Rendering category:', categoryId, 'with options:', options.length);
+  if (categoryId === 'weapons') {
+    console.log('Current weapons selection:', buildState.weapons);
+  }
   options.forEach(opt => {
-    const selected = buildState[categoryId] === opt.id;
+    // Handle multiple selections for weapons category
+    let selected = false;
+    if (categoryId === 'weapons') {
+      selected = buildState.weapons.includes(opt.id);
+    } else {
+      selected = buildState[categoryId] === opt.id;
+    }
+
     const row = document.createElement('button');
     row.className = 'blPartRow' + (selected ? ' selected' : '');
 
@@ -1260,10 +1299,21 @@ function renderPartList(categoryId) {
         <div class="blPartMeta">${metaHtml}</div>
         <div class="blPartDesc">${opt.desc}</div>
       </div>
-      <div class="blPartCheck">✓</div>`;
+      <div class="blPartCheck">${categoryId === 'weapons' ? (selected ? '☑' : '☐') : '✓'}</div>`;
 
     row.addEventListener('pointerdown', () => {
-      buildState[categoryId] = opt.id;
+      if (categoryId === 'weapons') {
+        // Toggle weapon selection (multiple allowed)
+        if (buildState.weapons.includes(opt.id)) {
+          buildState.weapons = buildState.weapons.filter(g => g !== opt.id);
+          if (buildState.weapons.length === 0) buildState.weapons = ['laser']; // Always have at least one weapon
+        } else {
+          buildState.weapons.push(opt.id);
+        }
+      } else {
+        // Single selection for other categories
+        buildState[categoryId] = opt.id;
+      }
       rebuildPreview();
       renderPartList(categoryId);
     });
@@ -1323,18 +1373,43 @@ launchButton && launchButton.addEventListener('click', async () => {
   loadStatus.textContent = 'LOADING ARENA…';
 
   selectedSize   = buildState.size;
-  selectedGun    = buildState.gun;
+  selectedGun    = buildState.weapons[0]; // Use first weapon for backward compatibility
   selectedEngine = buildState.engine;
   robotTint      = new THREE.Color(buildState.color);
 
   // Final robot at arena spawn position
   scene.remove(player);
-  player = buildRobot(robotTint.getHex(), true, selectedSize, selectedGun, selectedEngine, buildState.chassis, buildState.armor);
+  player = buildRobot(robotTint.getHex(), true, selectedSize, buildState.weapons, selectedEngine, buildState.chassis, buildState.armor);
   player.position.set(0, 0, 5);
 
   // Send ready status to peer if multiplayer
   if (conn && conn.open) {
     sendToPeer({ type: 'ready', ready: true });
+    console.log('Guest sent ready status, waiting for host to start');
+
+    // Guest should wait for host to send start signal
+    document.getElementById('feed').textContent = 'WAITING FOR HOST TO START MATCH...';
+    loadStatus.textContent = 'WAITING FOR HOST...';
+
+    // Set up wait loop for start signal
+    const waitForStart = () => {
+      if (gameStarted) {
+        console.log('Game started, returning');
+        return;
+      }
+
+      if (!conn || !conn.open) {
+        console.error('Connection lost while waiting for start');
+        document.getElementById('feed').textContent = 'CONNECTION LOST';
+        loadStatus.textContent = 'CONNECTION ERROR';
+        launchButton.disabled = false;
+        return;
+      }
+
+      setTimeout(waitForStart, 100);
+    };
+    waitForStart();
+    return;
   }
 
   // For single player or when host
@@ -1349,7 +1424,7 @@ launchButton && launchButton.addEventListener('click', async () => {
       }
       return;
     }
-    
+
     // Single player mode
     activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
     spawnBots(activeBotConfigs);
@@ -1402,20 +1477,20 @@ launchButton && launchButton.addEventListener('click', async () => {
 function startMultiplayerGame() {
   if (opponentReady) {
     document.getElementById('feed').textContent = 'MULTIPLAYER MATCH STARTING...';
-    sendToPeer({ type: 'start' });
-    
+
     // Start the game for host
     activeBotConfigs = pickOpponents(selectedTeamIndex, 1);
     spawnBots(activeBotConfigs);
-    
+
     // Load arena for host
     loadArenaAsset().then(() => {
       gameStarted = true;
       buildScreen.style.display = 'none';
       document.getElementById('feed').textContent = 'MULTIPLAYER BATTLE ONLINE';
-      
+
       // Send start signal to guest after host arena is loaded
       if (conn && conn.open) {
+        console.log('Host sending start signal to guest');
         sendToPeer({ type: 'start' });
       }
     }).catch((err) => {
@@ -1460,12 +1535,21 @@ function burst(position, color) {
 }
 
 function firePlayer() {
-  const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(player.quaternion);
-  const from = player.position.clone().add(new THREE.Vector3(0, 1.1, -0.9));
+  // Use the player's rotation Y to determine shooting direction
+  const angle = player.rotation.y;
+  const dir = new THREE.Vector3(Math.sin(angle), 0, Math.cos(angle)); // Try positive Z for forward
+
+  // Fire from each equipped weapon
+  buildState.weapons.forEach((gun, idx) => {
+    const offsetX = (idx - (buildState.weapons.length - 1) / 2) * 0.25;
+    const from = player.position.clone().add(new THREE.Vector3(offsetX, 1.1, 0));
+    const to = player.position.clone().add(dir.clone().multiplyScalar(14));
+    shoot(from, to, 0xffdd5a, 'p');
+  });
+
+  // Send shoot data to peer for multiplayer (use center weapon)
+  const from = player.position.clone().add(new THREE.Vector3(0, 1.1, 0));
   const to = player.position.clone().add(dir.multiplyScalar(14));
-  shoot(from, to, 0xffdd5a, 'p');
-  
-  // Send shoot data to peer for multiplayer
   if (conn && conn.open) {
     sendToPeer({
       type: 'shoot',
@@ -1489,12 +1573,18 @@ function update(dt) {
   const engineFactor = { standard: 1, sprint: 1.35, tank: 0.72, hover: 1.15, jet: 1.25 }[selectedEngine] ?? 1;
   const speed = (input.boost ? 6.5 : 3.8) * engineFactor;
 
-  player.position.x = THREE.MathUtils.clamp(player.position.x + input.x * speed * dt, -12, 12);
-  player.position.z = THREE.MathUtils.clamp(player.position.z + input.y * speed * dt,  -8,  8);
+  // Smooth input interpolation
+  const lerpFactor = 0.15;
+  if (!smoothInput) smoothInput = { x: 0, y: 0 };
+  smoothInput.x = THREE.MathUtils.lerp(smoothInput.x, input.x, lerpFactor);
+  smoothInput.y = THREE.MathUtils.lerp(smoothInput.y, input.y, lerpFactor);
+
+  player.position.x = THREE.MathUtils.clamp(player.position.x + smoothInput.x * speed * dt, -12, 12);
+  player.position.z = THREE.MathUtils.clamp(player.position.z + smoothInput.y * speed * dt,  -8,  8);
   resolveArenaCollision(player.position);
 
-  if (Math.abs(input.x) + Math.abs(input.y) > 0.1)
-    player.rotation.y = Math.atan2(input.x, input.y);
+  if (Math.abs(smoothInput.x) + Math.abs(smoothInput.y) > 0.1)
+    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y);
 
   // Animate tracks (rotate road wheels)
   if (selectedEngine !== 'hover') {
@@ -1780,8 +1870,8 @@ addEventListener('resize', () => {
   renderer.setSize(innerWidth, innerHeight);
 });
 addEventListener('keydown', e => {
-  if (e.key === 'w') input.y = -1;
-  if (e.key === 's') input.y =  1;
+  if (e.key === 'w') input.y = 1;
+  if (e.key === 's') input.y = -1;
   if (e.key === 'a') input.x = -1;
   if (e.key === 'd') input.x =  1;
   if (e.code === 'Space') input.boost = true;
@@ -1806,7 +1896,7 @@ const moveJoy  = e => {
   const x = e.clientX - r.left  - 56;
   const y = e.clientY - r.top   - 56;
   input.x = THREE.MathUtils.clamp(x / 35, -1, 1);
-  input.y = THREE.MathUtils.clamp(y / 35, -1, 1);
+  input.y = THREE.MathUtils.clamp(-y / 35, -1, 1); // Invert Y for natural joystick control
   knob.style.transform = `translate(${THREE.MathUtils.clamp(x,-35,35)}px,${THREE.MathUtils.clamp(y,-35,35)}px)`;
 };
 joystick.onpointerdown  = e => { joystick.setPointerCapture(e.pointerId); moveJoy(e); };
