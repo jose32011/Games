@@ -1554,7 +1554,7 @@ function burst(position, color) {
 function firePlayer() {
   // Use the player's rotation Y to determine shooting direction
   const angle = player.rotation.y;
-  const dir = new THREE.Vector3(Math.sin(angle), 0, Math.cos(angle)); // Try positive Z for forward
+  const dir = new THREE.Vector3(-Math.sin(angle), 0, -Math.cos(angle));
 
   // Fire from each equipped weapon
   buildState.weapons.forEach((gun, idx) => {
@@ -1597,11 +1597,11 @@ function update(dt) {
   smoothInput.y = THREE.MathUtils.lerp(smoothInput.y, input.y, lerpFactor);
 
   player.position.x = THREE.MathUtils.clamp(player.position.x + smoothInput.x * speed * dt, -12, 12);
-  player.position.z = THREE.MathUtils.clamp(player.position.z + smoothInput.y * speed * dt,  -8,  8);
+  player.position.z = THREE.MathUtils.clamp(player.position.z - smoothInput.y * speed * dt,  -8,  8);
   resolveArenaCollision(player.position);
 
   if (Math.abs(smoothInput.x) + Math.abs(smoothInput.y) > 0.1)
-    player.rotation.y = Math.atan2(smoothInput.x, smoothInput.y);
+    player.rotation.y = Math.atan2(-smoothInput.x, smoothInput.y);
 
   // Animate tracks (rotate road wheels)
   if (selectedEngine !== 'hover') {
